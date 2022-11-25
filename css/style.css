@@ -298,11 +298,11 @@
   position: relative;
 }
 
-.img-container:nth-child(odd) {
+.img-container-catalog:nth-child(odd) {
   margin-right: 40px;
 }
 
-.img-container:nth-child(n + 3) {
+.img-container-catalog:nth-child(n + 3) {
   margin-top: 40px;
 }
 
@@ -348,11 +348,7 @@ figcaption {
   color: #ffffff;
 }
 
-.img-container#popular {
-  margin: 0;
-}
-
-.Bestseller {
+.hit {
   position: absolute;
   top: -15px;
   left: 30px;
@@ -363,9 +359,6 @@ figcaption {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-}
-
-.hit {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
