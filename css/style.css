@@ -26,6 +26,7 @@
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .menu-link:nth-last-child(n + 2) {
@@ -85,6 +86,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  white-space: nowrap;
 }
 
 .logo {
@@ -138,7 +140,7 @@
 }
 
 .button-contact-container {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .button-contact {
@@ -158,7 +160,6 @@
 
 .intro {
   position: relative;
-  width: 1920px;
   height: 650px;
   margin-bottom: 107px;
   background-image: url(/images/plug.png);
@@ -259,6 +260,7 @@
   line-height: 30px;
   padding-bottom: 43px;
   align-items: center;
+  white-space: nowrap;
 }
 
 .catalog-ref {
@@ -273,13 +275,17 @@
 }
 
 .big-img {
-  min-width: 559px;
-  min-height: 590px;
+  width: 559px;
+  height: 590px;
   background: #f3f3f3;
   margin-right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.big-img figure {
+  padding: 30px 30px 66px;
 }
 
 .img-list {
@@ -289,7 +295,7 @@
 }
 
 .img-container {
-  width: 260px;
+  width: calc(50% - 40px);
   height: 280px;
   background: #f3f3f3;
   display: flex;
@@ -346,6 +352,14 @@ figcaption {
 .button-tag:focus {
   background: #0a7356;
   color: #ffffff;
+}
+
+.img-list-popular {
+  flex-wrap: nowrap;
+}
+
+.img-container-popular:nth-last-child(n + 2) {
+  margin-right: 40px;
 }
 
 .hit {
@@ -468,6 +482,11 @@ figcaption {
   justify-content: space-between;
   padding-top: 25px;
   border-top: 2px solid #dadbdb;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .aboutUs {
@@ -660,4 +679,40 @@ figcaption {
 
 .copyright:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .headbar {
+    padding: 21.87px 9.72% 15px;
+  }
+
+  .logobar {
+    padding: 0 9.72%;
+  }
+
+  .site-menu {
+    padding: 0 9.72%;
+  }
+
+  .button-contact-container {
+    width: 209px;
+  }
+
+  .page {
+    padding: 0 9.72%;
+  }
+
+  .foot {
+    padding: 114px 9.72% 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .headbar {
+    display: none;
+  }
+
+  .site-menu {
+    display: none;
+  }
 }
