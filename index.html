@@ -35,11 +35,20 @@
 
       <div class="logobar">
         <div class="button-container">
-          <button class="button">Каталог</button>
+          <button class="button button-catalog">Каталог</button>
+          <button class="menu-burger">
+            <span class="menu-burger-label">открыть меню</span>
+          </button>
         </div>
         <div class="logo">
           <a href="#" class="menu-link-ref">
-            <img src="/images/Logo.png" alt="Vitarus" class="logo" />
+            <picture>
+              <source
+                media="(max-width: 360px)"
+                srcset="images/Logo-mobile.png"
+              />
+              <img class="logo" src="images/Logo.png" alt="" />
+            </picture>
           </a>
         </div>
         <div class="svg-links">
@@ -145,37 +154,68 @@
         <div class="catalog-images">
           <div class="big-img">
             <figure>
-              <img src="/images/Frame34530.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/Frame-mini.png"
+                />
+                <img src="/images/Frame34530.png" alt="" />
+              </picture>
               <figcaption>Мебель для библиотек</figcaption>
             </figure>
           </div>
           <div class="img-list">
             <div class="img-container img-container-catalog">
               <figure>
-                <img src="/images/RFID.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="images/RFID-mini.png"
+                  />
+                  <img src="/images/RFID.png" alt="" />
+                </picture>
                 <figcaption>Оборудование RFID</figcaption>
               </figure>
             </div>
             <div class="img-container img-container-catalog">
               <figure>
-                <img src="/images/museum.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="images/museum-mini.png"
+                  />
+                  <img src="/images/museum.png" alt="" />
+                </picture>
                 <figcaption>Музейное оборудование</figcaption>
               </figure>
             </div>
             <div class="img-container img-container-catalog">
               <figure>
-                <img src="/images/university.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="images/university-mini.png"
+                  />
+                  <img src="/images/university.png" alt="" />
+                </picture>
                 <figcaption>Мебель для ВУЗовк</figcaption>
               </figure>
             </div>
             <div class="img-container img-container-catalog">
               <figure>
-                <img src="/images/DSHI.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 360px)"
+                    srcset="images/DSHI-mini.png"
+                  />
+                  <img src="/images/DSHI.png" alt="" />
+                </picture>
                 <figcaption>Мебель для ДШИ</figcaption>
               </figure>
             </div>
           </div>
         </div>
+        <a href="#" class="catalog-ref catalog-ref-mobile">Перейти в каталог</a>
       </section>
 
       <section class="popular-goods">
@@ -211,28 +251,52 @@
           <div class="img-container img-container-popular">
             <p class="hit">Хит продаж</p>
             <figure>
-              <img src="/images/rack.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/rack-mini.png"
+                />
+                <img src="/images/rack.png" alt="" />
+              </picture>
               <figcaption>Сталлажи для библиотек</figcaption>
             </figure>
           </div>
           <div class="img-container img-container-popular">
             <p class="hit">Хит продаж</p>
             <figure>
-              <img src="/images/departments.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/departments-mini.png"
+                />
+                <img src="/images/departments.png" alt="" />
+              </picture>
               <figcaption>Кафедры выдачи стеллажи</figcaption>
             </figure>
           </div>
           <div class="img-container img-container-popular">
             <p class="hit">Хит продаж</p>
             <figure>
-              <img src="/images/departments.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/departments-mini.png"
+                />
+                <img src="/images/departments.png" alt="" />
+              </picture>
               <figcaption>Кафедры выдачи стеллажи</figcaption>
             </figure>
           </div>
           <div class="img-container img-container-popular">
             <p class="hit">Хит продаж</p>
             <figure>
-              <img src="/images/departments.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/departments-mini.png"
+                />
+                <img src="/images/departments.png" alt="" />
+              </picture>
               <figcaption>Кафедры выдачи стеллажи</figcaption>
             </figure>
           </div>
@@ -257,7 +321,7 @@
               корзину, проверьте количество по каждой позиции и отправьте
               запрос.
             </p>
-            <div class="button-block">
+            <div class="button-block button-block-portfolio">
               <button class="switch">
                 <img src="/svg/arrow-left.svg" alt="" />
               </button>
@@ -267,28 +331,110 @@
               </button>
             </div>
             <div class="big-img-container">
-              <img src="/images/big-room.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/big-room-mini.png"
+                />
+                <img src="/images/big-room.png" alt="" />
+              </picture>
             </div>
           </article>
           <div class="img-list img-list-container">
             <div class="img-container-portfolio">
-              <img src="/images/mini-room.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/mini-room-mini.png"
+                />
+                <img src="/images/mini-room.png" alt="" />
+              </picture>
             </div>
             <div class="img-container-portfolio">
-              <img src="/images/mini-room.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/mini-room-mini.png"
+                />
+                <img src="/images/mini-room.png" alt="" />
+              </picture>
             </div>
             <div class="img-container-portfolio">
-              <img src="/images/mini-room.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/mini-room-mini.png"
+                />
+                <img src="/images/mini-room.png" alt="" />
+              </picture>
             </div>
             <div class="img-container-portfolior">
-              <img src="/images/mini-room.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/mini-room-mini.png"
+                />
+                <img src="/images/mini-room.png" alt="" />
+              </picture>
             </div>
+          </div>
+          <div class="button-block button-block-bottom">
+            <button class="switch">
+              <img src="/svg/arrow-left.svg" alt="" />
+            </button>
+            <span class="switch-number">11/12</span>
+            <button class="switch">
+              <img src="/svg/arrow-right.svg" alt="" />
+            </button>
+          </div>
+          <a href="#" class="catalog-ref catalog-ref-mobile">Посмотреть все</a>
+        </div>
+      </section>
+
+      <section class="ideas">
+        <h2 class="caption">Идеи</h2>
+        <div class="idea-img-container">
+          <div class="image-container-idea">
+            <picture>
+              <source
+                media="(max-width: 360px)"
+                srcset="images/idea-img1-mini.png"
+              />
+              <img src="/images/idea-img1.png" alt="" />
+            </picture>
+          </div>
+          <div class="image-container-idea">
+            <picture>
+              <source
+                media="(max-width: 360px)"
+                srcset="images/idea-img2-mini.png"
+              />
+              <img src="/images/idea-img2.png" alt="" />
+            </picture>
+          </div>
+          <div class="image-container-idea">
+            <picture>
+              <source
+                media="(max-width: 360px)"
+                srcset="images/idea-img3-mini.png"
+              />
+              <img src="/images/idea-img3.png" alt="" />
+            </picture>
           </div>
         </div>
       </section>
 
       <section class="series">
         <h2 class="caption">Серии</h2>
+        <div class="button-block button-block-bottom">
+          <button class="switch">
+            <img src="/svg/arrow-left.svg" alt="" />
+          </button>
+          <span class="switch-number">11/12</span>
+          <button class="switch">
+            <img src="/svg/arrow-right.svg" alt="" />
+          </button>
+        </div>
         <ul class="menu-list">
           <li class="menu-link menu-link-site">
             <button class="menu-link-ref button-site button-series">
@@ -314,10 +460,16 @@
 
         <div class="information-container information-container-series">
           <div class="image-conatainer-series">
-            <img src="/images/grace.png" alt="" />
+            <picture>
+              <source
+                media="(max-width: 360px)"
+                srcset="images/grace-mini.png"
+              />
+              <img src="/images/grace.png" alt="" />
+            </picture>
           </div>
           <div class="information-series">
-            <div class="button-block">
+            <div class="button-block button-block-portfolio">
               <button class="switch">
                 <img src="/svg/arrow-left.svg" alt="" />
               </button>
@@ -334,7 +486,11 @@
             </p>
             <div class="series-catalog">
               <p class="series-catalog-info">Более 100 товаров в каталоге</p>
-              <a href="#" class="catalog-ref">Посмотреть всю мебель</a>
+              <a
+                href="#"
+                class="catalog-ref catalog-ref-mobile catalog-ref-mobile-series"
+                >Посмотреть всю мебель</a
+              >
             </div>
           </div>
         </div>
@@ -368,19 +524,34 @@
           </div>
         </div>
         <div class="bottom-image-container">
-          <img src="/images/inspection.png" alt="" />
+          <picture>
+            <source
+              media="(max-width: 360px)"
+              srcset="images/inspection-mini.png"
+            />
+            <img src="/images/inspection.png" alt="" />
+          </picture>
         </div>
+        <a href="#" class="aboutUs-ref"> Металлообрабатывающий цех </a>
+        <a href="#" class="aboutUs-ref"> Деревообрабатывающий цех </a>
+        <a href="#" class="aboutUs-ref"> Цех по работе со стеклом </a>
       </section>
 
       <section class="news">
         <div class="description">
-          <h2 class="caption">О нас</h2>
-          <a href="#" class="catalog-ref">Посмотреть Все</a>
+          <h2 class="caption">Новости</h2>
+          <a href="#" class="catalog-ref catalog-ref-news">Посмотреть Все</a>
         </div>
         <div class="news-container">
           <article class="news-block">
             <div class="news-image-container">
-              <img src="/images/bookish.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/bookish-mini.png"
+                />
+                <img src="/images/bookish.png" alt="" />
+              </picture>
             </div>
             <h3 class="caption inform-caption inform-caption-news">
               Снова хорошие новости!
@@ -395,7 +566,13 @@
           </article>
           <article class="news-block">
             <div class="news-image-container">
-              <img src="/images/classRoom.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/bookish-mini.png"
+                />
+                <img src="/images/bookish.png" alt="" />
+              </picture>
             </div>
             <h3 class="caption inform-caption inform-caption-news">
               Московский юридический институт МЮИ стал партнером нашей компании
@@ -409,7 +586,13 @@
           </article>
           <article class="news-block">
             <div class="news-image-container">
-              <img src="/images/school.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 360px)"
+                  srcset="images/bookish-mini.png"
+                />
+                <img src="/images/bookish.png" alt="" />
+              </picture>
             </div>
             <h3 class="caption inform-caption inform-caption-news">
               Работаем со школами
@@ -447,7 +630,10 @@
       </section>
 
       <section class="reviews">
-        <h2 class="caption">Отзывы</h2>
+        <div class="description">
+          <h2 class="caption">Отзывы</h2>
+          <a href="#" class="catalog-ref catalog-ref-news">Посмотреть Все</a>
+        </div>
         <div class="news-container">
           <article class="news-block">
             <div class="photo-name">
@@ -588,9 +774,8 @@
       <div class="copyright-politics">
         <a class="copyright"
           >© 2022 ВитаРус. Информация сайта защищена законом об авторских
-          правах</a
-        >
-        <a class="copyright">Политика конфиденциальности</a>
+          правах</a>
+        <a class="politics">Политика конфиденциальности</a>
       </div>
     </footer>
   </body>
