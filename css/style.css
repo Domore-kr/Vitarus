@@ -762,7 +762,7 @@ figcaption {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 460px) {
   .hat {
     padding-bottom: 0;
   }
@@ -1038,6 +1038,12 @@ figcaption {
   .ideas {
     display: block;
     margin-bottom: 70px;
+  }
+
+  .image-container-idea {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
   }
 
   .image-container-idea:nth-last-child(n + 2) {
