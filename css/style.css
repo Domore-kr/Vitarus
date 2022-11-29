@@ -474,6 +474,10 @@ figcaption {
   padding: 0 13px 0;
 }
 
+.switch-number-two {
+  color: #b7b7b7;
+}
+
 .big-img-container {
   min-width: 860px;
   min-height: 500px;
