@@ -581,6 +581,10 @@ figcaption {
   margin-bottom: 30px;
 }
 
+.aboutUs-ref-bottom {
+  display: none;
+}
+
 .bottom-image-container {
   min-width: 1160px;
   min-height: 710px;
@@ -1333,5 +1337,9 @@ figcaption {
   .politics {
     margin-bottom: 20px;
     order: 1;
+  }
+
+  .aboutUs-ref-bottom {
+    display: block  ;
   }
 }
