@@ -400,6 +400,7 @@ figcaption {
   border: none;
   padding: 5px 20px;
   background: #f3f3f3;
+  cursor: pointer;
 }
 
 .button-tag:focus {
