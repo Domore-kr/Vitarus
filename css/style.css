@@ -16,9 +16,17 @@
 .headbar {
   display: flex;
   justify-content: space-between;
-  padding: 21.87px 9.792% 18.43px;
+  padding: 21.87px 0 18.43px;
   margin-bottom: 15px;
   background-color: #f3f3f3;
+}
+
+.content-container {
+  max-width: 1140px;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .menu-list {
@@ -59,10 +67,12 @@
 }
 
 .logobar {
+  max-width: 1140px;
+  width: 1140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 9.792%;
+  margin: auto;
   margin-bottom: 19px;
 }
 
@@ -93,6 +103,12 @@
   white-space: nowrap;
 }
 
+.button-logobar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .button-mini {
   display: none;
 }
@@ -121,7 +137,9 @@
 }
 
 .site-menu {
-  padding: 0 9.792%;
+  max-width: 1140px;
+  width: 1140px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,6 +167,10 @@
 .connection-button {
   width: 209px;
   height: 40px;
+}
+
+.button-contact-container {
+  width: 100%;
 }
 
 .button-contact {
@@ -188,9 +210,12 @@
 }
 
 .container-info {
+  max-width: 1140px;
+  width: 1140px;
+  margin: auto;
   position: relative;
   z-index: 2;
-  padding: 194px 0px 67px 19.792%;
+  padding: 194px 0px 67px 0;
 }
 
 .intro-head-container {
@@ -209,6 +234,12 @@
 }
 
 .intro-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 0.01em;
   font-size: 50px;
 }
 
@@ -223,8 +254,8 @@
   height: 20px;
   background: #ffffff;
   justify-content: space-between;
-  align-items: center;
-  padding: 7px 9px;
+  padding: 0 9px;
+  border-radius: 20px;
 }
 
 .radio {
@@ -232,7 +263,9 @@
 }
 
 .page {
-  padding: 0 9.792%;
+  max-width: 1140px;
+  width: 1140px;
+  margin: auto;
   margin-bottom: 100px;
 }
 
@@ -637,7 +670,13 @@ figcaption {
 
 .foot {
   background: #f3f3f3;
-  padding: 114px 380px 0;
+  padding: 114px 0;
+}
+
+.foot-container {
+  max-width: 1140px;
+  width: 1140px;
+  margin: auto;
 }
 
 .inform-caption-foot {
@@ -836,10 +875,6 @@ figcaption {
     width: 209px;
   }
 
-  .container-info {
-    padding: 194px 0px 60px 9.792%;
-  }
-
   .page {
     padding: 0 9.72%;
   }
@@ -884,12 +919,17 @@ figcaption {
     display: none;
   }
 
+  .content-container {
+    width: auto;
+  }
+
   .site-menu {
     display: none;
   }
 
   .logobar {
     padding: 20px;
+    width: auto;
   }
 
   .button-container {
@@ -898,6 +938,10 @@ figcaption {
     max-height: 40px;
     background-color: #0a7356;
     border-radius: 20px;
+  }
+
+  .button-logobar {
+    display: none;
   }
 
   .logo {
@@ -927,56 +971,31 @@ figcaption {
     border-radius: 20px;
   }
 
+  .button-container-logobar {
+    display: flex;
+    justify-content: center;
+  }
+
   .menu-burger {
-    width: 16px;
-    height: 20px;
     border: none;
     background-color: transparent;
-    position: absolute;
-    text-indent: -9999px;
-    cursor: pointer;
-    left: 31%;
-    top: 6px;
-    display: block;
-  }
-
-  .menu-burger-label {
-    width: 100%;
-    height: 20%;
-    margin-top: -0.1em;
-    background-color: #ffffff;
-    position: absolute;
-    left: 0;
-  }
-
-  .menu-burger:before {
-    top: 0;
-  }
-
-  .menu-burger:after {
-    content: "";
-    width: 100%;
-    height: 20%;
-    background-color: #ffffff;
-    position: absolute;
-    left: 0;
-  }
-
-  .menu-burger:after {
-    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .svg-links {
     justify-content: end;
   }
 
-  .intro {
-    margin-bottom: 80px;
-  }
-
   .container-info {
+    width: auto;
     padding: 110px 44px 20px 20px;
     top: 0;
+  }
+
+  .intro {
+    margin-bottom: 80px;
   }
 
   .intro-head-container {
@@ -985,18 +1004,20 @@ figcaption {
   }
 
   .intro-head {
+    line-height: 40px;
     font-size: 28px;
     white-space: nowrap;
   }
 
   .intro-text {
+    line-height: 40px;
     font-size: 28px;
   }
 
   .button-container-catalog {
     max-width: 150px;
     max-height: 40px;
-    margin-bottom: 90px;
+    margin-bottom: 140px;
     color: #ffffff;
   }
 
@@ -1009,6 +1030,7 @@ figcaption {
   .page {
     padding: 0 20px;
     margin-bottom: 80px;
+    width: auto;
   }
 
   .catalog {
@@ -1276,6 +1298,10 @@ figcaption {
 
   .foot {
     padding: 64px 22px 0;
+  }
+
+  .foot-container {
+    width: auto;
   }
 
   .site-inform {
