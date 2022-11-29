@@ -125,15 +125,18 @@
 .svg-links {
   display: flex;
   width: 200px;
+  justify-content: space-between;
+}
+
+.svg-button {
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 .svg {
-  max-width: 20px;
-  max-height: 20px;
-}
-
-.svg:nth-last-child(n + 2) {
-  margin-right: 68.69px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .site-menu {
@@ -260,6 +263,10 @@
 
 .radio {
   display: none;
+}
+
+.radio-input {
+  cursor: pointer;
 }
 
 .page {
@@ -1340,6 +1347,6 @@ figcaption {
   }
 
   .aboutUs-ref-bottom {
-    display: block  ;
+    display: block;
   }
 }
