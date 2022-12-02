@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <title>Витарус</title>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="module">
+      import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+    </script>
     <header class="hat">
       <div class="headbar">
         <div class="content-container">
@@ -184,7 +192,7 @@
               <figcaption>Мебель для библиотек</figcaption>
             </figure>
           </a>
-          <div class="img-list">
+          <div class="img-list img-list-catalog">
             <a class="img-container img-container-catalog">
               <figure>
                 <picture>
@@ -406,51 +414,116 @@
               </button>
             </div>
             <div class="big-img-container">
-              <picture>
+              <a
+                href="/images/big-room.png"
+                data-fancybox="gallery"
+                data-caption="Optional caption"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="images/big-room-mini.png"
+                  />
+                  <img src="/images/big-room.png" alt="" />
+                </picture>
+              </a>
+              <!-- <picture>
                 <source
                   media="(max-width: 460px)"
                   srcset="images/big-room-mini.png"
                 />
                 <img src="/images/big-room.png" alt="" />
-              </picture>
+              </picture> -->
             </div>
           </article>
           <div class="img-list img-list-container">
             <div class="img-container-portfolio">
-              <picture>
+              <a
+                href="/images/big-room.png"
+                data-fancybox="gallery"
+                data-caption="Optional caption"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="images/big-room-mini.png"
+                  />
+                  <img src="/images/mini-room.png" alt="" />
+                </picture>
+              </a>
+              <!-- <picture>
                 <source
                   media="(max-width: 460px)"
                   srcset="images/mini-room-mini.png"
                 />
                 <img src="/images/mini-room.png" alt="" />
-              </picture>
+              </picture> -->
             </div>
             <div class="img-container-portfolio">
-              <picture>
+              <a
+                href="/images/big-room.png"
+                data-fancybox="gallery"
+                data-caption="Optional caption"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="images/big-room-mini.png"
+                  />
+                  <img src="/images/mini-room.png" alt="" />
+                </picture>
+              </a>
+              <!-- <picture>
                 <source
                   media="(max-width: 460px)"
                   srcset="images/mini-room-mini.png"
                 />
                 <img src="/images/mini-room.png" alt="" />
-              </picture>
+              </picture> -->
             </div>
             <div class="img-container-portfolio">
-              <picture>
+              <a
+                href="/images/big-room.png"
+                data-fancybox="gallery"
+                data-caption="Optional caption"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="images/big-room-mini.png"
+                  />
+                  <img src="/images/mini-room.png" alt="" />
+                </picture>
+              </a>
+              <!-- <picture>
                 <source
                   media="(max-width: 460px)"
                   srcset="images/mini-room-mini.png"
                 />
                 <img src="/images/mini-room.png" alt="" />
-              </picture>
+              </picture> -->
             </div>
             <div class="img-container-portfolio">
-              <picture>
+              <a
+                href="/images/big-room.png"
+                data-fancybox="gallery"
+                data-caption="Optional caption"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="images/big-room-mini.png"
+                  />
+                  <img src="/images/mini-room.png" alt="" />
+                </picture>
+              </a>
+              <!-- <picture>
                 <source
                   media="(max-width: 460px)"
                   srcset="images/mini-room-mini.png"
                 />
                 <img src="/images/mini-room.png" alt="" />
-              </picture>
+              </picture> -->
             </div>
           </div>
           <div class="button-block button-block-bottom">
