@@ -161,7 +161,7 @@ figure {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 3;
-  padding: 44px 0 0 140px;
+  padding: 44px 0 0 9.72%;
 }
 
 .dropdown-content a {
@@ -172,6 +172,9 @@ figure {
 
 .show {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .menu-list-dropdown {
@@ -227,11 +230,16 @@ figure {
   padding-bottom: 20px;
 }
 
+.dropdown-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dropdown-image-container {
   width: 360px;
   background-color: #f3f3f3;
   border-radius: 20px;
-  margin: 40px 140px;
+  margin: 40px 9.72%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,7 +284,7 @@ figure {
 }
 
 .menu-link-site:nth-last-child(n + 2) {
-  margin-right: 55.64px;
+  margin-right: 2.897%;
 }
 
 .button-site {
@@ -493,10 +501,6 @@ figure {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-}
-
-.img-list-catalog {
-  justify-content: space-between;
 }
 
 .container-popular {
@@ -869,6 +873,7 @@ figcaption {
 .clients-containers {
   display: flex;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 .client-block {
@@ -903,7 +908,6 @@ figcaption {
 
 .foot-container {
   max-width: 1140px;
-  width: 1140px;
   margin: auto;
 }
 
@@ -1147,11 +1151,11 @@ svg {
   }
 
   .logobar {
-    padding: 0 9.72%;
+    box-sizing: border-box;
   }
 
   .site-menu {
-    padding: 0 9.72%;
+    box-sizing: border-box;
   }
 
   .button-contact-container {
@@ -1159,7 +1163,7 @@ svg {
   }
 
   .page {
-    padding: 0 9.72%;
+    box-sizing: border-box;
   }
 
   .img-list-container {
@@ -1189,10 +1193,6 @@ svg {
 
   .big-img {
     margin-right: 30px;
-  }
-
-  .img-list-catalog {
-    justify-content: space-between;
   }
 }
 
@@ -1261,8 +1261,15 @@ svg {
     border-radius: 20px;
   }
 
+  .dropdown {
+    width: 40px;
+    height: 40px;
+  }
+
   .dropbtn {
-    display: none;
+    /* display: none; */
+    text-indent: -999999px;
+    justify-content: center;
   }
 
   .logo {
@@ -1782,5 +1789,17 @@ svg {
   .news-image-container picture img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .big-img-container {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .catalog-images {
+    display: block;
   }
 }
