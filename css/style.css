@@ -123,12 +123,6 @@ figure {
   white-space: nowrap;
 }
 
-.button-logobar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .dropbtn {
   background-color: #0a7356;
   border-radius: 20px;
@@ -1267,7 +1261,7 @@ svg {
     border-radius: 20px;
   }
 
-  .button-logobar {
+  .dropbtn {
     display: none;
   }
 
@@ -1298,17 +1292,16 @@ svg {
     border-radius: 20px;
   }
 
-  .button-container-logobar {
-    display: flex;
-    justify-content: center;
-  }
-
   .menu-burger {
     border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #0a7356;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
 
   .svg-links {
