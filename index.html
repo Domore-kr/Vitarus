@@ -44,14 +44,154 @@
       </div>
 
       <div class="logobar">
-        <div class="button-container button-container-logobar">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="/svg/drag-handle-horizontal.svg" alt="" />Каталог
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown-menu">
+              <ul class="menu-list menu-list-dropdown menu-list-dropdown-first">
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Библиотечная мебель
+                    <img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Музейное оборудование<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Оборудование RFID<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ВУЗов<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ДШИ<img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+
+              <ul class="menu-list menu-list-dropdown">
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">О компании</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Библиотекам</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Музеям</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Дши</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Наши работы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-catalog">
+              <ul
+                class="menu-list menu-list-dropdown menu-list-dropdown-center"
+              >
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Вертикальные музейные витрины (16)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-image">
+              <div class="dropdown-image-container">
+                <img src="/images/dropdown-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+          window.onclick = function (event) {
+            if (!event.target.matches(".dropbtn")) {
+              var dropdowns =
+                document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                  openDropdown.classList.remove("show");
+                }
+              }
+            }
+          };
+        </script>
+
+        <!-- <div class="button-container button-container-logobar">
           <button class="button button-logobar">
             <img src="/svg/drag-handle-horizontal.svg" alt="" />Каталог
           </button>
           <button class="menu-burger">
             <img src="/svg/drag-handle-horizontal2.svg" alt="" />
           </button>
-        </div>
+        </div> -->
         <div class="logo">
           <a href="#" class="menu-link-ref">
             <picture>
@@ -427,13 +567,6 @@
                   <img src="/images/big-room.png" alt="" />
                 </picture>
               </a>
-              <!-- <picture>
-                <source
-                  media="(max-width: 460px)"
-                  srcset="images/big-room-mini.png"
-                />
-                <img src="/images/big-room.png" alt="" />
-              </picture> -->
             </div>
           </article>
           <div class="img-list img-list-container">
@@ -446,18 +579,11 @@
                 <picture>
                   <source
                     media="(max-width: 460px)"
-                    srcset="images/big-room-mini.png"
+                    srcset="images/mini-room-mini.png"
                   />
                   <img src="/images/mini-room.png" alt="" />
                 </picture>
               </a>
-              <!-- <picture>
-                <source
-                  media="(max-width: 460px)"
-                  srcset="images/mini-room-mini.png"
-                />
-                <img src="/images/mini-room.png" alt="" />
-              </picture> -->
             </div>
             <div class="img-container-portfolio">
               <a
@@ -468,18 +594,11 @@
                 <picture>
                   <source
                     media="(max-width: 460px)"
-                    srcset="images/big-room-mini.png"
+                    srcset="images/mini-room-mini.png"
                   />
                   <img src="/images/mini-room.png" alt="" />
                 </picture>
               </a>
-              <!-- <picture>
-                <source
-                  media="(max-width: 460px)"
-                  srcset="images/mini-room-mini.png"
-                />
-                <img src="/images/mini-room.png" alt="" />
-              </picture> -->
             </div>
             <div class="img-container-portfolio">
               <a
@@ -490,18 +609,11 @@
                 <picture>
                   <source
                     media="(max-width: 460px)"
-                    srcset="images/big-room-mini.png"
+                    srcset="images/mini-room-mini.png"
                   />
                   <img src="/images/mini-room.png" alt="" />
                 </picture>
               </a>
-              <!-- <picture>
-                <source
-                  media="(max-width: 460px)"
-                  srcset="images/mini-room-mini.png"
-                />
-                <img src="/images/mini-room.png" alt="" />
-              </picture> -->
             </div>
             <div class="img-container-portfolio">
               <a
@@ -512,18 +624,11 @@
                 <picture>
                   <source
                     media="(max-width: 460px)"
-                    srcset="images/big-room-mini.png"
+                    srcset="images/mini-room-mini.png"
                   />
                   <img src="/images/mini-room.png" alt="" />
                 </picture>
               </a>
-              <!-- <picture>
-                <source
-                  media="(max-width: 460px)"
-                  srcset="images/mini-room-mini.png"
-                />
-                <img src="/images/mini-room.png" alt="" />
-              </picture> -->
             </div>
           </div>
           <div class="button-block button-block-bottom">
@@ -547,7 +652,13 @@
           <div class="swiper-wrapper">
             <div class="image-container-idea">
               <a class="slider-item-ancor">
-                <img src="/images/idea-img1.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/idea-img1-mini.png"
+                  />
+                  <img class="scale" src="/images/idea-img1.png" alt="" />
+                </picture>
               </a>
               <div group-id="8720113">
                 <div class="pin-box" style="left: 16.2671%; top: 56.0636%">
@@ -620,7 +731,13 @@
             </div>
             <div class="image-container-idea">
               <a class="slider-item-ancor">
-                <img src="/images/idea-img2.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/idea-img2-mini.png"
+                  />
+                  <img class="scale" src="/images/idea-img2.png" alt="" />
+                </picture>
               </a>
               <div group-id="8720113">
                 <div class="pin-box" style="left: 68.3623%; top: 63.6714%">
@@ -726,7 +843,13 @@
             </div>
             <div class="image-container-idea">
               <a class="slider-item-ancor">
-                <img src="/images/idea-img3.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/idea-img3-mini.png"
+                  />
+                  <img class="scale" src="/images/idea-img3.png" alt="" />
+                </picture>
               </a>
               <div group-id="8720113">
                 <div class="pin-box" style="left: 41.53%; top: 76.2509%">
@@ -799,7 +922,13 @@
             </div>
             <div class="image-container-idea">
               <a class="slider-item-ancor">
-                <img src="/images/idea-img1.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/idea-img1-mini.png"
+                  />
+                  <img class="scale" src="/images/idea-img1.png" alt="" />
+                </picture>
               </a>
               <div group-id="8720113">
                 <div class="pin-box" style="left: 16.2671%; top: 56.0636%">
@@ -954,12 +1083,12 @@
         <h2 class="caption">О нас</h2>
         <div class="text-block">
           <div class="left-text">
-            <p class="text">
+            <p class="text text-aboutUs">
               ВитаРус – компания, предоставляющая широкий спектр услуг по
               профессиональному проектированию и комплексному оснащению мебелью
               и специализированным оборудованием общественных пространств.
             </p>
-            <p class="text">
+            <p class="text text-aboutUs">
               Наши сотрудники принимали участие в реализации десятков
               комплексных проектов по всей России, среди которых проекты
               библиотек, школ искусство, музеев, ВУЗов и учреждений

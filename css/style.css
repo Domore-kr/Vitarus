@@ -129,13 +129,120 @@ figure {
   justify-content: space-around;
 }
 
-.button-mini {
+.dropbtn {
+  background-color: #0a7356;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+
+  width: 141px;
+  height: 40px;
+}
+
+.dropdown-content {
   display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  padding: 44px 140px 0;
+}
+
+.dropdown-content a {
+  padding-bottom: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: flex;
+}
+
+.menu-list-dropdown {
+  display: block;
+}
+
+.menu-list-dropdown-first {
+  padding-bottom: 35px;
+  border-bottom: 2px solid #dadbdb;
+}
+
+.dropdown-link {
+  display: flex;
+  width: 100%;
+}
+
+.dropdown-link a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-link img {
+  padding-left: 35px;
+}
+
+.dropdown-link a:hover {
+  color: #00533c;
+}
+
+.dropdown-catalog {
+  padding-left: 100px;
+}
+
+.menu-list-dropdown-center {
+  width: 300px;
+  white-space: normal;
+}
+
+.dropdown-link-center a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.dropdown-image-container {
+  width: 360px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  margin: 40px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
   min-width: 183px;
   min-height: 90px;
+  z-index: 4;
 }
 
 .logo a img {
@@ -446,6 +553,7 @@ figcaption {
   flex-wrap: wrap;
   list-style-type: none;
   margin-bottom: 30px;
+  white-space: nowrap;
 }
 
 .tag {
@@ -672,7 +780,7 @@ figcaption {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1px;
   line-height: 20px;
   color: #292a2a;
   text-decoration: none;
@@ -816,7 +924,7 @@ figcaption {
 }
 
 .menu-link-ref-foot {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
   cursor: pointer;
 }
@@ -1257,7 +1365,7 @@ svg {
   }
 
   .caption {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
   }
 
@@ -1271,6 +1379,10 @@ svg {
   .text {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .text-aboutUs {
+    line-height: 30px;
   }
 
   .catalog-ref {
@@ -1324,7 +1436,9 @@ svg {
   }
 
   .tags {
-    display: block;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    width: 93vw;
   }
 
   .button-tag {
@@ -1335,9 +1449,13 @@ svg {
     height: 245px;
   }
 
+  .container-popular:nth-last-child(n + 2) {
+    margin-right: 20px;
+  }
+
   .img-container-popular {
     height: 230px;
-    min-width: 160px;
+    max-width: 160px;
   }
   .img-container-popular picture {
     padding: 20px;
@@ -1558,23 +1676,23 @@ svg {
   }
 
   .img-list-popular {
-    width: 95.6vw;
+    width: 93vw;
   }
 
   .img-list-container {
-    width: 95.6vw;
+    width: 93vw;
   }
 
   .swiper-wrapper {
-    width: 95.6vw;
+    width: 93vw;
   }
 
   .news-container {
-    width: 95.6vw;
+    width: 93vw;
   }
 
   .clients-containers {
-    width: 95.6vw;
+    width: 93vw;
   }
 }
 
@@ -1651,5 +1769,21 @@ svg {
   .client-block {
     min-width: 290px;
     min-height: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .news-block {
+    max-width: 240px;
+    min-width: 240px;
+  }
+
+  .news-image-container {
+    padding: 20px 20px 0;
+  }
+
+  .news-image-container picture img {
+    width: 100%;
+    height: 100%;
   }
 }
