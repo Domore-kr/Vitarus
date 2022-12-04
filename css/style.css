@@ -1073,6 +1073,10 @@ svg {
   width: 520px;
 }
 
+.card-scroll {
+  display: none;
+}
+
 .exposition {
   max-width: 460px;
 }
@@ -1112,6 +1116,11 @@ svg {
   color: #0a7356;
 }
 
+.switch-download-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .switch-container {
   display: flex;
   align-items: center;
@@ -1134,6 +1143,7 @@ svg {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  margin: auto;
 }
 
 .download-text {
@@ -1210,10 +1220,6 @@ svg {
   justify-content: space-between;
 }
 
-.product-card {
-  height: 310px;
-}
-
 .product-card-image-container {
   height: 200px;
   border-radius: 30px 30px 0 0;
@@ -1251,6 +1257,12 @@ svg {
   font-size: 14px;
   line-height: 20px;
   color: #b7b7b7;
+}
+
+.card-description button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 @media (min-width: 1141px) and (max-width: 1919px) {
@@ -1550,7 +1562,7 @@ svg {
   .tags {
     overflow: scroll;
     flex-wrap: nowrap;
-    width: 93vw;
+    width: 95.6vw;
   }
 
   .button-tag {
@@ -1788,23 +1800,176 @@ svg {
   }
 
   .img-list-popular {
-    width: 93vw;
+    width: 95.6vw;
   }
 
   .img-list-container {
-    width: 93vw;
+    width: 95.6vw;
   }
 
   .swiper-wrapper {
-    width: 93vw;
+    width: 95.6vw;
   }
 
   .news-container {
-    width: 93vw;
+    width: 95.6vw;
   }
 
   .clients-containers {
-    width: 93vw;
+    width: 95.6vw;
+  }
+
+  /* Карточка товара 1 */
+
+  .path {
+    margin-bottom: 15px;
+  }
+
+  .first-description {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .preview-img-block {
+    display: none;
+  }
+
+  .preview-big-img-container {
+    width: 320px;
+    margin: auto;
+  }
+
+  .card-scroll {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scroll-card-demo {
+    width: 280px;
+    border-bottom: 2px #0a7356 solid;
+  }
+
+  .scroll-card-number {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+
+  .code {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .intro-head-catalog {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 17px;
+  }
+
+  .description-card-catalog {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .button-container-cat {
+    display: block;
+  }
+
+  .button-first-description {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .switch-download-container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .switch-container {
+    margin: auto;
+    margin-left: 0;
+  }
+
+  .download-text {
+    display: none;
+  }
+
+  .share-container {
+    display: block;
+  }
+
+  .share-caption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  .description-caption {
+    font-size: 28px;
+  }
+
+  .text-description-catalog {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .product-cards {
+    overflow-x: scroll;
+    width: 95.6vw;
+  }
+
+  .product-card {
+    max-width: 140px;
+  }
+
+  .product-card:nth-last-child(n + 2) {
+    margin-right: 20px;
+  }
+
+  .product-card-image-container {
+    height: 150px;
+  }
+
+  .product-description-card-container {
+    height: 130px;
+    position: relative;
+  }
+
+  .product-description-card {
+    padding: 10px 10px 0 10px;
+    height: 110px;
+    box-sizing: border-box;
+  }
+
+  .card-caption {
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 7px;
+  }
+
+  .card-description {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .card-description button {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+  }
+
+  .text-card {
+    font-size: 12px;
+    padding-bottom: 13px;
   }
 }
 

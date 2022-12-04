@@ -334,18 +334,30 @@
           <div class="preview-img-container"></div>
         </div>
         <div class="preview-big-img-container">
-          <img src="/images/Frame-catalog.png" alt="" />
+          <picture>
+            <source
+              media="(max-width: 460px)"
+              srcset="/images/Frame-catalog-card-mini.png"
+            />
+            <img src="/images/Frame-catalog.png" alt="" />
+          </picture>
+        </div>
+        <div class="card-scroll">
+          <span class="scroll-card-demo"></span
+          ><span class="scroll-card-number">1/6</span>
         </div>
         <article class="exposition">
           <span class="menu-link-ref code">Код товара: Г.001.009</span>
           <h1 class="intro-head intro-head-catalog">
             Кафедра выдачи Г.001.009
           </h1>
-          <p class="text">
-            Столешница, стоевые: тамбурат - 51мм. Горизонт, полка, центральная
-            перегородка - ЛДСП 22 мм, опора регулируемая М8
-          </p>
-          <p class="text">4000х750х600</p>
+          <div class="description-card-catalog">
+            <p class="text text-catalog-card">
+              Столешница, стоевые: тамбурат - 51мм. Горизонт, полка, центральная
+              перегородка - ЛДСП 22 мм, опора регулируемая М8
+            </p>
+            <p class="text text-number">4000х750х600</p>
+          </div>
           <div class="button-container-cat">
             <button class="button button-first-description">
               <img src="/svg/white-heart.svg" alt="" /> В избранное
@@ -356,20 +368,36 @@
               <img src="/svg/question-circle.svg" alt="" /> Задать вопрос
             </button>
           </div>
-          <div class="switch-container">
-            <button class="switch switch-cat">
-              <img src="/svg/minus.svg" alt="" />
-            </button>
-            <span class="switch-number switch-number-cat">1</span>
-            <button class="switch switch-cat">
-              <img src="/svg/plus.svg" alt="" />
-            </button>
+          <div class="switch-download-container">
+            <div class="switch-container">
+              <button class="switch switch-cat">
+                <img src="/svg/minus.svg" alt="" />
+              </button>
+              <span class="switch-number switch-number-cat">1</span>
+              <button class="switch switch-cat">
+                <img src="/svg/plus.svg" alt="" />
+              </button>
+            </div>
+            <div class="download-container">
+              <p class="text download-text">Скачать</p>
+              <button class="download-button">
+                <img src="/svg/download.svg" alt="" /> 3D модель
+              </button>
+            </div>
           </div>
-          <div class="download-container">
-            <p class="text download-text">Скачать</p>
-            <button class="download-button">
-              <img src="/svg/download.svg" alt="" /> 3D модель
-            </button>
+          <div class="share-container">
+            <h4 class="caption share-caption">Поделиться</h4>
+            <div class="social-container">
+              <a class="social-button"
+                ><img src="/svg/telegram.svg" alt=""
+              /></a>
+              <a class="social-button"
+                ><img src="/svg/telegram.svg" alt=""
+              /></a>
+              <a class="social-button"
+                ><img src="/svg/whatsApp.svg" alt=""
+              /></a>
+            </div>
           </div>
         </article>
       </section>
@@ -413,49 +441,81 @@
         <div class="product-cards">
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
@@ -469,49 +529,81 @@
         <div class="product-cards">
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
           <article class="product-card">
             <div class="product-card-image-container">
-              <img class="scale" src="/images/product-card.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 460px)"
+                  srcset="/images/product-card-mini.png"
+                />
+                <img class="scale" src="/images/product-card.png" alt="" />
+              </picture>
             </div>
-            <div class="product-description-card">
-              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-              <div class="card-description">
-                <span class="text-card">4000х750х600</span>
-                <img src="/svg/like.svg" alt="" />
+            <div class="product-description-card-container">
+              <div class="product-description-card">
+                <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+                <div class="card-description">
+                  <span class="text-card">4000х750х600</span>
+                  <button><img src="/svg/like.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </article>
