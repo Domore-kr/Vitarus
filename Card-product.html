@@ -36,14 +36,147 @@
       </div>
 
       <div class="logobar">
-        <div class="button-container button-container-logobar">
-          <button class="button button-logobar">
-            <img src="/svg/drag-handle-horizontal.svg" alt="" />Каталог
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="/svg/drag-handle-horizontal2.svg" alt="" />Каталог
           </button>
-          <button class="menu-burger">
-            <img src="/svg/drag-handle-horizontal2.svg" alt="" />
-          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown-menu">
+              <ul class="menu-list menu-list-dropdown menu-list-dropdown-first">
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Библиотечная мебель
+                    <img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Музейное оборудование<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Оборудование RFID<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ВУЗов<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ДШИ<img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+
+              <ul
+                class="menu-list menu-list-dropdown menu-list-dropdown-bottom"
+              >
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">О компании</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Библиотекам</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Музеям</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Дши</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Наши работы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-catalog">
+              <ul
+                class="menu-list menu-list-dropdown menu-list-dropdown-center"
+              >
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Вертикальные музейные витрины (16)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-image">
+              <div class="dropdown-image-container">
+                <img src="/images/dropdown-image.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+        <script>
+          /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+          window.onclick = function (event) {
+            if (!event.target.matches(".dropbtn")) {
+              var dropdowns =
+                document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                  openDropdown.classList.remove("show");
+                }
+              }
+            }
+          };
+        </script>
         <div class="logo">
           <a href="#" class="menu-link-ref">
             <picture>
@@ -56,9 +189,15 @@
           </a>
         </div>
         <div class="svg-links">
-          <img src="/svg/loupe.svg" alt="loupe" class="svg" />
-          <img src="/svg/user.svg" alt="user" class="svg" />
-          <img src="/svg/heart.svg" alt="heart" class="svg" />
+          <button href="" class="svg-button">
+            <img src="/svg/loupe.svg" alt="loupe" class="svg" />
+          </button>
+          <button href="" class="svg-button">
+            <img src="/svg/user.svg" alt="user" class="svg" />
+          </button>
+          <button href="" class="svg-button">
+            <img src="/svg/heart.svg" alt="heart" class="svg" />
+          </button>
         </div>
       </div>
 
@@ -115,20 +254,20 @@
 
     <main class="page">
       <nav class="path">
-        <ul class="menu-list">
-          <li class="menu-link">
+        <ul class="menu-list menu-list-card">
+          <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Главная</p>
               <img src="/svg/right-arrow.svg" alt=""
             /></a>
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Каталог</p>
               <img src="/svg/right-arrow.svg" alt=""
             /></a>
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Кафедра выдачи Г.001.009</p>
             </a>
@@ -142,7 +281,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -151,7 +290,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -160,7 +299,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -169,7 +308,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -178,7 +317,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -187,7 +326,7 @@
             <picture>
               <source
                 media="(max-width: 460px)"
-                srcset="images/Logo-mobile.png"
+                srcset="/images/Frame-catalog-mini.png"
               />
               <img src="/images/Frame-catalog-mini.png" alt="" />
             </picture>
@@ -234,6 +373,239 @@
           </div>
         </article>
       </section>
+
+      <div class="product-description">
+        <article class="about-the-product">
+          <h3 class="caption description-caption">О товаре</h3>
+          <p class="text text-description-catalog">
+            Модель Джулиан с плавными изгибами подлокотников объединяет в себе
+            комфортабельность кресла и компактные габариты стула. Актуальный
+            дизайн без вычурных деталей позволяет изделию легко интегрироваться
+            в любой интерьер, а высокая спинка и наличие опоры для рук
+            гарантируют удобство в использовании.
+          </p>
+        </article>
+        <article class="general-characteristics">
+          <h3 class="caption description-caption">Общие характеристики</h3>
+          <ul class="characteristics">
+            <li class="charact"><span>Высота, см</span><span>70</span></li>
+            <li class="charact"><span>Ширина, см</span><span>70</span></li>
+            <li class="charact"><span>Длина, см</span><span>70</span></li>
+          </ul>
+        </article>
+        <article class="material">
+          <h3 class="caption description-caption">Материал</h3>
+          <ul class="characteristics">
+            <li class="charact"><span>Корпус</span><span>Металл</span></li>
+            <li class="charact"><span>Столешница</span><span>Дерево</span></li>
+            <li class="charact"><span>Ножки</span><span>Дерево</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <section class="order">
+        <div class="description">
+          <h2 class="caption product-card-caption">
+            С этим товаром заказывают
+          </h2>
+          <a href="#" class="catalog-ref">Посмотреть все</a>
+        </div>
+        <div class="product-cards">
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="watched">
+        <div class="description">
+          <h2 class="caption product-card-caption">Вы смотрели</h2>
+          <a href="#" class="catalog-ref">Посмотреть все</a>
+        </div>
+        <div class="product-cards">
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card-image-container">
+              <img class="scale" src="/images/product-card.png" alt="" />
+            </div>
+            <div class="product-description-card">
+              <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
+              <div class="card-description">
+                <span class="text-card">4000х750х600</span>
+                <img src="/svg/like.svg" alt="" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="site-inform">
+          <article class="aboutCompany">
+            <h3 class="caption inform-caption inform-caption-foot">
+              О компании
+            </h3>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Дизайн бюро</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Производство</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >Некоммерческая научная деятельность</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Вакансии</a>
+              </li>
+            </ul>
+          </article>
+          <article class="buyers">
+            <h3 class="caption inform-caption">Покупателям</h3>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Услуги</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Каталог</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >ФП Новая Библиотека</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+              </li>
+            </ul>
+          </article>
+          <address class="footer-addres">
+            <p class="caption inform-caption">Контакты</p>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a
+                  class="menu-link-ref menu-link-ref-foot ref"
+                  href="tel:+74912300833"
+                  >8 (4912) 300-833</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a
+                  class="menu-link-ref menu-link-ref-foot ref"
+                  href="mailto:vita-rus@bk.ru"
+                  >e-mail: vita-rus@bk.ru</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >Рязань, ул. Керамзавода, 21А</a
+                >
+              </li>
+            </ul>
+            <div class="icons">
+              <div class="icon-container">
+                <a href=""><img src="/svg/youtube.svg" alt="" /></a>
+              </div>
+              <div class="icon-container">
+                <a href=""><img src="/svg/image9.svg" alt="" /></a>
+              </div>
+            </div>
+          </address>
+        </div>
+        <div class="copyright-politics">
+          <a class="copyright"
+            >© 2022 ВитаРус. Информация сайта защищена законом об авторских
+            правах</a
+          >
+          <a class="politics">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
