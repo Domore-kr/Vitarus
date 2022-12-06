@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Карточка товара-2</title>
+  </head>
+  <body>
+    <header class="hat">
+      <div class="headbar">
+        <div class="content-container">
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-link">
+                <a class="menu-link-ref">Доставка и оплата</a>
+              </li>
+              <li class="menu-link">
+                <a class="menu-link-ref">Гарантии</a>
+              </li>
+              <li class="menu-link">
+                <a class="menu-link-ref">Контакты</a>
+              </li>
+              <li class="menu-link">
+                <a class="menu-link-ref">Портфолио</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="connection">
+            <a href="#" class="menu-link-ref">Скачать каталог мебели</a>
+            <a href="tel:+74912300833" class="phone">8 (4912) 300-833</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="logobar">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="/svg/drag-handle-horizontal2.svg" alt="" />Каталог
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown-menu">
+              <ul class="menu-list menu-list-dropdown menu-list-dropdown-first">
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Библиотечная мебель
+                    <img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Музейное оборудование<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Оборудование RFID<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ВУЗов<img
+                      src="/svg/black-arrow-right.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref"
+                    >Мебель для ДШИ<img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+
+              <ul
+                class="menu-list menu-list-dropdown menu-list-dropdown-bottom"
+              >
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">О компании</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Библиотекам</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Музеям</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Дши</a>
+                </li>
+                <li class="dropdown-link">
+                  <a class="menu-link-ref">Наши работы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-catalog">
+              <ul
+                class="menu-list menu-list-dropdown menu-list-dropdown-center"
+              >
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Вертикальные музейные витрины (16)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Стенды, ширмы музейные, перегородки, демонстрационное
+                    оборудование (1)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+                <li class="dropdown-link dropdown-link-center">
+                  <a class="menu-link-ref"
+                    >Горизонтальные музейные витрины (6)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-image">
+              <div class="dropdown-image-container">
+                <img src="/images/dropdown-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+          window.onclick = function (event) {
+            if (!event.target.matches(".dropbtn")) {
+              var dropdowns =
+                document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                  openDropdown.classList.remove("show");
+                }
+              }
+            }
+          };
+        </script>
+        <div class="logo">
+          <a href="#" class="menu-link-ref">
+            <picture>
+              <source
+                media="(max-width: 460px)"
+                srcset="images/Logo-mobile.png"
+              />
+              <img src="/images/Logo.png" alt="" />
+            </picture>
+          </a>
+        </div>
+        <div class="svg-links">
+          <button href="" class="svg-button">
+            <img src="/svg/loupe.svg" alt="loupe" class="svg" />
+          </button>
+          <button href="" class="svg-button">
+            <img src="/svg/user.svg" alt="user" class="svg" />
+          </button>
+          <button href="" class="svg-button">
+            <img src="/svg/heart.svg" alt="heart" class="svg" />
+          </button>
+        </div>
+      </div>
+
+      <div class="site-menu">
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-link menu-link-site">
+              <button class="menu-link-ref button-site">
+                О компании
+                <img src="/svg/arrow.svg" alt="arrow-side" class="arrow" />
+              </button>
+            </li>
+            <li class="menu-link menu-link-site">
+              <button class="menu-link-ref button-site">
+                Библиотекам<img
+                  src="/svg/arrow.svg"
+                  alt="arrow-side"
+                  class="arrow"
+                />
+              </button>
+            </li>
+            <li class="menu-link menu-link-site">
+              <button class="menu-link-ref button-site">
+                Музеям<img
+                  src="/svg/arrow.svg"
+                  alt="arrow-side"
+                  class="arrow"
+                />
+              </button>
+            </li>
+            <li class="menu-link menu-link-site">
+              <button class="menu-link-ref button-site">
+                Дши<img src="/svg/arrow.svg" alt="arrow-side" class="arrow" />
+              </button>
+            </li>
+            <li class="menu-link menu-link-site">
+              <button class="menu-link-ref button-site">
+                Наши работы<img
+                  src="/svg/arrow.svg"
+                  alt="arrow-side"
+                  class="arrow"
+                />
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <address class="connection-button">
+          <div class="button-container button-contact-container">
+            <button class="button button-contact">Свяжитесь с нами</button>
+          </div>
+        </address>
+      </div>
+    </header>
+
+    <main class="page">
+      <nav class="path">
+        <ul class="menu-list menu-list-card">
+          <li class="menu-link menu-link-card">
+            <a href="#" class="menu-link-ref menu-link-ref-catalog"
+              ><p class="catalog-text">Главная</p>
+              <img src="/svg/right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li class="menu-link menu-link-card">
+            <a href="#" class="menu-link-ref menu-link-ref-catalog"
+              ><p class="catalog-text">Услуги</p>
+              <img src="/svg/right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li class="menu-link menu-link-card">
+            <a href="#" class="menu-link-ref menu-link-ref-catalog"
+              ><p class="catalog-text">Планировочные решения</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-sidebar-container">
+        <div class="mobile-sidebar">
+          <div class="button-container mobile-button-container">
+            <button class="button mobile-button-sidebar">
+              <img src="/svg/drag-handle-horizontal-greeen.svg" alt="" />
+              Каталог
+            </button>
+          </div>
+          <div class="button-container mobile-button-container">
+            <button class="button mobile-button-sidebar">
+              <img src="/svg/adjustments.svg" alt="" />
+              Фильтры
+            </button>
+          </div>
+        </div>
+        <div class="sidebar">
+          <nav>
+            <ul
+              class="menu-list menu-list-dropdown menu-list-dropdown-first sidebar-container"
+            >
+              <li class="dropdown-link sidebar-link sidebar-link-head">
+                Каталог
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  Библиотечная мебель
+                </button>
+              </li>
+              <li class="dropdown-lin sidebar-linkk">
+                <button class="menu-link-ref button-sidebar">
+                  Музейное оборудование
+                </button>
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  Оборудование RFID
+                </button>
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  Мебель для ВУЗов
+                </button>
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  Мебель для ДШИ
+                </button>
+              </li>
+            </ul>
+
+            <ul
+              class="menu-list menu-list-dropdown menu-list-dropdown-first sidebar-container"
+            >
+              <li class="dropdown-link sidebar-link sidebar-link-head">
+                Фильтры
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  По изделиям
+                </button>
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">По сериям</button>
+              </li>
+              <li class="dropdown-link sidebar-link">
+                <button class="menu-link-ref button-sidebar">
+                  По сферам применения
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="foundation">
+          <section class="information-card">
+            <h1 class="caption caption-card-information">
+              Планировочные решения
+            </h1>
+            <p class="text text-information-card">
+              Разработка планировочного решения. Единоразово нашим клиентам мы
+              выдаем три варианта планировок. Далее, мы начинаем их обсуждать,
+              вносить изменения и корректировки. Это нормально, что какие-то
+              моменты мы берем с первого варианта, что-то берем со второго,
+              что-то с третьего. Нам важно на каждом этапе «прожить» несколько
+              дней в квартире или доме, представить, как просыпаются наши
+              клиенты, как идут в душ, готовят и т.д. Этот этап — залог того,
+              что в квартире будет удобно жить конкретному человеку или семье.
+            </p>
+            <p class="text text-information-card">
+              Разработка планировочного решения. Единоразово нашим клиентам мы
+              выдаем три варианта планировок. Далее, мы начинаем их обсуждать,
+              вносить изменения и корректировки. Это нормально, что какие-то
+              моменты мы берем с первого варианта, что-то берем со второго,
+              что-то с третьего. Нам важно на каждом этапе «прожить» несколько
+              дней в квартире или доме, представить, как просыпаются наши
+              клиенты, как идут в душ, готовят и т.д. Этот этап — залог того,
+              что в квартире будет удобно жить конкретному человеку или семье.
+            </p>
+          </section>
+          <div class="scheme">
+            <article class="sheme-image">
+              <h3 class="caption caption-scheme">Фото 1</h3>
+              <div class="image-container">
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/scheme-one-mini.png"
+                  />
+                  <img src="/images/scheme-one.png" alt="" />
+                </picture>
+              </div>
+            </article>
+            <article class="sheme-image">
+              <h3 class="caption caption-scheme">Фото 2</h3>
+              <div class="image-container">
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/scheme-two-mini.png"
+                  />
+                  <img src="/images/scheme-two.png" alt="" />
+                </picture>
+              </div>
+            </article>
+          </div>
+          <section class="sample">
+            <h2 class="caption caption-card-information">
+              Образец Планировочного решения
+            </h2>
+            <p class="text text-information-card">
+              Зачастую, планировочное решение заказывают еще на этапе покупки
+              недвижимости, чтобы уже заранее оценить насколько помещение будет
+              соответствовать требованиям конкретной семьи.
+            </p>
+            <div class="scheme-container">
+              <div class="scheme-img-container">
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/sample-scheme-mini.png"
+                  />
+                  <img src="/images/sample-scheme.png" alt="" />
+                </picture>
+              </div>
+              <div class="scheme-img-container">
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/sample-scheme-mini.png"
+                  />
+                  <img src="/images/sample-scheme.png" alt="" />
+                </picture>
+              </div>
+              <div class="scheme-img-container">
+                <picture>
+                  <source
+                    media="(max-width: 460px)"
+                    srcset="/images/sample-scheme-mini.png"
+                  />
+                  <img src="/images/sample-scheme.png" alt="" />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <section class="contact-form">
+            <h2 class="caption">Форма обратной связи</h2>
+            <div class="form-container">
+              <form action="">
+                <div class="field-container">
+                  <div class="forma">
+                    <span class="form-head">Название организации</span>
+                    <input
+                      type="text"
+                      class="field"
+                      placeholder="ИП Александр"
+                      required
+                    />
+                  </div>
+                  <div class="forma">
+                    <span class="form-head">Контактное лицо</span>
+                    <input
+                      type="text"
+                      class="field"
+                      placeholder="Александр"
+                      required
+                    />
+                  </div>
+                  <div class="forma">
+                    <span class="form-head">Телефон</span>
+                    <input
+                      type="tel"
+                      class="field"
+                      placeholder="+7 960 000 00 00"
+                      required
+                    />
+                  </div>
+                  <div class="forma">
+                    <span class="form-head">Email</span>
+                    <input
+                      type="email"
+                      class="field"
+                      placeholder="User@mail.ru"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="button-block-field">
+                  <div class="button-container button-container-field">
+                    <button class="button">Заказать проект</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="site-inform">
+          <article class="aboutCompany">
+            <h3 class="caption inform-caption inform-caption-foot">
+              О компании
+            </h3>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Дизайн бюро</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Производство</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >Некоммерческая научная деятельность</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Вакансии</a>
+              </li>
+            </ul>
+          </article>
+          <article class="buyers">
+            <h3 class="caption inform-caption">Покупателям</h3>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Услуги</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Каталог</a>
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >ФП Новая Библиотека</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+              </li>
+            </ul>
+          </article>
+          <address class="footer-addres">
+            <p class="caption inform-caption">Контакты</p>
+            <ul class="aboutCompany-list">
+              <li class="menu-link-foot">
+                <a
+                  class="menu-link-ref menu-link-ref-foot ref"
+                  href="tel:+74912300833"
+                  >8 (4912) 300-833</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a
+                  class="menu-link-ref menu-link-ref-foot ref"
+                  href="mailto:vita-rus@bk.ru"
+                  >e-mail: vita-rus@bk.ru</a
+                >
+              </li>
+              <li class="menu-link-foot">
+                <a class="menu-link-ref menu-link-ref-foot"
+                  >Рязань, ул. Керамзавода, 21А</a
+                >
+              </li>
+            </ul>
+            <div class="icons">
+              <div class="icon-container">
+                <a href=""><img src="/svg/youtube.svg" alt="" /></a>
+              </div>
+              <div class="icon-container">
+                <a href=""><img src="/svg/image9.svg" alt="" /></a>
+              </div>
+            </div>
+          </address>
+        </div>
+        <div class="copyright-politics">
+          <a class="copyright"
+            >© 2022 ВитаРус. Информация сайта защищена законом об авторских
+            правах</a
+          >
+          <a class="politics">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
