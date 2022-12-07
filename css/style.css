@@ -2227,7 +2227,7 @@ input[type="checkbox"]:checked + label:before {
 
   .product-cards {
     overflow-x: scroll;
-    width: 95.4vw;
+    width: 94.4vw;
   }
 
   .product-card {
