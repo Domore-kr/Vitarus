@@ -782,7 +782,7 @@ figcaption {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 1px;
+  font-size: 17px;
   line-height: 20px;
   color: #292a2a;
   text-decoration: none;
@@ -1865,7 +1865,7 @@ input[type="checkbox"]:checked + label:before {
   .tags {
     overflow: scroll;
     flex-wrap: nowrap;
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .button-tag {
@@ -2103,23 +2103,23 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .img-list-popular {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .img-list-container {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .swiper-wrapper {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .news-container {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .clients-containers {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   /* Карточка товара 1 */
@@ -2227,7 +2227,7 @@ input[type="checkbox"]:checked + label:before {
 
   .product-cards {
     overflow-x: scroll;
-    width: 95.6vw;
+    width: 95.4vw;
   }
 
   .product-card {
@@ -2323,7 +2323,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .scheme-container {
-    width: 94.5vw;
+    width: 94.4vw;
   }
 
   .scheme-img-container {
