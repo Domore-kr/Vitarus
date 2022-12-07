@@ -9,6 +9,7 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
   outline: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -1568,6 +1569,85 @@ input[type="checkbox"]:checked + label:before {
   justify-content: space-between;
 }
 
+.button-container-pag {
+  width: 211px;
+  height: 40px;
+}
+
+.button-container-pag button {
+  background: #ffffff;
+  border: 2px solid #dadbdb;
+  border-radius: 20px;
+  color: #292a2a;
+}
+
+.cd-pagination {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.button-pag {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-pag a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cd-pagination li:nth-last-child(n + 2) {
+  margin-right: 10px;
+}
+
+.pag-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag-num:hover {
+  background-color: #f3f3f3;
+}
+
+.pag-num a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #292a2a;
+}
+
+.pag-ellipsis {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
 @media (min-width: 1141px) and (max-width: 1919px) {
   .headbar {
     padding: 21.87px 9.72% 15px;
@@ -2349,6 +2429,45 @@ input[type="checkbox"]:checked + label:before {
     max-width: none;
     max-height: none;
     width: 100%;
+  }
+
+  /* Каталог */
+
+  .top-button-catalog-container {
+    overflow: scroll;
+    width: 94.4vw;
+  }
+
+  .button-catalog-block:nth-last-child(n + 2) {
+    margin-right: 20px;
+  }
+
+  .filter-container {
+    display: none;
+  }
+
+  .product-cards-catalog {
+    width: auto;
+  }
+
+  .product-card-catalog {
+    overflow: hidden;
+  }
+
+  .product-card:nth-last-child(n + 2) {
+    margin-right: 0;
+  }
+
+  .location-container {
+    display: block;
+  }
+
+  .button-container-pag {
+    width: 211px;
+    height: 40px;
+    max-width: none;
+    max-height: none;
+    margin-bottom: 30px;
   }
 }
 
