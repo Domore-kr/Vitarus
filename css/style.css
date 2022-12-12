@@ -2769,12 +2769,16 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 460px) {
   .image-container-idea {
-    max-width: 100%;
+    width: 100%;
   }
-}
 
-.swiper {
-  width: 1440px;
+  .slider-item-ancor {
+    width: 100%;
+  }
+
+  .slider-item-ancor picture img {
+    width: 100%;
+  }
 }
 
 .swiper-slide {
