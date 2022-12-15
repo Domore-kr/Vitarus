@@ -2616,6 +2616,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 320px) {
+  .product-cards-catalog {
+    justify-content: center;
+  }
+
   .news-block {
     max-width: 240px;
     min-width: 240px;
