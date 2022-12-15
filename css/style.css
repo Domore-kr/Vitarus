@@ -719,7 +719,6 @@ figcaption {
   transition-property: transform;
   box-sizing: content-box;
   justify-content: space-between;
-  overflow: scroll;
 }
 
 .series {
@@ -1376,7 +1375,6 @@ svg {
 .scheme-container {
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 30px;
   border-bottom: 2px #0a7356 solid;
@@ -2148,10 +2146,6 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 70px;
   }
 
-  .news-container {
-    overflow: scroll;
-  }
-
   .news-block:nth-last-child(n + 2) {
     margin-right: 20px;
   }
@@ -2357,7 +2351,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .product-cards {
-    overflow-x: scroll;
     width: 94.4vw;
   }
 
@@ -2659,7 +2652,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .product-cards {
-    overflow-x: scroll;
     width: 93.4vw;
   }
 
@@ -2772,6 +2764,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 460px) {
+  .scheme-container {
+    overflow-x: scroll;
+  }
+
   .image-container-idea {
     width: 100%;
   }
