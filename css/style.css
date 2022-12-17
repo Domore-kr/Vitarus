@@ -708,6 +708,12 @@ figcaption {
 .image-container-idea {
   position: relative;
   margin-right: 20px;
+  width: 100%;
+}
+
+.idea-img {
+  width: 100%;
+  pointer-events: none;
 }
 
 .swiper-wrap {
@@ -1737,8 +1743,8 @@ input[type="checkbox"]:checked + label:before {
 
   .image-container-idea {
     position: relative;
-    width: 360px;
-    height: 360px;
+    /* width: 360px;
+    height: 360px; */
     margin-right: 20px;
   }
 
@@ -2773,10 +2779,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .slider-item-ancor {
-    width: 100%;
-  }
-
-  .slider-item-ancor picture img {
     width: 100%;
   }
 }
