@@ -797,14 +797,11 @@ figcaption {
   position: relative;
   margin-right: 20px;
   width: 100%;
-<<<<<<< HEAD
-=======
 }
 
 .idea-img {
   width: 100%;
   pointer-events: none;
->>>>>>> d5662da4fb4a407cfdee262f1e77f6d07ecc3bd2
 }
 
 .swiper-wrap {
@@ -2962,10 +2959,6 @@ input[type="checkbox"]:checked + label:before {
   .slider-item-ancor {
     width: 100%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> d5662da4fb4a407cfdee262f1e77f6d07ecc3bd2
 }
 
 .swiper-slide {
