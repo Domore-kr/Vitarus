@@ -47,15 +47,33 @@ figure {
 }
 
 .hat.header__active .headbar{
-  display: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .hat.header__active .logobar{
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.hat.header__active .site-menu{
-  display: none;
+.menu {
+  transition: .2s ease all;
+}
+
+.hat.header__active .menu{
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hat.header__active .connection-button{
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .headbar {
@@ -64,6 +82,7 @@ figure {
   padding: 10px 0 10px;
   margin-bottom: 15px;
   background-color: #f3f3f3;
+  transition: .3s ease all;
 }
 
 .content-container {
@@ -78,6 +97,7 @@ figure {
 
 .menu-list {
   display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
@@ -93,7 +113,7 @@ figure {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 140%;
   color: #292a2a;
 }
@@ -341,12 +361,13 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: .3s ease all;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
 
 .menu-link-site:nth-last-child(n + 2) {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .site-menu .menu ul {
@@ -418,6 +439,7 @@ figure {
 .connection-button {
   width: 209px;
   height: 40px;
+  transition: .2s ease all;
 }
 
 .button-contact-container {
@@ -585,6 +607,7 @@ figure {
   margin-bottom: 107px;
 }
 
+
 .caption {
   font-family: "Raleway";
   font-style: normal;
@@ -644,10 +667,17 @@ figure {
 }
 
 .container-popular {
-  height: 295px;
   position: relative;
   display: flex;
   align-items: end;
+}
+
+.container-popular .product-card {
+  margin: 15px 0 0 0;
+}
+
+.container-popular .product-card-image-container {
+  height: 100%;
 }
 
 .container-popular:nth-last-child(n + 2) {
@@ -796,7 +826,7 @@ figcaption {
   top: 150px;
 }
 
-.portfolio__swiper .btns__container .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+.portfolio__swiper .btns__container .swiper-button-next, .portfolio__swiper .btns__container .swiper-button-prev, .portfolio__swiper .btns__container .swiper-pagination {
   position: unset;
   margin-top: 0;
 }
@@ -906,13 +936,16 @@ figcaption {
   pointer-events: none;
 }
 
-.paint:hover {
+.paint{
+  transition: .2s ease all;
+}
+
+.pin svg:hover .paint{
   fill: #0a7356;
 }
 
 .image-container-idea {
   position: relative;
-  margin-right: 20px;
   width: 100%;
 }
 
@@ -975,6 +1008,7 @@ figcaption {
 
 .series__swiper {
   max-width: 560px;
+  margin-left: 0;
 }
 
 .button-series {
@@ -1102,6 +1136,7 @@ figcaption {
 
 .inform-caption-news {
   padding: 0 30px 20px;
+  color: #000;
 }
 
 .text-news {
@@ -3089,6 +3124,7 @@ input[type="checkbox"]:checked + label:before {
 
 .news-block {
   width: 100%;
+  height: 100%;
 }
 
 :root {

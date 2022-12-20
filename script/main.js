@@ -113,27 +113,8 @@ if (document.querySelector('.button-pause')) {
 // Swipers 
 
   const popular__swiper = new Swiper(".popular__swiper", {
-    slidesPerView: 1,
+    slidesPerView: 5,
     spaceBetween: 10,
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      "@1.50": {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
   });
 
 
@@ -203,81 +184,24 @@ if (document.querySelector('.button-pause')) {
   portfolio__swiper('.portfolio')
 
   const ideas__swiper = new Swiper(".ideas__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      "@1.50": {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
+    slidesPerView: 3,
+    spaceBetween: 20,
   });
 
 
   const news__swiper = new Swiper(".news__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 4,
+    spaceBetween: 40,
     navigation: {
       nextEl: ".news__btn__next",
       prevEl: ".news__btn__prev",
-    },
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      "@1.50": {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
     },
   });
 
 
   const clients__swiper = new Swiper(".clients__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      "@1.50": {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
+    slidesPerView: 4,
+    spaceBetween: 40,
   });
 
 
