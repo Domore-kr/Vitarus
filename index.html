@@ -34,14 +34,11 @@
               <li class="menu-link">
                 <a href="#" class="menu-link-ref">Контакты</a>
               </li>
-              <li class="menu-link">
-                <a href="#" class="menu-link-ref">Портфолио</a>
-              </li>
             </ul>
           </nav>
 
           <address class="connection">
-            <a href="#" class="menu-link-ref">Скачать каталог мебели</a>
+            <a href="https://vita-rus.ru/upload/download/catalog.pdf" class="menu-link-ref">Скачать каталог мебели</a>
             <a href="tel:+74912300833" class="phone">8 (4912) 300-833</a>
           </address>
         </div>
@@ -49,8 +46,12 @@
 
       <div class="logobar">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            <img src="svg/drag-handle-horizontal2.svg" alt="" />Каталог
+          <button class="dropbtn">
+            <div class="arrows">
+              <span></span>
+              <span></span>
+            </div>
+            <h4>Каталог</h4>
           </button>
           <div id="myDropdown" class="dropdown-content">
             <div class="dropdown-menu">
@@ -169,24 +170,6 @@
             </div>
           </div>
         </div>
-        <script>
-          /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
-          function myFunction() {
-            document.getElementById("myDropdown").classList.add("show");
-          }
-          // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
-          window.onclick = function (event) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            if (!event.target.matches(".dropbtn")) {
-              for (let i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")) {
-                  openDropdown.classList.remove("show");
-                }
-              }
-            }
-          };
-        </script>
         <div class="logo">
           <a href="#" class="menu-link-ref">
             <picture>
@@ -218,49 +201,44 @@
                 <a href="#!">О компании</a>
                 <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
                 <ul class="dop__menu">
-                    <a href="#!">Майер-медицина</a>
-                    <a href="#!">Аюрведа</a>
-                    <a href="#!">MAYRVEDA Kitchen</a>
-                    <a href="#!">MAYRVEDA Spa</a>
+                    <a href="#!">Дизайн-бюро</a>
+                    <a href="#!">Производство</a>
+                    <a href="#!">Новости</a>
+                    <a href="#!">Контакты</a>
+                    <a href="#!">Отзывы</a>
+                    <a href="#!">Благодарственные письма</a>
+                    <a href="#!">Вакансии</a>
                 </ul> 
             </li>
             <li class="menu-link menu-link-site wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;"> 
-                <a href="#" class="title" href="#!">Библиотекам</a>
+                <a href="#" class="title" href="#!">Услуги</a>
                 <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
                 <ul class="dop__menu">
-                    <a href="#!">Инфраструктура</a>
-                    <a href="#!">Путь гостя</a>
-                    <a href="#!">Номера</a>
+                    <a href="#!">Проект организации пространства</a>
+                    <a href="#!">3D-дизайн</a>
+                    <a href="#!">Разработка проектов библиотек</a>
+                    <a href="#!">Разработка проектов для высших учебных заведений</a>
+                    <a href="#!">Разработка проектов музеев</a>
+                    <a href="#!">Разработка малых архитектурных форм</a>
                 </ul> 
+            </li>
+            <li class="menu-link menu-link-site wow fadeInDown" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;"> 
+                <a href="#" class="title" href="#!">Библиотекам</a> 
             </li>
             <li class="menu-link menu-link-site wow fadeInDown" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;"> 
                 <a href="#" class="title" href="#!">Музеям</a> 
-                <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
-                <ul class="dop__menu">
-                    <a href="#!">Программы</a>
-                    <a href="#!">Модули</a>
-                    <a href="#!">Чек-апы</a>
-                    <a href="#!">Все услуги</a>
-                </ul> 
             </li>
             <li class="menu-link menu-link-site wow fadeInDown" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;"> 
                 <a href="#" class="title" href="#!">Дши</a> 
-                <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
-                <ul class="dop__menu">
-                    <a href="#!">Программы</a>
-                    <a href="#!">Модули</a>
-                    <a href="#!">Чек-апы</a>
-                    <a href="#!">Все услуги</a>
-                </ul> 
             </li>
             <li class="menu-link menu-link-site wow fadeInDown" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;"> 
                 <a href="#" class="title" href="#!">Наши работы</a> 
                 <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
                 <ul class="dop__menu">
-                    <a href="#!">Программы</a>
-                    <a href="#!">Модули</a>
-                    <a href="#!">Чек-апы</a>
-                    <a href="#!">Все услуги</a>
+                    <a href="#!">Библиотеки</a>
+                    <a href="#!">Вузы</a>
+                    <a href="#!">Музеи</a>
+                    <a href="#!">ДШИ</a>
                 </ul> 
             </li>
         </ul>
@@ -274,46 +252,59 @@
     </header>
 
     <article class="intro">
-      <div class="intro_media">
-        <video class="intro-video" autoplay muted loop>
-          <source src="video/video.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="container-info">
-        <div class="intro-head-container">
-          <h1 class="intro-head">Компания «Витарус»</h1>
-          <p class="intro-text">представляет новые тренды в мире мебели</p>
-        </div>
-        <div class="button-container button-container-catalog">
-          <button class="button">Подробнее</button>
-        </div>
-        <div class="intro-button-container">
-          <div class="button-container button-container-scroll">
-            <label class="radio-input">
-              <input type="radio" name="radio-group" class="radio" />
-              <img src="svg/input.svg" alt="" />
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="radio-group" class="radio" />
-              <img src="svg/input.svg" alt="" />
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="radio-group" class="radio" />
-              <img src="svg/activeInput.svg" alt="" />
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="radio-group" class="radio" />
-              <img src="svg/input.svg" alt="" />
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="radio-group" class="radio" />
-              <img src="svg/input.svg" alt="" />
-            </label>
+      <div class="swiper video__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="intro_media">
+              <img src="images/intro__img.jpg" class="intro-video" />
+            </div>
+            <div class="container-info">
+              <div class="intro-head-container">
+                <h1 class="intro-head">Компания «Витарус»</h1>
+                <p class="intro-text">представляет новые тренды в мире мебели</p>
+              </div>
+              <div class="button-container button-container-catalog">
+                <button class="button">Подробнее</button>
+              </div>
+            </div>
           </div>
-          <button class="button-pause">
-            <img src="svg/pause-button.svg" alt="" />
-          </button>
+          <div class="swiper-slide">
+            <div class="intro_media">
+              <video class="intro-video video__intro__sec" autoplay muted loop>
+                <source src="video/video.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="container-info">
+              <div class="intro-head-container">
+                <h1 class="intro-head">Компания «Витарус»</h1>
+                <p class="intro-text">представляет новые тренды в мире мебели</p>
+              </div>
+              <div class="button-container button-container-catalog">
+                <button class="button">Подробнее</button>
+              </div>
+              <div class="intro-button-container">
+                <button class="button-pause">
+                  <img src="svg/pause-button.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="intro_media">
+              <img src="images/intro__img.jpg" class="intro-video" />
+            </div>
+            <div class="container-info">
+              <div class="intro-head-container">
+                <h1 class="intro-head">Компания «Витарус»</h1>
+                <p class="intro-text">представляет новые тренды в мире мебели</p>
+              </div>
+              <div class="button-container button-container-catalog">
+                <button class="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </article>
 
@@ -1769,119 +1760,249 @@
           <a href="#" class="catalog-ref">Посмотреть все</a>
         </div>
         <div class="information-container">
-          <article class="information">
-            <h3 class="caption inform-caption">
-              Поселк Харп, Ямало-Ненецкий АО
-            </h3>
-            <p class="text">
-              Кафедры серии Грация – это изысканность и стиль в каждой детали.
-              Для получения стоимости интересующего оборудования соберите в
-              корзину нужную вам продукцию. Перейдите в корзину, проверьте
-              количество по каждой позиции и отправьте запрос. Перейдите в
-              корзину, проверьте количество по каждой позиции и отправьте
-              запрос.
-            </p>
-            <div class="button-block button-block-portfolio">
-              <button class="switch">
-                <img src="svg/arrow-left.svg" alt="" />
-              </button>
-              <span class="switch-number"
-                >11/<span class="switch-number-two">12</span></span
-              >
-              <button class="switch">
-                <img src="svg/arrow-right.svg" alt="" />
-              </button>
+          <div class="swiper portfolio__swiper">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <div class="text__container">
+                    <h3 class="caption inform-caption">
+                      Поселк Харп, Ямало-Ненецкий АО
+                    </h3>
+                    <p class="text">
+                      Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                      Для получения стоимости интересующего оборудования соберите в
+                      корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                      количество по каждой позиции и отправьте запрос. Перейдите в
+                      корзину, проверьте количество по каждой позиции и отправьте
+                      запрос.
+                    </p>
+                  </div>
+                  <img src="images/big-room.png">
+                </div>
+              </div>
             </div>
-            <div class="big-img-container">
-              <a
-                href="images/big-room.png"
-                data-fancybox="gallery"
-                data-caption="Optional caption"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="images/big-room-mini.png"
-                  />
-                  <img src="images/big-room.png" alt="" />
-                </picture>
-              </a>
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/big-room.png">
+                </div>
+              </div>
             </div>
-          </article>
-          <div class="img-list img-list-container">
-            <div class="img-container-portfolio">
-              <a
-                href="images/big-room.png"
-                data-fancybox="gallery"
-                data-caption="Optional caption"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/mini-room-mini.png"
-                  />
-                  <img src="images/mini-room.png" alt="" />
-                </picture>
-              </a>
-            </div>
-            <div class="img-container-portfolio">
-              <a
-                href="images/big-room.png"
-                data-fancybox="gallery"
-                data-caption="Optional caption"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/mini-room-mini.png"
-                  />
-                  <img src="images/mini-room.png" alt="" />
-                </picture>
-              </a>
-            </div>
-            <div class="img-container-portfolio">
-              <a
-                href="images/big-room.png"
-                data-fancybox="gallery"
-                data-caption="Optional caption"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/mini-room-mini.png"
-                  />
-                  <img src="images/mini-room.png" alt="" />
-                </picture>
-              </a>
-            </div>
-            <div class="img-container-portfolio">
-              <a
-                href="images/big-room.png"
-                data-fancybox="gallery"
-                data-caption="Optional caption"
-              >
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/mini-room-mini.png"
-                  />
-                  <img src="images/mini-room.png" alt="" />
-                </picture>
-              </a>
+            <div class="btns__container">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="button-block button-block-bottom">
-            <button class="switch">
-              <img src="svg/arrow-left.svg" alt="" />
-            </button>
-            <span class="switch-number"
-              >11/<span class="switch-number-two">12</span></span
-            >
-            <button class="switch">
-              <img src="svg/arrow-right.svg" alt="" />
-            </button>
-          </div>
-          <a href="#" class="catalog-ref catalog-ref-mobile">Посмотреть все</a>
         </div>
       </section>
 
@@ -2591,97 +2712,6 @@
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
                 </div>
-                <!-- <button class="switch">
-                  <img src="svg/arrow-left.svg" alt="" />
-                </button>
-                <span class="switch-number"
-                  >11/<span class="switch-number-two">12</span></span
-                >
-                <button class="switch">
-                  <img src="svg/arrow-right.svg" alt="" />
-                </button> -->
-              </div>
-              <p class="text text-series">
-                Кафедры серии Грация – это изысканность и стиль в каждой детали.
-                Для получения стоимости интересующего оборудования соберите в
-                корзину нужную вам продукцию. Перейдите в корзину, проверьте
-                количество по каждой позиции и отправьте запрос.
-              </p>
-              <div class="series-catalog">
-                <p class="series-catalog-info">Более 100 товаров в каталоге</p>
-                <a
-                  href="#"
-                  class="catalog-ref catalog-ref-mobile catalog-ref-mobile-series"
-                  >Посмотреть всю мебель</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="tabs__pane information-container information-container-series">
-            <div class="swiper series__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="image-conatainer-series">
-                    <picture>
-                      <source
-                        media="(max-width: 899px)"
-                        srcset="images/grace-mini.png"
-                      />
-                      <img class="scale" src="images/grace.png" alt="" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-conatainer-series">
-                    <picture>
-                      <source
-                        media="(max-width: 899px)"
-                        srcset="images/grace-mini.png"
-                      />
-                      <img class="scale" src="images/grace.png" alt="" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-conatainer-series">
-                    <picture>
-                      <source
-                        media="(max-width: 899px)"
-                        srcset="images/grace-mini.png"
-                      />
-                      <img class="scale" src="images/grace.png" alt="" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-conatainer-series">
-                    <picture>
-                      <source
-                        media="(max-width: 899px)"
-                        srcset="images/grace-mini.png"
-                      />
-                      <img class="scale" src="images/grace.png" alt="" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="information-series">
-              <div class="button-block button-block-portfolio">
-                <div class="btns__container">
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <!-- <button class="switch">
-                  <img src="svg/arrow-left.svg" alt="" />
-                </button>
-                <span class="switch-number"
-                  >11/<span class="switch-number-two">12</span></span
-                >
-                <button class="switch">
-                  <img src="svg/arrow-right.svg" alt="" />
-                </button> -->
               </div>
               <p class="text text-series">
                 Кафедры серии Грация – это изысканность и стиль в каждой детали.
@@ -2828,15 +2858,79 @@
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
                 </div>
-                <!-- <button class="switch">
-                  <img src="svg/arrow-left.svg" alt="" />
-                </button>
-                <span class="switch-number"
-                  >11/<span class="switch-number-two">12</span></span
+              </div>
+              <p class="text text-series">
+                Кафедры серии Грация – это изысканность и стиль в каждой детали.
+                Для получения стоимости интересующего оборудования соберите в
+                корзину нужную вам продукцию. Перейдите в корзину, проверьте
+                количество по каждой позиции и отправьте запрос.
+              </p>
+              <div class="series-catalog">
+                <p class="series-catalog-info">Более 100 товаров в каталоге</p>
+                <a
+                  href="#"
+                  class="catalog-ref catalog-ref-mobile catalog-ref-mobile-series"
+                  >Посмотреть всю мебель</a
                 >
-                <button class="switch">
-                  <img src="svg/arrow-right.svg" alt="" />
-                </button> -->
+              </div>
+            </div>
+          </div>
+          <div class="tabs__pane information-container information-container-series">
+            <div class="swiper series__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-conatainer-series">
+                    <picture>
+                      <source
+                        media="(max-width: 899px)"
+                        srcset="images/grace-mini.png"
+                      />
+                      <img class="scale" src="images/grace.png" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-conatainer-series">
+                    <picture>
+                      <source
+                        media="(max-width: 899px)"
+                        srcset="images/grace-mini.png"
+                      />
+                      <img class="scale" src="images/grace.png" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-conatainer-series">
+                    <picture>
+                      <source
+                        media="(max-width: 899px)"
+                        srcset="images/grace-mini.png"
+                      />
+                      <img class="scale" src="images/grace.png" alt="" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-conatainer-series">
+                    <picture>
+                      <source
+                        media="(max-width: 899px)"
+                        srcset="images/grace-mini.png"
+                      />
+                      <img class="scale" src="images/grace.png" alt="" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="information-series">
+              <div class="button-block button-block-portfolio">
+                <div class="btns__container">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
               <p class="text text-series">
                 Кафедры серии Грация – это изысканность и стиль в каждой детали.

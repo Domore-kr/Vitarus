@@ -10,6 +10,51 @@
 })();
 
 
+/* Burger */
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.add("show");
+// }
+
+// window.onclick = function (event) {
+//   var dropdowns = document.getElementsByClassName("dropdown-content");
+//   if (!event.target.matches(".dropbtn")) {
+//     for (let i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show");
+//       }
+//     }
+//   }
+// };
+
+const burger__btn = document.querySelector('.dropbtn')
+const burger__content = document.querySelector('.dropdown-content')
+
+burger__btn.addEventListener('click', (e) => {
+  console.log(e.target)
+  if (burger__content.classList.contains('active__content')) {
+    burger__btn.classList.remove('active')
+    burger__content.classList.remove('active__content')
+  } else {
+    burger__btn.classList.add('active')
+    burger__content.classList.add('active__content')
+  }
+})
+
+// Play video
+
+const button__pause = document.querySelector('.button-pause');
+if (document.querySelector('.button-pause')) {
+  const video__intro__sec = document.querySelector('.video__intro__sec');
+  button__pause.addEventListener('click', () => {
+    if (video__intro__sec.paused == true) {
+      video__intro__sec.play();
+    } else {
+      video__intro__sec.pause();
+    }
+  });
+}
+
 //Переключение табов
 
   class Tabs {
@@ -115,6 +160,47 @@
     }
   }
   series__swiper('.series', '.tabs__pane')
+
+  const video__swiper = new Swiper(".video__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    initialSlide: 1,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  function portfolio__swiper(section) {
+    if (section) {
+      const galleryThumbs = new Swiper('.gallery-thumbs', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        direction: "vertical",
+      });
+
+      const nextBtn = document.querySelector(section).querySelector('.swiper-button-next');
+      const prevBtn = document.querySelector(section).querySelector('.swiper-button-prev');
+      const pagination = document.querySelector(section).querySelector('.swiper-pagination');
+
+      const gallery__top = new Swiper(document.querySelector(section).querySelector('.gallery-top'), {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn,
+        },
+        pagination: {
+          el: pagination,
+          type: "fraction",
+        },
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+    }
+  }
+
+  portfolio__swiper('.portfolio')
 
   const ideas__swiper = new Swiper(".ideas__swiper", {
     slidesPerView: 1,
