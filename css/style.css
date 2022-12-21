@@ -339,9 +339,12 @@ figure {
 
 .search-container form {
   display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 
-.search-container form input {
+.search-container form input{
+  position: absolute;
   width: 0;
   overflow: hidden;
   height: 0;
@@ -359,6 +362,7 @@ figure {
   background: #ffffff;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .svg {
@@ -481,8 +485,8 @@ figure {
 
 .intro {
   position: relative;
-  margin-bottom: 107px;
-  margin-top: 230px;
+  margin-bottom: 40px;
+  margin-top: 220px;
 }
 
 .intro_media {
@@ -498,7 +502,7 @@ figure {
 }
 
 .video__swiper .swiper-slide {
-  min-height: 720px;
+  min-height: 600px;
 }
 
 .video__swiper .swiper-slide::after {
@@ -513,6 +517,7 @@ figure {
 }
 
 .video__swiper .swiper-pagination {
+  position: unset;
   background: #fff;
   border-radius: 20px;
   width: unset;
@@ -531,6 +536,7 @@ figure {
   width: 30px;
   border-radius: 10px;
   height: 6px;
+  background: #0a7356;
 }
 
 .container-info {
@@ -539,7 +545,6 @@ figure {
   margin: auto;
   position: relative;
   z-index: 2;
-  padding: 194px 0px 67px 0;
 }
 
 .intro-head-container {
@@ -907,7 +912,7 @@ figcaption {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   color: #292a2a;
 }
@@ -1105,8 +1110,10 @@ figcaption {
 }
 
 .text-block {
-  display: flex;
+  display: grid;
   margin-bottom: 27px;
+  column-gap: 29px;
+  grid-template-columns: repeat(2, 49%);
 }
 
 .aboutUs-ref {

@@ -24,6 +24,28 @@ burger__btn.addEventListener('click', (e) => {
   }
 })
 
+// Open search
+const search__container = document.querySelector('.search-container')
+
+function close__search (e) {
+  if (search__container.querySelector('.search__input').classList.contains('input__active') && e.target != search__container.querySelector('.search__btn')) {
+    document.addEventListener('click', (e) => {
+      const click = e.composedPath().includes(search__container)
+      if (click != search__container) {
+        search__container.querySelector('.search__input').classList.remove('input__active')
+      }
+    })
+  }
+}
+
+if (!search__container.querySelector('.search__input').classList.contains('input__active')) {
+  search__container.addEventListener('click', () => {
+    search__container.querySelector('.search__input').classList.add('input__active')
+  })
+  close__search()
+}
+
+
 // Play video
 
 const button__pause = document.querySelector('.button-pause');
@@ -219,7 +241,7 @@ if (document.querySelector('.button-pause')) {
 
   const reviews__swiper = new Swiper(".reviews__swiper", {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 40,
     navigation: {
       nextEl: ".reviews__btn__next",
       prevEl: ".reviews__btn__prev",
