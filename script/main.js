@@ -219,7 +219,7 @@ if (document.querySelector('.button-pause')) {
 
   const reviews__swiper = new Swiper(".reviews__swiper", {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 40,
     navigation: {
       nextEl: ".reviews__btn__next",
       prevEl: ".reviews__btn__prev",
