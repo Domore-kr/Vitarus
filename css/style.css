@@ -834,13 +834,10 @@ figcaption {
 .portfolio .gallery-top .swiper-slide {
   flex-direction: column;
   justify-content: space-between;
-<<<<<<< HEAD
 }
 
 .portfolio .gallery-top .swiper-slide img{
   border-radius: 50px;
-=======
->>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 }
 
 .portfolio .gallery-thumbs {
@@ -857,13 +854,8 @@ figcaption {
   top: 180px;
 }
 
-<<<<<<< HEAD
 .portfolio__swiper .btns__container .swiper-button-next, 
 .portfolio__swiper .btns__container .swiper-button-prev, 
-=======
-.portfolio__swiper .btns__container .swiper-button-next,
-.portfolio__swiper .btns__container .swiper-button-prev,
->>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .portfolio__swiper .btns__container .swiper-pagination {
   position: unset;
   margin-top: 0;
@@ -1016,11 +1008,7 @@ figcaption {
   display: flex;
 }
 
-<<<<<<< HEAD
 .series .swiper-button-next, 
-=======
-.series .swiper-button-next,
->>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .series .swiper-button-prev {
   top: 20px;
   position: relative;
@@ -1207,11 +1195,7 @@ figcaption {
   margin-bottom: 0;
 }
 
-<<<<<<< HEAD
 .swiper-button-next, 
-=======
-.swiper-button-next,
->>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .swiper-button-prev {
   width: 50px;
   height: 50px;
@@ -3105,13 +3089,10 @@ input[type="checkbox"]:checked + label:before {
 
   .img-list-catalog {
     flex-wrap: nowrap;
-<<<<<<< HEAD
   }
 
   .img-container-catalog {
     width: calc(25%);
-=======
->>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
   }
 
   .img-container-catalog {
