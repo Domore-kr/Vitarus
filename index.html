@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Витарус</title>
   </head>
@@ -182,9 +183,14 @@
           </a>
         </div>
         <div class="svg-links">
-          <button href="#!" class="svg-button">
-            <img src="svg/loupe.svg" alt="loupe" class="svg" />
-          </button>
+          <div class="search-container">
+            <form action="#!">
+              <input type="text" placeholder="Введите запрос" name="search">
+              <button href="#!" class="svg-button">
+                <img src="svg/loupe.svg" alt="loupe" class="svg" />
+              </button>
+            </form>
+          </div>
           <button href="#!" class="svg-button">
             <img src="svg/user.svg" alt="user" class="svg" />
           </button>
@@ -388,8 +394,47 @@
         <p class="description">Найдите нужный вам проект</p>
         <div class="tabs__buttons">
           <ul class="tags">
-            <li class="tag">
-              <button class="tabs__btn tabs__btn_active button-tag" autofocus>Стеллажи для библиотек</button>
+            <div class="swiper tags__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn tabs__btn_active button-tag">Стеллажи для библиотек</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Столы для библиотек</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Стулья для библиотек</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Читательские боксы</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Эксклюзивная библиотечная мебель</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Мебель для детской библиотеки</button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="tag">
+                    <button class="tabs__btn button-tag">Накопители для периодических изданий</button>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <!-- <li class="tag">
+              <button class="tabs__btn tabs__btn_active button-tag">Стеллажи для библиотек</button>
             </li>
             <li class="tag">
               <button class="tabs__btn button-tag">Столы для библиотек</button>
@@ -407,10 +452,8 @@
               <button class="tabs__btn button-tag">Мебель для детской библиотеки</button>
             </li>
             <li class="tag">
-              <button class="tabs__btn button-tag">
-                Накопители для периодических изданий
-              </button>
-            </li>
+              <button class="tabs__btn button-tag">Накопители для периодических изданий</button>
+            </li> -->
           </ul>
         </div>
         <div class="tabs__content">
@@ -2051,40 +2094,292 @@
             <div class="swiper-container gallery-thumbs">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/big-room.png">
+                  <div class="sub-swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/big-room.png">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2120,38 +2415,10 @@
                         style="left: 16.2671%; top: 56.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2160,38 +2427,10 @@
                         style="left: 46.2671%; top: 72.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2215,75 +2454,19 @@
                         style="left: 68.3623%; top: 63.6714%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
                       <div class="pin-box" style="left: 42.53%; top: 53.2509%">
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2292,38 +2475,10 @@
                         style="left: 61.2671%; top: 19.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2344,75 +2499,19 @@
                     <div group-id="8720113">
                       <div class="pin-box" style="left: 41.53%; top: 76.2509%">
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
                       <div class="pin-box" style="left: 7.2671%; top: 60.0636%">
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2436,38 +2535,10 @@
                         style="left: 16.2671%; top: 56.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2476,38 +2547,10 @@
                         style="left: 46.2671%; top: 72.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2531,38 +2574,10 @@
                         style="left: 16.2671%; top: 56.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2571,38 +2586,10 @@
                         style="left: 46.2671%; top: 72.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2626,38 +2613,10 @@
                         style="left: 16.2671%; top: 56.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
@@ -2666,38 +2625,10 @@
                         style="left: 46.2671%; top: 72.0636%"
                       >
                         <div class="pin">
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000svg"
-                            svg-inline=""
-                            role="presentation"
-                            focusable="false"
-                            tabindex="-1"
-                            class="pin-icon"
-                          >
-                            <circle
-                              opacity=".2"
-                              cx="18"
-                              cy="18"
-                              r="18"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              cx="18"
-                              cy="17.999"
-                              r="10.8"
-                              fill="#fff"
-                            ></circle>
-                            <circle
-                              class="paint"
-                              cx="18"
-                              cy="17.999"
-                              r="4.8"
-                              fill="silver"
-                            ></circle>
+                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000svg" svg-inline="" role="presentation" focusable="false"tabindex="-1" class="pin-icon">
+                            <circle opacity=".2" cx="18" cy="18" r="18" fill="#fff" ></circle>
+                            <circle cx="18" cy="17.999" r="10.8" fill="#fff"></circle>
+                            <circle class="paint" cx="18" cy="17.999" r="4.8" fill="#0a7356"></circle>
                           <svg>
                         </div>
                       </div>
