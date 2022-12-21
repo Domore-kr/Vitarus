@@ -11,27 +11,10 @@
 
 
 /* Burger */
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.add("show");
-// }
-
-// window.onclick = function (event) {
-//   var dropdowns = document.getElementsByClassName("dropdown-content");
-//   if (!event.target.matches(".dropbtn")) {
-//     for (let i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains("show")) {
-//         openDropdown.classList.remove("show");
-//       }
-//     }
-//   }
-// };
-
 const burger__btn = document.querySelector('.dropbtn')
 const burger__content = document.querySelector('.dropdown-content')
 
 burger__btn.addEventListener('click', (e) => {
-  console.log(e.target)
   if (burger__content.classList.contains('active__content')) {
     burger__btn.classList.remove('active')
     burger__content.classList.remove('active__content')
@@ -154,7 +137,8 @@ if (document.querySelector('.button-pause')) {
   function portfolio__swiper(section) {
     if (section) {
       const galleryThumbs = new Swiper('.gallery-thumbs', {
-        slidesPerView: 4,
+        simulateTouch: false,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         direction: "vertical",
       });
@@ -183,12 +167,32 @@ if (document.querySelector('.button-pause')) {
 
   portfolio__swiper('.portfolio')
 
+  // Change img
+
+  const slides__thumbs = document.querySelector('.gallery-thumbs').querySelectorAll('.swiper-slide')
+  slides__thumbs.forEach(slide => {
+    slide.addEventListener('click', (e) => {
+      const active__big__img = document.querySelector('.gallery-top ').querySelector('.swiper-slide-active').querySelector('img')
+      if (e.target.src != undefined) {
+        active__big__img.src = e.target.src
+      }
+    })
+  })
+
   const ideas__swiper = new Swiper(".ideas__swiper", {
     slidesPerView: 3,
     spaceBetween: 20,
   });
 
-
+  if (window.innerWidth <= 768) {
+    const tags__swiper = new Swiper(".tags__swiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      cssMode: false,
+      initialSlide: 1,
+    });
+  }
+  
   const news__swiper = new Swiper(".news__swiper", {
     slidesPerView: 4,
     spaceBetween: 40,
@@ -198,37 +202,27 @@ if (document.querySelector('.button-pause')) {
     },
   });
 
-
-  const clients__swiper = new Swiper(".clients__swiper", {
+  const subSwiperThumbs = new Swiper(".sub-swiper-thumbs", {
     slidesPerView: 4,
     spaceBetween: 40,
+    direction: "vertical",
+    navigation: {
+      nextEl: ".news__btn__next",
+      prevEl: ".news__btn__prev",
+    },
   });
 
+  const clients__swiper = new Swiper(".clients__swiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+  });
 
   const reviews__swiper = new Swiper(".reviews__swiper", {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 10,
     navigation: {
       nextEl: ".reviews__btn__next",
       prevEl: ".reviews__btn__prev",
     },
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      "@1.50": {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
   });
+
