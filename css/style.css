@@ -695,6 +695,7 @@ figure {
 }
 
 .container-popular .product-card {
+  width: 100%;
   margin: 15px 0 0 0;
   width: 100%;
 }
@@ -794,7 +795,6 @@ figcaption {
   border: none;
 }
 
-
 .hit {
   position: absolute;
   z-index: 2;
@@ -834,10 +834,13 @@ figcaption {
 .portfolio .gallery-top .swiper-slide {
   flex-direction: column;
   justify-content: space-between;
+<<<<<<< HEAD
 }
 
 .portfolio .gallery-top .swiper-slide img{
   border-radius: 50px;
+=======
+>>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 }
 
 .portfolio .gallery-thumbs {
@@ -854,8 +857,13 @@ figcaption {
   top: 180px;
 }
 
+<<<<<<< HEAD
 .portfolio__swiper .btns__container .swiper-button-next, 
 .portfolio__swiper .btns__container .swiper-button-prev, 
+=======
+.portfolio__swiper .btns__container .swiper-button-next,
+.portfolio__swiper .btns__container .swiper-button-prev,
+>>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .portfolio__swiper .btns__container .swiper-pagination {
   position: unset;
   margin-top: 0;
@@ -907,7 +915,6 @@ figcaption {
   font-size: 18px;
   line-height: 30px;
   color: #292a2a;
-  margin-bottom: 100px;
 }
 
 .button-block {
@@ -1009,7 +1016,11 @@ figcaption {
   display: flex;
 }
 
+<<<<<<< HEAD
 .series .swiper-button-next, 
+=======
+.series .swiper-button-next,
+>>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .series .swiper-button-prev {
   top: 20px;
   position: relative;
@@ -1025,7 +1036,6 @@ figcaption {
   order: 1;
   left: 0;
 }
-
 
 .series .swiper-pagination {
   position: unset;
@@ -1197,7 +1207,11 @@ figcaption {
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .swiper-button-next, 
+=======
+.swiper-button-next,
+>>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
 .swiper-button-prev {
   width: 50px;
   height: 50px;
@@ -2107,7 +2121,6 @@ input[type="checkbox"]:checked + label:before {
     width: auto;
   }
 
-  
   .image-container-idea {
     position: relative;
     /* width: 360px;
@@ -2414,6 +2427,10 @@ input[type="checkbox"]:checked + label:before {
 
   .information-container {
     display: block;
+  }
+
+  .text__container {
+    margin-bottom: 100px;
   }
 
   .information {
@@ -3088,14 +3105,21 @@ input[type="checkbox"]:checked + label:before {
 
   .img-list-catalog {
     flex-wrap: nowrap;
+<<<<<<< HEAD
   }
 
   .img-container-catalog {
     width: calc(25%);
+=======
+>>>>>>> 7b2d2bc0ebf14752740938b9cb93ad00e9d4524b
   }
 
   .img-container-catalog {
     margin-top: 40px;
+  }
+
+  .img-container-catalog {
+    width: calc(25%);
   }
 
   .img-container-catalog:nth-last-child(n + 2) {
