@@ -3136,9 +3136,6 @@ input[type="checkbox"]:checked + label:before {
   height: 100%;
 }
 
-:root {
-  --swiper-theme-color: #0a7356 !important;
-}
 
 .swiper-slide-popular {
   padding-right: 20px;
