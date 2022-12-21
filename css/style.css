@@ -3192,14 +3192,14 @@ input[type="checkbox"]:checked + label:before {
 
 .bottom-interactive {
   grid-area: bottom-interactive;
-  margin: 40px 40px 0 0;
+  padding-top: 40px;
+  padding-right: 20px;
   border-radius: 20px;
-  background: #f3f3f3;
 }
 
 .image-ref {
   grid-area: image-ref;
-  margin: 40px 0 0 0;
+  padding: 40px 0 0 20px;
   border-radius: 20px;
 }
 
@@ -3213,9 +3213,6 @@ input[type="checkbox"]:checked + label:before {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 1.375rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
-  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
   cursor: pointer;
   height: 100%;
   text-decoration: none;
@@ -3225,6 +3222,7 @@ input[type="checkbox"]:checked + label:before {
   transition: background-color var(--interact-duration) linear;
 
   background: #f3f3f3;
+  border-radius: 20px;
 }
 
 .section__item_last:before {
