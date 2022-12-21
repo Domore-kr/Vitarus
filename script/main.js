@@ -213,12 +213,12 @@ if (document.querySelector('.button-pause')) {
   });
 
   const clients__swiper = new Swiper(".clients__swiper", {
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 5,
+    spaceBetween: 20,
   });
 
   const reviews__swiper = new Swiper(".reviews__swiper", {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 10,
     navigation: {
       nextEl: ".reviews__btn__next",
