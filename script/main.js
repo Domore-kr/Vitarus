@@ -283,6 +283,21 @@ function portfolio__swiper(section) {
       slidesPerView: "auto",
       spaceBetween: 30,
       direction: "vertical",
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          direction: "horizontal",
+        },
+
+        320: {
+          slidesPerView: 1,
+          direction: "horizontal",
+        },
+
+        900: {
+          direction: "vertical",
+        },
+      },
     });
 
     const nextBtn = document

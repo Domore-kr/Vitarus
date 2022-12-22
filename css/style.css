@@ -2426,6 +2426,41 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 899px) {
+  .portfolio .gallery-top .swiper-slide img {
+    margin-top: 50px;
+  }
+
+  .portfolio {
+    margin-bottom: 60px;
+  }
+
+  .portfolio .swiper-container {
+    padding-bottom: 20px;
+  }
+  .portfolio__swiper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 40px;
+    grid-template-areas:
+      "text__swiper"
+      "swiper__thumb";
+  }
+
+  .swiper-vertical > .swiper-wrapper {
+    flex-direction: row;
+  }
+
+  .portfolio .gallery-thumbs {
+    max-height: 100%;
+    height: auto;
+  }
+
+  .portfolio .gallery-thumbs .swiper-slide img {
+    border-radius: 20px;
+    width: auto;
+  }
+
   .img-list-catalog {
     justify-content: space-between;
   }
@@ -2654,14 +2689,6 @@ input[type="checkbox"]:checked + label:before {
 
   .hit {
     top: 0;
-  }
-
-  .text__container {
-    margin-bottom: 100px;
-  }
-
-  .text__container {
-    margin-bottom: 100px;
   }
 
   .information {
@@ -3364,6 +3391,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (min-width: 900px) and (max-width: 1139px) {
+  .container {
+    overflow: hidden;
+  }
+
   .product-cards {
     justify-content: space-around;
   }
