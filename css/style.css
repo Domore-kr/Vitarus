@@ -3228,8 +3228,12 @@ input[type="checkbox"]:checked + label:before {
   -o-transition: background-color var(--interact-duration) linear;
   transition: background-color var(--interact-duration) linear;
 
-  background: #1cb73d;
+  background-color: rgb(10, 115, 86, 0.35);
   border-radius: 20px;
+}
+
+.section__item:hover {
+  background-color: rgb(10, 115, 86);
 }
 
 .section__item_last:before {
