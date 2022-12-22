@@ -1105,10 +1105,8 @@ figcaption {
 }
 
 .text-block {
-  display: grid;
+  display: flex;
   margin-bottom: 27px;
-  column-gap: 29px;
-  grid-template-columns: repeat(2, 49%);
 }
 
 .aboutUs-ref {
@@ -3221,7 +3219,7 @@ input[type="checkbox"]:checked + label:before {
   -o-transition: background-color var(--interact-duration) linear;
   transition: background-color var(--interact-duration) linear;
 
-  background: #f3f3f3;
+  background: #1cb73d;
   border-radius: 20px;
 }
 
@@ -3238,6 +3236,15 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transition: left var(--interact-duration) linear;
   -o-transition: left var(--interact-duration) linear;
   transition: left var(--interact-duration) linear;
+  transition: 0.5s;
+}
+
+.section__item_last:hover::before {
+  transform: translate(20px, 0);
+  -webkit-transform: translate(20px, 0);
+  -o-transform: translate(20px, 0);
+  -moz-transform: translate(20px, 0);
+  transition: 0.5s;
 }
 
 .section__text {
