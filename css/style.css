@@ -121,10 +121,6 @@ figure {
   color: #292a2a;
 }
 
-.menu-link-ref:hover {
-  text-decoration: underline;
-}
-
 .phone {
   text-decoration: none;
   margin-left: 50px;
@@ -296,6 +292,7 @@ figure {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  transition: .2s ease all;
 }
 
 .dropdown-link img {
@@ -354,12 +351,26 @@ figure {
 }
 
 .search-container form input {
+  font-family: 'Raleway';
+  font-weight: 500;
   position: absolute;
+  border: 2px solid #DADBDB;
+  border-radius: 20px;
   width: 0;
   overflow: hidden;
   height: 0;
   opacity: 0;
+  top: -40%;
+  right: -100%;
+  min-height: 40px;
   transition: 0.2s ease all;
+}
+
+.search__input.active {
+  width: 260px;
+  height: 100%;
+  opacity: 1;
+  padding: 10px;
 }
 
 .svg-links {
@@ -492,6 +503,227 @@ figure {
   color: #ffffff;
   background-color: #0a7356;
 }
+
+.popup__contacts {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.popup__contacts.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__contacts .popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.popup__contacts .popup__body .popup__card {
+  position: relative;
+  max-width: 586px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 48px;
+  background-color: #fff;
+}
+
+.popup__contacts .popup__body .popup__card .close__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 11px;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+}
+
+.popup__contacts .popup__body .popup__card .close__btn:hover {
+  cursor: pointer;
+}
+
+.popup__contacts .popup__body .popup__card .close__btn .close__line {
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 5px;
+  z-index: 100;
+  background-color: #7a7a7a;
+}
+
+.popup__contacts .popup__body .popup__card .close__btn .close__line:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.popup__contacts .popup__body .popup__card .close__btn .close__line:nth-child(2) {
+  -webkit-transform: translateY(-2px) rotate(45deg);
+          transform: translateY(-2px) rotate(45deg);
+}
+
+.popup__contacts .popup__body .popup__card .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #222222;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(34, 34, 34, 0.5);
+}
+
+.popup__contacts .popup__body .popup__card .form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.popup__contacts .popup__body .popup__card .form .input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.popup__contacts .popup__body .popup__card .form .ic2 {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.popup__contacts .popup__body .popup__card .form .input {
+  background-color: transparent;
+  border: 1px solid #BDBDBD;
+  border-radius: 12px;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  width: 115px;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut-long2 {
+  width: 120px;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut-long1 {
+  width: 160px;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut-long {
+  width: 180px;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut-short {
+  width: 80px;
+}
+
+.popup__contacts .popup__body .popup__card .form .cut-short1 {
+  width: 50px;
+}
+
+.popup__contacts .popup__body .popup__card .form .input:focus ~ .cut,
+.popup__contacts .popup__body .popup__card .form .input:not(:placeholder-shown) ~ .cut {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+.popup__contacts .popup__body .popup__card .form .placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  opacity: 0.5;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition: color 200ms, -webkit-transform 200ms;
+  transition: color 200ms, -webkit-transform 200ms;
+  transition: transform 200ms, color 200ms;
+  transition: transform 200ms, color 200ms, -webkit-transform 200ms;
+  top: 18px;
+}
+
+.popup__contacts .popup__body .popup__card .form .input:focus ~ .placeholder,
+.popup__contacts .popup__body .popup__card .form .input:not(:placeholder-shown) ~ .placeholder {
+  -webkit-transform: translateY(-25px) translateX(10px) scale(0.75);
+          transform: translateY(-25px) translateX(10px) scale(0.75);
+}
+
+.popup__contacts .popup__body .popup__card .info {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.popup__contacts .popup__body .popup__card .info a {
+  color: #0a7356;
+}
+
+.popup__contacts .popup__body .popup__card .send button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  border: 0;
+  border-radius: 57px;
+  color: #fff;
+  background-color: #0a7356;
+  padding: 16px 30px;
+}
+
 
 .intro {
   position: relative;
@@ -630,6 +862,10 @@ figure {
   margin-bottom: 105px;
 }
 
+.big-img {
+  width: 100%;
+}
+
 .tags__swiper .swiper-wrapper {
   flex-wrap: wrap;
   column-gap: 20px;
@@ -676,12 +912,7 @@ figure {
   color: #0a7356;
 }
 
-.catalog-images {
-  display: flex;
-}
-
 .big-img {
-  width: 100%;
   height: 100%;
   background: #f3f3f3;
   margin-right: 30px;
@@ -689,10 +920,6 @@ figure {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-}
-
-.big-img figure {
-  padding: 30px 30px 66px;
 }
 
 .img-list {
@@ -925,6 +1152,7 @@ figcaption {
 .button-block {
   display: flex;
   align-items: center;
+  margin-top: 10px;
   margin-bottom: 60px;
 }
 
@@ -1020,6 +1248,10 @@ figcaption {
   display: flex;
 }
 
+.series .tabs__content {
+  margin-top: 26px;
+}
+
 .series .swiper-button-next,
 .series .swiper-button-prev {
   top: 20px;
@@ -1088,7 +1320,6 @@ figcaption {
 }
 
 .information-container-series {
-  margin-top: 26px;
   justify-content: space-between;
 }
 
@@ -2081,11 +2312,21 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .tabs__pane {
-  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  transition: 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .tabs__pane_show {
   display: flex;
+  width: unset;
+  height: unset;
+  opacity: 1;
+  transition-delay: 0.1s;
 }
 
 @media (min-width: 1141px) and (max-width: 1919px) {
@@ -2338,10 +2579,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .big-img {
-    width: 100%;
     margin: auto;
-    max-height: 190px;
-    margin-bottom: 20px;
   }
 
   .big-img figure {
@@ -2354,10 +2592,6 @@ input[type="checkbox"]:checked + label:before {
 
   figcaption {
     font-size: 14px;
-  }
-
-  .img-container-catalog figure {
-    padding: 29px 20px;
   }
 
   .catalog-ref-mobile {
@@ -3061,10 +3295,6 @@ input[type="checkbox"]:checked + label:before {
     display: block;
   }
 
-  .big-img {
-    width: 100%;
-  }
-
   .img-list-catalog {
     flex-wrap: nowrap;
   }
@@ -3157,53 +3387,41 @@ input[type="checkbox"]:checked + label:before {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 40px;
+  grid-auto-rows: minmax(auto, auto);
   grid-template-areas:
-    "big-image-series-cat big-image-series-cat right-image-one right-image-two"
-    "big-image-series-cat big-image-series-cat right-image-three right-image-four"
-    "bottom-interactive bottom-interactive bottom-interactive image-ref"
-    ". . . .";
+  "item_1 item_2 item_3"
+  "item_1 item_4 item_5"
+  "item_6 item_6 item_7";
 }
 
-.big-image-series-cat {
-  grid-area: big-image-series-cat;
-  padding-right: 40px;
+.item_1 {
+  grid-area: item_1;
 }
 
-.right-image-one {
-  grid-area: right-image-one;
-  padding: 0 20px 30px 0;
+.item_2 {
+  grid-area: item_2;
 }
 
-.right-image-two {
-  grid-area: right-image-two;
-  padding: 0 0 30px 20px;
+.item_3 {
+  grid-area: item_3;
 }
 
-.right-image-three {
-  grid-area: right-image-three;
-  padding: 30px 20px 0 0;
+.item_4 {
+  grid-area: item_4;
 }
 
-.right-image-four {
-  grid-area: right-image-four;
-  padding: 30px 0 0 20px;
+.item_5 {
+  grid-area: item_5;
 }
 
-.bottom-interactive {
-  grid-area: bottom-interactive;
-  padding-top: 40px;
-  padding-right: 20px;
-  border-radius: 20px;
+.item_6 {
+  grid-area: item_6;
 }
 
-.image-ref {
-  grid-area: image-ref;
-  padding: 40px 0 0 20px;
-  border-radius: 20px;
+.item_7 {
+  grid-area: item_7;
 }
 
 .section__item {
@@ -3237,11 +3455,7 @@ input[type="checkbox"]:checked + label:before {
   background-image: url(../svg/interactive-arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 54px;
   height: 26px;
-  position: absolute;
-  top: 28px;
-  left: 20px;
   -webkit-transition: left var(--interact-duration) linear;
   -o-transition: left var(--interact-duration) linear;
   transition: left var(--interact-duration) linear;
@@ -3278,4 +3492,30 @@ input[type="checkbox"]:checked + label:before {
   line-height: 24px;
   text-align: center;
   color: #292a2a;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "item_1 item_1"
+      "item_2 item_3"
+      "item_4 item_5"
+      "item_6 item_7";
+  }
+
+  .section__text {
+    padding: 0;
+  }
+
+  .section__item_last:before {
+    top: 30%;
+  }
+
+  figure {
+    margin: 0;
+    padding: 20px;
+  }
 }
