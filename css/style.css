@@ -292,7 +292,7 @@ figure {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .dropdown-link img {
@@ -351,10 +351,10 @@ figure {
 }
 
 .search-container form input {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   position: absolute;
-  border: 2px solid #DADBDB;
+  border: 2px solid #dadbdb;
   border-radius: 20px;
   width: 0;
   overflow: hidden;
@@ -528,11 +528,11 @@ figure {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 100%;
 }
 
@@ -551,14 +551,14 @@ figure {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 36px;
   position: absolute;
   top: 16px;
@@ -581,14 +581,22 @@ figure {
   background-color: #7a7a7a;
 }
 
-.popup__contacts .popup__body .popup__card .close__btn .close__line:nth-child(1) {
+.popup__contacts
+  .popup__body
+  .popup__card
+  .close__btn
+  .close__line:nth-child(1) {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-.popup__contacts .popup__body .popup__card .close__btn .close__line:nth-child(2) {
+.popup__contacts
+  .popup__body
+  .popup__card
+  .close__btn
+  .close__line:nth-child(2) {
   -webkit-transform: translateY(-2px) rotate(45deg);
-          transform: translateY(-2px) rotate(45deg);
+  transform: translateY(-2px) rotate(45deg);
 }
 
 .popup__contacts .popup__body .popup__card .title {
@@ -620,7 +628,7 @@ figure {
 
 .popup__contacts .popup__body .popup__card .form .input {
   background-color: transparent;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 12px;
   font-size: 18px;
   height: 100%;
@@ -637,7 +645,7 @@ figure {
   position: absolute;
   top: -20px;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: -webkit-transform 200ms;
   transition: -webkit-transform 200ms;
   transition: transform 200ms;
@@ -666,9 +674,14 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .form .input:focus ~ .cut,
-.popup__contacts .popup__body .popup__card .form .input:not(:placeholder-shown) ~ .cut {
+.popup__contacts
+  .popup__body
+  .popup__card
+  .form
+  .input:not(:placeholder-shown)
+  ~ .cut {
   -webkit-transform: translateY(12px);
-          transform: translateY(12px);
+  transform: translateY(12px);
 }
 
 .popup__contacts .popup__body .popup__card .form .placeholder {
@@ -684,7 +697,7 @@ figure {
   pointer-events: none;
   position: absolute;
   -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
+  transform-origin: 0 50%;
   -webkit-transition: color 200ms, -webkit-transform 200ms;
   transition: color 200ms, -webkit-transform 200ms;
   transition: transform 200ms, color 200ms;
@@ -693,9 +706,14 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .form .input:focus ~ .placeholder,
-.popup__contacts .popup__body .popup__card .form .input:not(:placeholder-shown) ~ .placeholder {
+.popup__contacts
+  .popup__body
+  .popup__card
+  .form
+  .input:not(:placeholder-shown)
+  ~ .placeholder {
   -webkit-transform: translateY(-25px) translateX(10px) scale(0.75);
-          transform: translateY(-25px) translateX(10px) scale(0.75);
+  transform: translateY(-25px) translateX(10px) scale(0.75);
 }
 
 .popup__contacts .popup__body .popup__card .info {
@@ -723,7 +741,6 @@ figure {
   background-color: #0a7356;
   padding: 16px 30px;
 }
-
 
 .intro {
   position: relative;
@@ -932,6 +949,7 @@ figure {
 .container-popular {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: end;
   width: 100%;
 }
@@ -2544,7 +2562,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .page {
-    padding: 0 20px;
+    margin: 0 20px;
     margin-bottom: 80px;
     width: auto;
   }
@@ -2616,10 +2634,6 @@ input[type="checkbox"]:checked + label:before {
 
   .button-tag {
     font-size: 14px;
-  }
-
-  .container-popular {
-    height: 245px;
   }
 
   .container-popular:nth-last-child(n + 2) {
@@ -3502,6 +3516,7 @@ input[type="checkbox"]:checked + label:before {
   .container {
     grid-template-columns: 50% 50%;
     grid-gap: 20px;
+    overflow: hidden;
     grid-auto-rows: minmax(auto, auto);
     grid-template-areas:
       "item_1 item_1"
