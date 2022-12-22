@@ -280,7 +280,7 @@ class Tabs__header {
     },
     breakpoints: {
       1024: {
-        slidesPerView: 'auto'
+        slidesPerView: 3,
       },
     }
   });
