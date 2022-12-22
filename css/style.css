@@ -2400,10 +2400,6 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 100px;
   }
 
-  .information-container {
-    display: block;
-  }
-
   .text__container {
     margin-bottom: 100px;
   }
