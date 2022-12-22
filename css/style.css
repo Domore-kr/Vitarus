@@ -1244,7 +1244,7 @@ figcaption {
 }
 
 .client-block {
-  min-width: 260px;
+  min-width: 200px;
   min-height: 130px;
   background: #f3f3f3;
   border-radius: 20px;
@@ -1401,6 +1401,10 @@ svg {
 
 .scale:hover {
   transform: scale(1.2);
+}
+
+.client-image {
+  width: auto;
 }
 
 /* Карточка товара 1 */
