@@ -2,49 +2,29 @@
     const header = document.querySelector('.hat');
     window.onscroll = () => {
         if (window.scrollY > 70) {
-            header.classList.add('header__active');
+          header.classList.add('header__active');
         } else {
-            header.classList.remove('header__active');
+          header.classList.remove('header__active');
         }
     };
 })();
 
 
-/* Burger */
-const burger__btn = document.querySelector('.dropbtn')
-const burger__content = document.querySelector('.dropdown-content')
-
-burger__btn.addEventListener('click', (e) => {
-  if (burger__content.classList.contains('active__content')) {
-    burger__btn.classList.remove('active')
-    burger__content.classList.remove('active__content')
-  } else {
-    burger__btn.classList.add('active')
-    burger__content.classList.add('active__content')
-  }
-})
-
-// Open search
-const search__container = document.querySelector('.search-container')
-
-function close__search (e) {
-  if (search__container.querySelector('.search__input').classList.contains('input__active') && e.target != search__container.querySelector('.search__btn')) {
-    document.addEventListener('click', (e) => {
-      const click = e.composedPath().includes(search__container)
-      if (click != search__container) {
-        search__container.querySelector('.search__input').classList.remove('input__active')
-      }
-    })
-  }
-}
-
-if (!search__container.querySelector('.search__input').classList.contains('input__active')) {
-  search__container.addEventListener('click', () => {
-    search__container.querySelector('.search__input').classList.add('input__active')
+// Burger 
+  const burger__btn = document.querySelector('.dropbtn')
+  const burger__content = document.getElementById('dropdown-content')
+  const body = document.querySelector('body');
+  burger__btn.addEventListener('click', (e) => {
+    if (burger__content.classList.contains('active__content')) {
+      burger__btn.classList.remove('active')
+      burger__content.classList.remove('active__content')
+      body.classList.remove('lock')
+    } else {
+      burger__btn.classList.add('active')
+      burger__content.classList.add('active__content')
+      body.classList.add('lock')
+    }
   })
-  close__search()
-}
-
 
 // Play video
 
@@ -110,6 +90,7 @@ if (document.querySelector('.button-pause')) {
     }
   }
 
+  new Tabs('.hat');
   new Tabs('.popular-goods');
   new Tabs('.series');
 

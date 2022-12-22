@@ -24,6 +24,10 @@ figure {
   overflow: hidden;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 #detach-button-host {
   display: none !important;
 }
@@ -80,7 +84,6 @@ figure {
   display: flex;
   justify-content: space-between;
   padding: 10px 0 10px;
-  margin-bottom: 15px;
   background-color: #f3f3f3;
   transition: 0.3s ease all;
 }
@@ -140,7 +143,6 @@ figure {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  margin-bottom: 19px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -241,6 +243,10 @@ figure {
   transition: 0.2s ease all;
 }
 
+.dropdown-content .tabs__content {
+  width: 100%;
+}
+
 .dropdown-content.active__content {
   opacity: 1;
   visibility: visible;
@@ -275,6 +281,10 @@ figure {
 .dropdown-link {
   display: flex;
   width: 100%;
+}
+
+.dropdown-link .tabs__btn_active {
+  color: #0a7356;
 }
 
 .dropdown-link a {
@@ -486,7 +496,7 @@ figure {
 .intro {
   position: relative;
   margin-bottom: 40px;
-  margin-top: 220px;
+  margin-top: 200px;
 }
 
 .intro_media {
@@ -702,7 +712,6 @@ figure {
 .container-popular .product-card {
   width: 100%;
   margin: 15px 0 0 0;
-  width: 100%;
 }
 
 .container-popular .product-card-image-container {
@@ -3225,7 +3234,7 @@ input[type="checkbox"]:checked + label:before {
 
 .section__item_last:before {
   content: "";
-  background-image: url(/svg/interactive-arrow.svg);
+  background-image: url(../svg/interactive-arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 54px;
