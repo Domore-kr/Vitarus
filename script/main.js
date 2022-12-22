@@ -336,7 +336,10 @@ document.addEventListener('click', (e) => {
       prevEl: ".reviews__btn__prev",
     },
     breakpoints: {
-      1024: {
+      768: {
+        slidesPerView: 4,
+      },
+      375: {
         slidesPerView: 3,
       },
     }
