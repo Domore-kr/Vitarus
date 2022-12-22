@@ -1114,10 +1114,8 @@ figcaption {
 }
 
 .text-block {
-  display: grid;
+  display: flex;
   margin-bottom: 27px;
-  column-gap: 29px;
-  grid-template-columns: repeat(2, 49%);
 }
 
 .aboutUs-ref {
@@ -3230,8 +3228,12 @@ input[type="checkbox"]:checked + label:before {
   -o-transition: background-color var(--interact-duration) linear;
   transition: background-color var(--interact-duration) linear;
 
-  background: #f3f3f3;
+  background-color: rgb(10, 115, 86, 0.35);
   border-radius: 20px;
+}
+
+.section__item:hover {
+  background-color: rgb(10, 115, 86);
 }
 
 .section__item_last:before {
@@ -3247,6 +3249,15 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transition: left var(--interact-duration) linear;
   -o-transition: left var(--interact-duration) linear;
   transition: left var(--interact-duration) linear;
+  transition: 0.5s;
+}
+
+.section__item_last:hover::before {
+  transform: translate(20px, 0);
+  -webkit-transform: translate(20px, 0);
+  -o-transform: translate(20px, 0);
+  -moz-transform: translate(20px, 0);
+  transition: 0.5s;
 }
 
 .section__text {
