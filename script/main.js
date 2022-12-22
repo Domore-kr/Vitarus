@@ -9,20 +9,30 @@
     };
 })();
 
-
 // Burger 
+
   const burger__btn = document.querySelector('.dropbtn')
   const burger__content = document.getElementById('dropdown-content')
   const body = document.querySelector('body');
+
+  const toggleBurger = () => {
+    burger__btn.classList.toggle('active')
+    burger__content.classList.toggle('active__content')
+    body.classList.toggle('lock')
+  }
+
   burger__btn.addEventListener('click', (e) => {
-    if (burger__content.classList.contains('active__content')) {
-      burger__btn.classList.remove('active')
-      burger__content.classList.remove('active__content')
-      body.classList.remove('lock')
-    } else {
-      burger__btn.classList.add('active')
-      burger__content.classList.add('active__content')
-      body.classList.add('lock')
+    e.stopPropagation();
+    toggleBurger();
+  })
+
+  document.addEventListener('click', (e) => {
+    let its__content = e.target == burger__content || burger__content.contains(e.target);
+    let its__burger = e.target == burger__btn;
+    let menu__is__active = burger__content.classList.contains('active__content');
+    
+    if (!its__content && !its__burger && menu__is__active) {
+      toggleBurger();
     }
   })
 
@@ -39,6 +49,30 @@ if (document.querySelector('.button-pause')) {
     }
   });
 }
+
+// Popup contacts header
+
+const popup__contacts = document.querySelector('.popup__contacts')
+const popup__body = popup__contacts.querySelector('.popup__body')
+const close__popup__contacts = popup__contacts.querySelector('.close__btn')
+const button__popup__contacts = document.querySelectorAll('.connection-button')
+
+button__popup__contacts.forEach(element => {element.addEventListener('click', () => {
+  body.classList.add('lock');
+  popup__contacts.classList.add('open');
+});})
+
+close__popup__contacts.addEventListener('click', () => {
+  body.classList.remove('lock');
+  popup__contacts.classList.remove('open');
+});
+
+document.addEventListener('click', (e) => {
+  if (e.target === popup__body) {
+    body.classList.remove('lock');
+    popup__contacts.classList.remove('open');
+  }
+})
 
 // Change content header
 
@@ -145,7 +179,30 @@ class Tabs__header {
   new Tabs('.popular-goods');
   new Tabs('.series');
 
+// Search field
 
+const search__container = document.querySelector('.search-container')
+const search__btn = search__container.querySelector('.search__btn')
+const search__input = search__container.querySelector('.search__input')
+
+const toggleInput = () => {
+  search__input.classList.toggle('active');
+}
+
+search__btn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  search__input.classList.add('active');
+})
+
+document.addEventListener('click', (e) => {
+  let its_menu = e.target == search__container || search__container.contains(e.target);
+  let its_btn = e.target == search__btn;
+  let menu_is_active = search__input.classList.contains('active');
+  
+  if (!its_menu && !its_btn && menu_is_active) {
+    toggleInput();
+  }
+})
 
 // Swipers 
 
@@ -279,7 +336,10 @@ class Tabs__header {
       prevEl: ".reviews__btn__prev",
     },
     breakpoints: {
-      1024: {
+      768: {
+        slidesPerView: 4,
+      },
+      375: {
         slidesPerView: 3,
       },
     }
