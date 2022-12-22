@@ -1475,7 +1475,7 @@ figcaption {
 }
 
 .client-block {
-  min-width: 260px;
+  min-width: 200px;
   min-height: 130px;
   background: #f3f3f3;
   border-radius: 20px;
@@ -1632,6 +1632,10 @@ svg {
 
 .scale:hover {
   transform: scale(1.2);
+}
+
+.client-image {
+  width: auto;
 }
 
 /* Карточка товара 1 */
@@ -3391,9 +3395,9 @@ input[type="checkbox"]:checked + label:before {
   grid-gap: 40px;
   grid-auto-rows: minmax(auto, auto);
   grid-template-areas:
-  "item_1 item_2 item_3"
-  "item_1 item_4 item_5"
-  "item_6 item_6 item_7";
+    "item_1 item_2 item_3"
+    "item_1 item_4 item_5"
+    "item_6 item_6 item_7";
 }
 
 .item_1 {
