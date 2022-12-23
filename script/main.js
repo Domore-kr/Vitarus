@@ -284,31 +284,21 @@ function portfolio__swiper(section) {
       spaceBetween: 30,
       direction: "vertical",
       breakpoints: {
-        640: {
-          slidesPerView: 2,
-          direction: "horizontal",
-        },
-
         320: {
-          slidesPerView: 1,
           direction: "horizontal",
         },
-
+        640: {
+          direction: "horizontal",
+        },
         900: {
           direction: "vertical",
         },
       },
     });
 
-    const nextBtn = document
-      .querySelector(section)
-      .querySelector(".swiper-button-next");
-    const prevBtn = document
-      .querySelector(section)
-      .querySelector(".swiper-button-prev");
-    const pagination = document
-      .querySelector(section)
-      .querySelector(".swiper-pagination");
+    const nextBtn = document.querySelector(section).querySelector(".swiper-button-next");
+    const prevBtn = document.querySelector(section).querySelector(".swiper-button-prev");
+    const pagination = document.querySelector(section).querySelector(".swiper-pagination");
 
     const gallery__top = new Swiper(
       document.querySelector(section).querySelector(".gallery-top"),
@@ -335,15 +325,10 @@ portfolio__swiper(".portfolio");
 
 // Change img
 
-const slides__thumbs = document
-  .querySelector(".gallery-thumbs")
-  .querySelectorAll(".swiper-slide");
+const slides__thumbs = document.querySelector(".gallery-thumbs").querySelectorAll(".swiper-slide");
 slides__thumbs.forEach((slide) => {
   slide.addEventListener("click", (e) => {
-    const active__big__img = document
-      .querySelector(".gallery-top ")
-      .querySelector(".swiper-slide-active")
-      .querySelector("img");
+    const active__big__img = document.querySelector(".gallery-top ").querySelector(".swiper-slide-active").querySelector("img");
     if (e.target.src != undefined) {
       active__big__img.src = e.target.src;
     }
@@ -359,10 +344,13 @@ const ideas__swiper = new Swiper(".ideas__swiper", {
     },
 
     768: {
+      slidesPerView: 3,
+    },
+    425: {
       slidesPerView: 2,
     },
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
   },
 });
@@ -384,15 +372,16 @@ const news__swiper = new Swiper(".news__swiper", {
     prevEl: ".news__btn__prev",
   },
   breakpoints: {
-    1024: {
-      slidesPerView: 4,
-    },
-
-    768: {
-      slidesPerView: 2,
-    },
     320: {
       slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
     },
   },
 });
@@ -404,6 +393,19 @@ const subSwiperThumbs = new Swiper(".sub-swiper-thumbs", {
   navigation: {
     nextEl: ".news__btn__next",
     prevEl: ".news__btn__prev",
+  },
+  breakpoints: {
+    290: {
+      slidesPerView: 2,
+      direction: "horizontal",
+    },
+    640: {
+      slidesPerView: 3,
+      direction: "horizontal",
+    },
+    1024: {
+      direction: "vertical",
+    },
   },
 });
 
@@ -441,15 +443,16 @@ const reviews__swiper = new Swiper(".reviews__swiper", {
     prevEl: ".reviews__btn__prev",
   },
   breakpoints: {
-    1024: {
-      slidesPerView: 4,
-    },
-
-    768: {
-      slidesPerView: 2,
-    },
     320: {
       slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
     },
   },
 });

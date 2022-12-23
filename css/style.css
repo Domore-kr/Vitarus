@@ -2505,7 +2505,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .dropbtn {
-    /* display: none; */
     text-indent: -999999px;
     justify-content: center;
   }
@@ -2564,6 +2563,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .intro {
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 
@@ -2597,7 +2597,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .page {
-    margin: 0 20px;
+    padding: 0 20px;
     margin-bottom: 80px;
     width: auto;
   }
@@ -2664,7 +2664,6 @@ input[type="checkbox"]:checked + label:before {
   .tags {
     overflow: scroll;
     flex-wrap: nowrap;
-    width: 94.4vw;
   }
 
   .button-tag {
@@ -2698,10 +2697,6 @@ input[type="checkbox"]:checked + label:before {
   .inform-caption {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .button-block-portfolio {
-    display: none;
   }
 
   .big-img-container {
@@ -2879,27 +2874,7 @@ input[type="checkbox"]:checked + label:before {
   .aboutUs-ref-bottom {
     display: block;
   }
-
-  .img-list-popular {
-    width: 94.4vw;
-  }
-
-  .img-list-container {
-    width: 94.4vw;
-  }
-
-  .swiper-wrap {
-    width: 94.4vw;
-  }
-
-  .news-container {
-    width: 94.4vw;
-  }
-
-  .clients-containers {
-    width: 94.4vw;
-  }
-
+  
   /* Карточка товара 1 */
 
   .path {
@@ -3181,9 +3156,112 @@ input[type="checkbox"]:checked + label:before {
     height: 100%;
     column-gap: unset;
   }
+
   .tag {
     margin-bottom: 0;
   }
+
+  .portfolio__swiper .btns__container {
+    position: unset;
+    justify-content: center;
+  }
+
+  .button-block-portfolio {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .portfolio .gallery-top .swiper-slide img {
+    min-height: 390px;
+  }
+
+  .portfolio__swiper .btns__container .swiper-pagination {
+    width: auto;
+  }
+
+  .portfolio .gallery-thumbs .swiper-slide {
+    max-width: unset;
+    max-height: 170px;
+    min-height: unset;
+    min-width: unset;
+  }
+
+  .portfolio .gallery-thumbs .swiper-slide img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio .sub-swiper-thumbs {
+    max-width: 100%;
+  }
+
+  .series__swiper {
+    max-width: 100%;
+  }
+
+  .series .tabs__pane {
+    flex-direction: column;
+  }
+
+  .text-series {
+    max-width: 100%;
+  }
+
+  .popular__swiper {
+    margin: 0 -20px;
+    padding: 0 60px 0 20px;
+  }
+
+  .popular-goods .tabs__content,
+  .popular-goods .tabs__buttons {
+    margin: 0 -20px;
+  }
+  
+  .popular-goods .tags__swiper {
+    padding: 0 20px;
+  }
+
+  .popular-goods .tabs__pane{
+    padding: 0 20px;
+  }
+
+  .ideas__swiper {
+    margin: 0 -20px;
+    padding: 0 30px 0 20px;
+  }
+
+  .news__swiper {
+    margin: 0 -20px;
+    padding: 0 60px 80px 20px;
+  }
+
+  .news-block {
+    max-width: 100%;
+  }
+
+  .clients__swiper {
+    margin: 0 -20px;
+    padding: 0 30px 0 20px;
+  }
+
+  .reviews .swiper-button-next,
+  .reviews .swiper-button-prev {
+    top: 93%;
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+  }
+
+  .swiper-button-next {
+    right: 20px;
+  }
+
+  .reviews__swiper {
+    margin: 0 -20px;
+    padding: 0 60px 80px 20px;
+  }
+
 }
 
 @media (min-width: 1920px) {
@@ -3545,7 +3623,7 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 1023px) {
   .container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(50% - 10px ) calc(50% - 10px);
     grid-gap: 20px;
     overflow: hidden;
     grid-auto-rows: minmax(auto, auto);
