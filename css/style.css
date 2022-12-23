@@ -3625,7 +3625,6 @@ input[type="checkbox"]:checked + label:before {
   .container {
     grid-template-columns: calc(50% - 10px ) calc(50% - 10px);
     grid-gap: 20px;
-    overflow: hidden;
     grid-auto-rows: minmax(auto, auto);
     grid-template-areas:
       "item_1 item_1"
