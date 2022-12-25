@@ -1232,8 +1232,68 @@ figcaption {
   transition: 0.2s ease all;
 }
 
+.pin svg{
+  cursor: pointer;
+}
+
 .pin svg:hover .paint {
   fill: #0a7356;
+}
+
+.popup__idea__pin {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  z-index: 1;
+  transition: 0.2s ease all;
+}
+
+.pin__container {
+  position: relative;
+}
+
+.pin__container:hover .popup__idea__pin {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__idea__pin.right__top {
+  bottom: 36px;
+  left: 30px;
+}
+
+.popup__idea__pin.right__bottom {
+  top: 35px;
+  left: 28px;
+}
+
+.popup__idea__pin.left__top {
+  bottom: 30px;
+  right: 98%;
+}
+
+.popup__idea__pin.left__bottom {
+  top: 30px;
+  right: 85%;
+}
+
+.popup__idea__pin .title{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup__idea__pin a button{
+  background: 0;
+  border: 0;
 }
 
 .image-container-idea {
