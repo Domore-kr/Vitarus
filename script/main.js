@@ -138,11 +138,13 @@ class Tabs {
     this._config = Object.assign(defaultConfig, config);
     this._elTabs =
       typeof target === "string" ? document.querySelector(target) : target;
-    this._elButtons = this._elTabs.querySelectorAll(".tabs__btn");
-    this._elPanes = this._elTabs.querySelectorAll(".tabs__pane");
-    this._eventShow = new Event("tab.itc.change");
-    this._init();
-    this._events();
+    if (this._elTabs) {
+      this._elButtons = this._elTabs.querySelectorAll(".tabs__btn");
+      this._elPanes = this._elTabs.querySelectorAll(".tabs__pane");
+      this._eventShow = new Event("tab.itc.change");
+      this._init();
+      this._events();
+    }
   }
   _init() {
     this._elTabs.setAttribute("role", "tablist");
@@ -239,7 +241,7 @@ const popular__swiper = new Swiper(".popular__swiper", {
 });
 
 function series__swiper(section, container__swiper) {
-  if (section) {
+  if (document.querySelector(section)) {
     const slider__section = Array.from(
       document.querySelector(section).querySelectorAll(container__swiper)
     );
@@ -265,6 +267,7 @@ function series__swiper(section, container__swiper) {
     });
   }
 }
+
 series__swiper(".series", ".tabs__pane");
 
 const video__swiper = new Swiper(".video__swiper", {
