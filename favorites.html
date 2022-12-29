@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <title>Карточка товара-2</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>favorites</title>
   </head>
   <body>
     <header class="hat">
@@ -628,7 +625,7 @@
     </header>
 
     <main class="page">
-      <nav class="path">
+      <nav class="path path_favorites">
         <ul class="menu-list menu-list-card">
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
@@ -638,235 +635,123 @@
           </li>
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
-              ><p class="catalog-text">Услуги</p>
+              ><p class="catalog-text">Избранное</p>
               <img src="/svg/right-arrow.svg" alt=""
             /></a>
-          </li>
-          <li class="menu-link menu-link-card">
-            <a href="#" class="menu-link-ref menu-link-ref-catalog"
-              ><p class="catalog-text">Планировочные решения</p>
-            </a>
           </li>
         </ul>
       </nav>
 
-      <div class="main-sidebar-container">
-        <div class="mobile-sidebar">
-          <div class="button-container mobile-button-container">
-            <button class="button mobile-button-sidebar">
-              <img src="/svg/drag-handle-horizontal-greeen.svg" alt="" />
-              Каталог
-            </button>
-          </div>
-          <div class="button-container mobile-button-container">
-            <button class="button mobile-button-sidebar">
-              <img src="/svg/adjustments.svg" alt="" />
-              Фильтры
-            </button>
-          </div>
-        </div>
-        <div class="sidebar">
-          <nav>
-            <ul
-              class="menu-list menu-list-dropdown menu-list-dropdown-first sidebar-container"
-            >
-              <li class="dropdown-link sidebar-link sidebar-link-head">
-                Каталог
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  Библиотечная мебель
-                </button>
-              </li>
-              <li class="dropdown-lin sidebar-linkk">
-                <button class="menu-link-ref button-sidebar">
-                  Музейное оборудование
-                </button>
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  Оборудование RFID
-                </button>
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  Мебель для ВУЗов
-                </button>
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  Мебель для ДШИ
-                </button>
-              </li>
-            </ul>
+      <h1 class="favorites_head">Избранное</h1>
 
-            <ul
-              class="menu-list menu-list-dropdown menu-list-dropdown-first sidebar-container"
-            >
-              <li class="dropdown-link sidebar-link sidebar-link-head">
-                Фильтры
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  По изделиям
-                </button>
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">По сериям</button>
-              </li>
-              <li class="dropdown-link sidebar-link">
-                <button class="menu-link-ref button-sidebar">
-                  По сферам применения
-                </button>
-              </li>
-            </ul>
-          </nav>
+      <section class="buyer_information">
+        <div class="head-button-container">
+          <h2 class="buyer_head">Информация о покупателе</h2>
+          <button class="button_hide">
+            <img src="/svg/favorite_arrow_up.svg" alt="" />
+          </button>
         </div>
-
-        <div class="foundation">
-          <section class="information-card">
-            <h1 class="caption caption-card-information">
-              Планировочные решения
-            </h1>
-            <p class="text text-information-card">
-              Разработка планировочного решения. Единоразово нашим клиентам мы
-              выдаем три варианта планировок. Далее, мы начинаем их обсуждать,
-              вносить изменения и корректировки. Это нормально, что какие-то
-              моменты мы берем с первого варианта, что-то берем со второго,
-              что-то с третьего. Нам важно на каждом этапе «прожить» несколько
-              дней в квартире или доме, представить, как просыпаются наши
-              клиенты, как идут в душ, готовят и т.д. Этот этап — залог того,
-              что в квартире будет удобно жить конкретному человеку или семье.
-            </p>
-            <p class="text text-information-card">
-              Разработка планировочного решения. Единоразово нашим клиентам мы
-              выдаем три варианта планировок. Далее, мы начинаем их обсуждать,
-              вносить изменения и корректировки. Это нормально, что какие-то
-              моменты мы берем с первого варианта, что-то берем со второго,
-              что-то с третьего. Нам важно на каждом этапе «прожить» несколько
-              дней в квартире или доме, представить, как просыпаются наши
-              клиенты, как идут в душ, готовят и т.д. Этот этап — залог того,
-              что в квартире будет удобно жить конкретному человеку или семье.
-            </p>
-          </section>
-          <div class="scheme">
-            <article class="sheme-image">
-              <h3 class="caption caption-scheme">Фото 1</h3>
-              <div class="image-container">
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="/images/scheme-one-mini.png"
-                  />
-                  <img src="/images/scheme-one.png" alt="" />
-                </picture>
-              </div>
-            </article>
-            <article class="sheme-image">
-              <h3 class="caption caption-scheme">Фото 2</h3>
-              <div class="image-container">
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="/images/scheme-two-mini.png"
-                  />
-                  <img src="/images/scheme-two.png" alt="" />
-                </picture>
-              </div>
-            </article>
+        <form action="#0" class="form_buyer">
+          <div class="forma_favorite forma_name">
+            <span class="forma_head">Ваше Имя *</span>
+            <input
+              class="input_favorite"
+              type="text"
+              placeholder="Максим"
+              required
+            />
           </div>
-          <section class="sample">
-            <h2 class="caption caption-card-information">
-              Образец Планировочного решения
-            </h2>
-            <p class="text text-information-card">
-              Зачастую, планировочное решение заказывают еще на этапе покупки
-              недвижимости, чтобы уже заранее оценить насколько помещение будет
-              соответствовать требованиям конкретной семьи.
-            </p>
+          <div class="forma_favorite forma_phone">
+            <span class="forma_head">Телефон *</span>
+            <input
+              class="input_favorite"
+              type="text"
+              placeholder="+7 960 100 50 50"
+              required
+            />
+          </div>
+          <div class="forma_favorite forma_company">
+            <span class="forma_head">Название компании</span>
+            <input
+              class="input_favorite"
+              type="text"
+              placeholder="ОАО “Безымянный”"
+              required
+            />
+          </div>
+          <div class="forma_favorite forma_email">
+            <span class="forma_head">Email</span>
+            <input
+              class="input_favorite"
+              type="text"
+              placeholder="User@mail.ru"
+              required
+            />
+          </div>
+          <div class="forma_favorite forma_adress">
+            <span class="forma_head">Адрес доставки</span>
+            <input
+              class="input_favorite"
+              type="text"
+              placeholder="Адрес"
+              required
+            />
+          </div>
+          <div class="forma_favorite forma_delivery">
+            <span class="forma_head">Доставка</span>
+            <select class="input_favorite input_favorite_select">
+              <option>Самовывоз</option>
+              <option>Доставка</option>
+            </select>
+          </div>
+          <div class="forma_favorite forma_comment">
+            <span class="forma_head">Комментарий</span>
+            <textarea
+              class="input_favorite input_favorite_textarea"
+              name=""
+              id=""
+              rows="5"
+              placeholder="Напишите здесь"
+            ></textarea>
+          </div>
+        </form>
+      </section>
 
-            <div class="scheme-container">
-              <div class="scheme-img-container">
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="/images/sample-scheme-mini.png"
-                  />
-                  <img src="/images/sample-scheme.png" alt="" />
-                </picture>
-              </div>
-              <div class="scheme-img-container">
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="/images/sample-scheme-mini.png"
-                  />
-                  <img src="/images/sample-scheme.png" alt="" />
-                </picture>
-              </div>
-              <div class="scheme-img-container">
-                <picture>
-                  <source
-                    media="(max-width: 899px)"
-                    srcset="/images/sample-scheme-mini.png"
-                  />
-                  <img src="/images/sample-scheme.png" alt="" />
-                </picture>
-              </div>
-            </div>
-          </section>
-          <section class="contact-form">
-            <h2 class="caption">Форма обратной связи</h2>
-            <div class="form-container">
-              <form action="">
-                <div class="field-container">
-                  <div class="forma">
-                    <span class="form-head">Название организации</span>
-                    <input
-                      type="text"
-                      class="field"
-                      placeholder="ИП Александр"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Контактное лицо</span>
-                    <input
-                      type="text"
-                      class="field"
-                      placeholder="Александр"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Телефон</span>
-                    <input
-                      type="tel"
-                      class="field"
-                      placeholder="+7 960 000 00 00"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Email</span>
-                    <input
-                      type="email"
-                      class="field"
-                      placeholder="User@mail.ru"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="button-block-field">
-                  <div class="button-container button-container-field">
-                    <button class="button">Заказать проект</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </section>
-        </div>
-      </div>
+      <section class="basket">
+        <article class="basket_product">
+          <div class="basket_product_image_container">
+            <img src="/images/basket_image.png" alt="" />
+          </div>
+          <h3 class="basket_product_name">Кафедра выдачи Г.001.009</h3>
+          <span class="basket_product_description">Артикул: Г.001.009</span>
+          <span class="basket_product_description">Размер: 4000х750х600</span>
+          <button class="basket_product_del">
+            <img src="/svg/basket_del.svg" alt="" />
+          </button>
+        </article>
+        <article class="basket_product">
+          <div class="basket_product_image_container">
+            <img src="/images/basket_image.png" alt="" />
+          </div>
+          <h3 class="basket_product_name">Кафедра выдачи Г.001.009</h3>
+          <span class="basket_product_description">Артикул: Г.001.009</span>
+          <span class="basket_product_description">Размер: 4000х750х600</span>
+          <button class="basket_product_del">
+            <img src="/svg/basket_del.svg" alt="" />
+          </button>
+        </article>
+        <article class="basket_product">
+          <div class="basket_product_image_container">
+            <img src="/images/basket_image.png" alt="" />
+          </div>
+          <h3 class="basket_product_name">Кафедра выдачи Г.001.009</h3>
+          <span class="basket_product_description">Артикул: Г.001.009</span>
+          <span class="basket_product_description">Размер: 4000х750х600</span>
+          <button class="basket_product_del">
+            <img src="/svg/basket_del.svg" alt="" />
+          </button>
+        </article>
+      </section>
     </main>
 
     <footer class="foot">
@@ -878,21 +763,29 @@
             </h3>
             <ul class="aboutCompany-list">
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Дизайн бюро</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Дизайн бюро</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Производство</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Производство</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >Некоммерческая научная деятельность</a
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Гарантии</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Вакансии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Вакансии</a
+                >
               </li>
             </ul>
           </article>
@@ -900,18 +793,22 @@
             <h3 class="caption inform-caption">Покупателям</h3>
             <ul class="aboutCompany-list">
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Услуги</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot">Услуги</a>
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Каталог</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Каталог</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >ФП Новая Библиотека</a
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Гарантии</a
+                >
               </li>
             </ul>
           </article>
@@ -933,29 +830,30 @@
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >Рязань, ул. Керамзавода, 21А</a
                 >
               </li>
             </ul>
             <div class="icons">
               <div class="icon-container">
-                <a href="#"><img src="/svg/youtube.svg" alt="" /></a>
+                <a href=""><img src="svg/youtube.svg" alt="" /></a>
               </div>
               <div class="icon-container">
-                <a href="#"><img src="/svg/image9.svg" alt="" /></a>
+                <a href=""><img src="svg/image9.svg" alt="" /></a>
               </div>
             </div>
           </address>
         </div>
         <div class="copyright-politics">
-          <a href="#" class="copyright"
+          <a href="#!" class="copyright"
             >© 2022 ВитаРус. Информация сайта защищена законом об авторских
             правах</a
           >
-          <a href="#" class="politics">Политика конфиденциальности</a>
+          <a href="#!" class="politics">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
+    <script src="./script/main.js"></script>
   </body>
 </html>

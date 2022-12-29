@@ -15,6 +15,10 @@
   user-select: none;
 }
 
+body {
+  margin-top: 220px;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -38,7 +42,6 @@ figure {
 }
 
 .hat {
-  padding-bottom: 20px;
   position: fixed;
   top: 0;
   background: #fff;
@@ -873,6 +876,7 @@ figure {
   width: 1140px;
   margin: auto;
   margin-bottom: 100px;
+  margin-top: 200px;
 }
 
 .catalog {
@@ -2433,7 +2437,218 @@ input[type="checkbox"]:checked + label:before {
   transition-delay: 0.1s;
 }
 
+/* Избранное */
+
+.path_favorites {
+  margin-bottom: 88px;
+}
+
+.favorites_head {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  color: #292a2a;
+}
+
+.buyer_information {
+  background: #f3f3f3;
+  border-radius: 30px;
+  padding: 40px;
+  margin-bottom: 70px;
+}
+
+.head-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 45px;
+}
+
+.buyer_head {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+.button_hide {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.form_buyer {
+  display: grid;
+  gap: 25px 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "forma_name forma_phone"
+    "forma_company forma_email"
+    "forma_adress forma_delivery"
+    "forma_comment forma_comment";
+}
+
+.forma_favorite {
+  display: flex;
+  flex-direction: column;
+}
+
+.forma_head {
+  padding: 0 0 5px 20px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+.input_favorite {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  isolation: isolate;
+}
+
+.input_favorite_select {
+  appearance: none;
+  background-image: url(/svg/arrow_custom.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 25px);
+}
+
+.input_favorite_textarea {
+  resize: none;
+  overflow: hidden;
+  max-height: 190px;
+}
+
+.forma_name {
+  grid-area: forma_name;
+}
+
+.forma_phone {
+  grid-area: forma_phone;
+}
+
+.forma_company {
+  grid-area: forma_company;
+}
+
+.forma_email {
+  grid-area: forma_email;
+}
+
+.forma_adress {
+  grid-area: forma_adress;
+}
+
+.forma_delivery {
+  grid-area: forma_delivery;
+}
+
+.forma_comment {
+  grid-area: forma_comment;
+}
+
+.basket_product {
+  padding: 20px 40px;
+  background: #f3f3f3;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket_product:nth-last-child(n + 2) {
+  margin-bottom: 20px;
+}
+
+.basket_product_name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+.basket_product_description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+.basket_product_del {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+}
+
 @media (min-width: 1141px) and (max-width: 1919px) {
+  body {
+    margin-top: 220px;
+  }
+
   .headbar {
     padding: 21.87px 9.72% 15px;
   }
@@ -2486,6 +2701,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 1140px) {
+  body {
+    margin-top: 202px;
+  }
+
   .logobar {
     width: auto;
   }
@@ -2508,6 +2727,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 899px) {
+  body {
+    margin-top: 137px;
+  }
+
   .portfolio .gallery-top .swiper-slide img {
     margin-top: 50px;
   }
@@ -3347,6 +3570,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (min-width: 1920px) {
+  body {
+    margin-top: 200px;
+  }
+
   .content-container {
     max-width: 1440px;
     width: 1440px;
@@ -3561,6 +3788,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 460px) {
+  body {
+    margin-top: 87px;
+  }
+
   .scheme-container {
     overflow-x: scroll;
   }
