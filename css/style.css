@@ -2618,6 +2618,8 @@ input[type="checkbox"]:checked + label:before {
   /* Monochromic/200 */
 
   color: #292a2a;
+
+  padding-right: 10px;
 }
 
 .basket_product_description {
@@ -2631,6 +2633,8 @@ input[type="checkbox"]:checked + label:before {
   /* Monochromic/200 */
 
   color: #292a2a;
+
+  padding-right: 10px;
 }
 
 .basket_product_del {
