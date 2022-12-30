@@ -2679,6 +2679,141 @@ input[type="checkbox"]:checked + label:before {
   margin-left: auto;
 }
 
+/* Поиск */
+
+.search_container {
+  background: #f3f3f3;
+  border-radius: 30px;
+  padding: 25px 40px;
+  margin-bottom: 50px;
+}
+
+.search_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.input_search {
+  height: 60px;
+}
+
+.forma_search {
+  min-width: 280px;
+  width: 320px;
+  padding-right: 10px;
+}
+
+.search_button {
+  margin: 0;
+}
+
+.search_button {
+  height: 60px;
+  min-width: 260px;
+  width: 320px;
+  justify-content: center;
+}
+
+.search_product_container {
+  background: #f3f3f3;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+.search_product_container {
+  margin-bottom: 30px;
+}
+
+.search_img_container {
+  margin-right: 30px;
+}
+
+.search_product_head_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.search_product_head {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+.search_date {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: right;
+
+  /* Monochromic/150 */
+
+  color: #b7b7b7;
+}
+
+.search_product_description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.search_product_path {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Monochromic/150 */
+
+  color: #b7b7b7;
+
+  display: flex;
+  list-style-type: none;
+}
+
+.search_product_path li a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Monochromic/150 */
+
+  color: #b7b7b7;
+  text-decoration: underline;
+}
+
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
@@ -3651,6 +3786,46 @@ input[type="checkbox"]:checked + label:before {
     display: block;
     margin-bottom: 10px;
   }
+
+  /* Поиск */
+
+  .search-container {
+    padding: 25px 20px 30px;
+  }
+
+  .forma_search {
+    width: 280px;
+  }
+
+  .search_button {
+    width: 280px;
+  }
+
+  .search_product_container {
+    flex-direction: column;
+  }
+
+  .search_img_container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .search_img_container picture img {
+    width: 100%;
+  }
+
+  .search_product_head_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search_product_head_container a {
+    order: 2;
+  }
+
+  .search_date {
+    order: 1;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -4041,6 +4216,17 @@ input[type="checkbox"]:checked + label:before {
   figure {
     margin: 0;
     padding: 20px;
+  }
+
+  /* Поиск */
+  .search_form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forma_search {
+    margin-bottom: 25px;
+    padding: 0;
   }
 }
 
