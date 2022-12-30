@@ -2694,10 +2694,6 @@ input[type="checkbox"]:checked + label:before {
   align-items: end;
 }
 
-.input_search {
-  height: 60px;
-}
-
 .forma_search {
   min-width: 280px;
   width: 320px;
