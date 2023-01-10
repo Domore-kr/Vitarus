@@ -877,6 +877,7 @@ figure {
   width: 1140px;
   margin: auto;
   margin-bottom: 100px;
+  margin-top: 200px;
 }
 
 .catalog {
@@ -3781,13 +3782,10 @@ input[type="checkbox"]:checked + label:before {
     display: block;
     margin-bottom: 10px;
   }
-  .product-cards {
-    justify-content: center;
-  }
 
-   /* Поиск */
+  /* Поиск */
 
-   .search-container {
+  .search-container {
     padding: 25px 20px 30px;
   }
 
