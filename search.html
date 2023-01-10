@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Каталог</title>
+    <title>Search</title>
   </head>
   <body>
     <header class="hat">
@@ -435,8 +434,8 @@
             </form>
           </div>
           <!-- <button href="#!" class="svg-button">
-            <img src="svg/user.svg" alt="user" class="svg" />
-          </button> -->
+                <img src="svg/user.svg" alt="user" class="svg" />
+              </button> -->
           <button href="#!" class="svg-button">
             <img src="svg/heart.svg" alt="heart" class="svg" />
           </button>
@@ -626,614 +625,228 @@
     </header>
 
     <main class="page">
-      <nav class="path">
+      <nav class="path path_favorites">
         <ul class="menu-list menu-list-card">
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Главная</p>
-              <img src="svg/right-arrow.svg" alt=""
+              <img src="/svg/right-arrow.svg" alt=""
             /></a>
           </li>
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
-              ><p class="catalog-text">Каталог</p></a
-            >
+              ><p class="catalog-text">Поиск</p>
+              <img src="/svg/right-arrow.svg" alt=""
+            /></a>
           </li>
         </ul>
       </nav>
 
-      <div class="top-button-catalog-container">
-        <div class="swiper swiper__catalog__btns">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="button-catalog-block">
-                <button class="scale">
-                  <img
-                    class="button-catalog-img-top"
-                    src="svg/Furniture-one.svg"
-                    alt=""
-                  />Мебель для библиотек
-                </button>
-              </div>
+      <h1 class="favorites_head">Поиск</h1>
+
+      <section class="search_container">
+        <form action="#0" class="search_form">
+          <div class="forma_favorite forma_search forma_name">
+            <span class="forma_head">Что ищем</span>
+            <input
+              class="input_favorite input_search"
+              type="text"
+              placeholder="Максим"
+              required
+            />
+          </div>
+          <div class="forma_favorite forma_search forma_delivery">
+            <span class="forma_head">Где ищем</span>
+            <select class="input_favorite input_favorite_select input_search">
+              <option>Везде</option>
+              <option>Не везде</option>
+            </select>
+          </div>
+          <button class="basket_button_container search_button">
+            <img src="/svg/white_loupe.svg" alt="" />Поиск
+          </button>
+        </form>
+      </section>
+
+      <section class="search_list">
+        <article class="search_product_container">
+          <div class="search_img_container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/search_img_mobile.png"
+              />
+              <img src="/images/search_img.png" alt="" />
+            </picture>
+          </div>
+          <div class="search_product_content">
+            <div class="search_product_head_container">
+              <a href=""
+                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
+              >
+              <span class="search_date">Изменен: 02.10.2021</span>
             </div>
-            <div class="swiper-slide">
-              <div class="button-catalog-block">
-                <button class="scale">
-                  <img
-                    class="button-catalog-img-top"
-                    src="svg/Furniture-two.svg"
-                    alt=""
-                  />Мебель для библиотек
-                </button class="scale">
-              </div>
+            <span class="search_product_description"
+              >Мебель для детей требует особого подхода к проектированию и
+              производству. Здесь не должно быть острых углов, токсичных красок
+              или опасных ...</span
+            >
+            <ul class="search_product_path">
+              <li>Путь:</li>
+              <li><a href="#">Главная</a></li>
+              <li>/</li>
+              <li><a href="#">Каталог библиотечной мебели</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="search_product_container">
+          <div class="search_img_container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/search_img_mobile.png"
+              />
+              <img src="/images/search_img.png" alt="" />
+            </picture>
+          </div>
+          <div class="search_product_content">
+            <div class="search_product_head_container">
+              <a href=""
+                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
+              >
+              <span class="search_date">Изменен: 02.10.2021</span>
             </div>
-            <div class="swiper-slide">
-              <div class="button-catalog-block">
-                <button class="scale">
-                  <img
-                    class="button-catalog-img-top"
-                    src="svg/Furniture-two.svg"
-                    alt=""
-                  />Мебель для библиотек
-                </button>
-              </div>
+            <span class="search_product_description"
+              >Мебель для детей требует особого подхода к проектированию и
+              производству. Здесь не должно быть острых углов, токсичных красок
+              или опасных ...</span
+            >
+            <ul class="search_product_path">
+              <li>Путь:</li>
+              <li><a href="#">Главная</a></li>
+              <li>/</li>
+              <li><a href="#">Каталог библиотечной мебели</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="search_product_container">
+          <div class="search_img_container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/search_img_mobile.png"
+              />
+              <img src="/images/search_img.png" alt="" />
+            </picture>
+          </div>
+          <div class="search_product_content">
+            <div class="search_product_head_container">
+              <a href=""
+                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
+              >
+              <span class="search_date">Изменен: 02.10.2021</span>
             </div>
-            <div class="swiper-slide">
-              <div class="button-catalog-block">
-                <button class="scale">
-                  <img
-                    class="button-catalog-img-top"
-                    src="svg/Furniture-three.svg"
-                    alt=""
-                  />Мебель для библиотек
-                </button>
-              </div>
+            <span class="search_product_description"
+              >Мебель для детей требует особого подхода к проектированию и
+              производству. Здесь не должно быть острых углов, токсичных красок
+              или опасных ...</span
+            >
+            <ul class="search_product_path">
+              <li>Путь:</li>
+              <li><a href="#">Главная</a></li>
+              <li>/</li>
+              <li><a href="#">Каталог библиотечной мебели</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="search_product_container">
+          <div class="search_img_container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/search_img_mobile.png"
+              />
+              <img src="/images/search_img.png" alt="" />
+            </picture>
+          </div>
+          <div class="search_product_content">
+            <div class="search_product_head_container">
+              <a href=""
+                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
+              >
+              <span class="search_date">Изменен: 02.10.2021</span>
             </div>
-            <div class="swiper-slide">
-              <div class="button-catalog-block">
-                <button class="scale">
-                  <img
-                    class="button-catalog-img-top"
-                    src="svg/Furniture-two.svg"
-                    alt=""
-                  />Мебель для библиотек
-                </button>
-              </div>
+            <span class="search_product_description"
+              >Мебель для детей требует особого подхода к проектированию и
+              производству. Здесь не должно быть острых углов, токсичных красок
+              или опасных ...</span
+            >
+            <ul class="search_product_path">
+              <li>Путь:</li>
+              <li><a href="#">Главная</a></li>
+              <li>/</li>
+              <li><a href="#">Каталог библиотечной мебели</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="search_product_container">
+          <div class="search_img_container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/search_img_mobile.png"
+              />
+              <img src="/images/search_img.png" alt="" />
+            </picture>
+          </div>
+          <div class="search_product_content">
+            <div class="search_product_head_container">
+              <a href=""
+                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
+              >
+              <span class="search_date">Изменен: 02.10.2021</span>
             </div>
+            <span class="search_product_description"
+              >Мебель для детей требует особого подхода к проектированию и
+              производству. Здесь не должно быть острых углов, токсичных красок
+              или опасных ...</span
+            >
+            <ul class="search_product_path">
+              <li>Путь:</li>
+              <li><a href="#">Главная</a></li>
+              <li>/</li>
+              <li><a href="#">Каталог библиотечной мебели</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="location-container">
+          <div class="button-container button-container-pag">
+            <button class="button">Показать еще</button>
+          </div>
+          <div class="paginator">
+            <nav role="navigation">
+              <ul class="cd-pagination">
+                <li class="button-pag">
+                  <a class="disabled" href="#0"
+                    ><img src="/svg/black-arrow-left.svg" alt=""
+                  /></a>
+                </li>
+                <li class="pag-num"><a class="current" href="#0">1</a></li>
+                <li class="pag-num"><a class="current" href="#0">2</a></li>
+                <li class="pag-num"><a class="current" href="#0">3</a></li>
+                <li class="pag-num pag-ellipsis"><span>...</span></li>
+                <li class="pag-num"><a class="current" href="#0">10</a></li>
+                <li class="button-pag">
+                  <a href="#0"
+                    ><img src="/svg/black-arrow-right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-
-      <div class="main-sidebar-container">
-        <div class="filter-container">
-          <div class="filter-head">
-            <button><img src="svg/arrow-top.svg" alt="" />По изделиям</button>
-          </div>
-          <ul class="filter">
-            <li class="filter-link">
-              <input
-                id="highload0"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload0" class="checkbox-custom-label"
-                >Кафедры выдачи литературы</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload1"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload1" class="checkbox-custom-label"
-                >Стеллажи для библиотек</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload2"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload2" class="checkbox-custom-label"
-                >Столы для библиотек</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload3"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload3" class="checkbox-custom-label"
-                >Стулья для библиотек</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload4"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highloa43" class="checkbox-custom-label"
-                >Читательские боксы</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload5"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload5" class="checkbox-custom-label"
-                >Накопители</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload6"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload6" class="checkbox-custom-label"
-                >Мебель для детской библиотеки</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload7"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload7" class="checkbox-custom-label"
-                >Кафедры выдачи литературы</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload8"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload8" class="checkbox-custom-label"
-                >Эксклюзивная мебель</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload9"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload9" class="checkbox-custom-label"
-                >Каталожные и формулярные шкафы</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload10"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload10" class="checkbox-custom-label"
-                >Системы хранения</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload11"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload11" class="checkbox-custom-label"
-                >Горизонтальные музейные витрины</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload12"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload12" class="checkbox-custom-label"
-                >Стенды, ширмы музейные</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload13"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload13" class="checkbox-custom-label"
-                >RFID-метки и ЭЧБ</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload14"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload14" class="checkbox-custom-label"
-                >Ворота идентификации и контроля</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload15"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload15" class="checkbox-custom-label"
-                >Инвентаризация библиотечных фондов</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload16"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload16" class="checkbox-custom-label"
-                >Системы самообслуживания</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload17"
-                class="checkbox-custom"
-                name="checkbox-one"
-                type="checkbox"
-              />
-              <label for="highload17" class="checkbox-custom-label"
-                >Станции возврата и сортировки</label
-              >
-            </li>
-          </ul>
-
-          <div class="filter-link filter-head">
-            <button><img src="svg/arrow-top.svg" alt="" />По сериям</button>
-          </div>
-          <ul class="filter">
-            <li class="filter-link">
-              <input
-                id="highload18"
-                class="checkbox-custom"
-                name="checkbox-two"
-                type="checkbox"
-              />
-              <label for="highload18" class="checkbox-custom-label"
-                >Серия Грация</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload19"
-                class="checkbox-custom"
-                name="checkbox-two"
-                type="checkbox"
-              />
-              <label for="highload19" class="checkbox-custom-label"
-                >Серия Медиа</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload20"
-                class="checkbox-custom"
-                name="checkbox-two"
-                type="checkbox"
-              />
-              <label for="highload20" class="checkbox-custom-label"
-                >Серия Спринт</label
-              >
-            </li>
-            <li class="filter-link">
-              <input
-                id="highload21"
-                class="checkbox-custom"
-                name="checkbox-two"
-                type="checkbox"
-              />
-              <label for="highload21" class="checkbox-custom-label"
-                >Серия Лайт</label
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="foundation">
-          <div class="product-cards product-cards-catalog">
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card-catalog">
-              <div class="product-card-image-container">
-                <picture>
-                  <source
-                    media="(max-width: 460px)"
-                    srcset="images/product-card-mini.png"
-                  />
-                  <img class="scale" src="images/product-card.png" alt="" />
-                </picture>
-              </div>
-              <div class="product-description-card-container">
-                <div class="product-description-card">
-                  <h4 class="caption card-caption">Кафедра выдачи Г.001.009</h4>
-                  <div class="card-description">
-                    <span class="text-card">4000х750х600</span>
-                    <button><img src="svg/like.svg" alt="" /></button>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="location-container">
-            <div class="button-container button-container-pag">
-              <button class="button">Показать еще</button>
-            </div>
-            <div class="paginator">
-              <nav role="navigation">
-                <ul class="cd-pagination">
-                  <li class="button-pag">
-                    <a class="disabled" href="#0"
-                      ><img src="svg/black-arrow-left.svg" alt=""
-                    /></a>
-                  </li>
-                  <li class="pag-num"><a class="current" href="#0">1</a></li>
-                  <li class="pag-num"><a class="current" href="#0">2</a></li>
-                  <li class="pag-num"><a class="current" href="#0">3</a></li>
-                  <li class="pag-num"><a class="current" href="#0">4</a></li>
-                  <li class="pag-num"><a class="current" href="#0">5</a></li>
-                  <li class="pag-num pag-ellipsis"><span>...</span></li>
-                  <li class="pag-num"><a class="current" href="#0">10</a></li>
-                  <li class="button-pag">
-                    <a href="#0"
-                      ><img src="svg/black-arrow-right.svg" alt=""
-                    /></a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="foot">
@@ -1245,21 +858,29 @@
             </h3>
             <ul class="aboutCompany-list">
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Дизайн бюро</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Дизайн бюро</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Производство</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Производство</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >Некоммерческая научная деятельность</a
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Гарантии</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Вакансии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Вакансии</a
+                >
               </li>
             </ul>
           </article>
@@ -1267,18 +888,22 @@
             <h3 class="caption inform-caption">Покупателям</h3>
             <ul class="aboutCompany-list">
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Услуги</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot">Услуги</a>
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Каталог</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Каталог</a
+                >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >ФП Новая Библиотека</a
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot">Гарантии</a>
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
+                  >Гарантии</a
+                >
               </li>
             </ul>
           </article>
@@ -1300,31 +925,30 @@
                 >
               </li>
               <li class="menu-link-foot">
-                <a href="#" class="menu-link-ref menu-link-ref-foot"
+                <a href="#!" class="menu-link-ref menu-link-ref-foot"
                   >Рязань, ул. Керамзавода, 21А</a
                 >
               </li>
             </ul>
             <div class="icons">
               <div class="icon-container">
-                <a href="#"><img src="svg/youtube.svg" alt="" /></a>
+                <a href=""><img src="svg/youtube.svg" alt="" /></a>
               </div>
               <div class="icon-container">
-                <a href="#"><img src="svg/image9.svg" alt="" /></a>
+                <a href=""><img src="svg/image9.svg" alt="" /></a>
               </div>
             </div>
           </address>
         </div>
         <div class="copyright-politics">
-          <a href="#" class="copyright"
+          <a href="#!" class="copyright"
             >© 2022 ВитаРус. Информация сайта защищена законом об авторских
             правах</a
           >
-          <a href="#" class="politics">Политика конфиденциальности</a>
+          <a href="#!" class="politics">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./script/main.js"></script>
   </body>
 </html>

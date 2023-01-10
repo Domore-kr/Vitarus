@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
@@ -16,32 +17,30 @@
     <title>Карточка товара-1</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script type="module">
-      import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
-    </script>
     <header class="hat">
       <div class="headbar">
         <div class="content-container">
           <nav class="menu">
             <ul class="menu-list">
               <li class="menu-link">
-                <a href="#" class="menu-link-ref">Доставка и оплата</a>
+                <a href="#!" class="menu-link-ref">Доставка и оплата</a>
               </li>
               <li class="menu-link">
-                <a href="#" class="menu-link-ref">Гарантии</a>
+                <a href="#!" class="menu-link-ref">Гарантии</a>
               </li>
               <li class="menu-link">
-                <a href="#" class="menu-link-ref">Контакты</a>
-              </li>
-              <li class="menu-link">
-                <a href="#" class="menu-link-ref">Портфолио</a>
+                <a href="#!" class="menu-link-ref">Контакты</a>
               </li>
             </ul>
           </nav>
 
           <address class="connection">
-            <a href="#" class="menu-link-ref">Скачать каталог мебели</a>
+            <a
+              target="_blank"
+              href="https://vita-rus.ru/upload/download/catalog.pdf"
+              class="menu-link-ref"
+              >Скачать каталог мебели</a
+            >
             <a href="tel:+74912300833" class="phone">8 (4912) 300-833</a>
           </address>
         </div>
@@ -49,42 +48,46 @@
 
       <div class="logobar">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            <img src="/svg/drag-handle-horizontal2.svg" alt="" />Каталог
+          <button class="dropbtn">
+            <div class="arrows">
+              <span></span>
+              <span></span>
+            </div>
+            <h4>Каталог</h4>
           </button>
-          <div id="myDropdown" class="dropdown-content">
-            <div class="dropdown-menu">
+          <div id="dropdown-content" class="dropdown-content">
+            <div class="tabs__buttons">
               <ul class="menu-list menu-list-dropdown menu-list-dropdown-first">
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref"
+                  <a href="#!" class="tabs__btn menu-link-ref"
                     >Библиотечная мебель
-                    <img src="/svg/black-arrow-right.svg" alt=""
+                    <img src="svg/black-arrow-right.svg" alt=""
                   /></a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref"
+                  <a href="#!" class="tabs__btn menu-link-ref"
                     >Музейное оборудование<img
-                      src="/svg/black-arrow-right.svg"
+                      src="svg/black-arrow-right.svg"
                       alt=""
                   /></a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref"
+                  <a href="#!" class="tabs__btn menu-link-ref"
                     >Оборудование RFID<img
-                      src="/svg/black-arrow-right.svg"
+                      src="svg/black-arrow-right.svg"
                       alt=""
                   /></a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref"
+                  <a href="#!" class="tabs__btn menu-link-ref"
                     >Мебель для ВУЗов<img
-                      src="/svg/black-arrow-right.svg"
+                      src="svg/black-arrow-right.svg"
                       alt=""
                   /></a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref"
-                    >Мебель для ДШИ<img src="/svg/black-arrow-right.svg" alt=""
+                  <a href="#!" class="tabs__btn menu-link-ref"
+                    >Мебель для ДШИ<img src="svg/black-arrow-right.svg" alt=""
                   /></a>
                 </li>
               </ul>
@@ -93,122 +96,356 @@
                 class="menu-list menu-list-dropdown menu-list-dropdown-bottom"
               >
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref">О компании</a>
+                  <a href="#!" class="menu-link-ref">О компании</a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref">Библиотекам</a>
+                  <a href="#!" class="menu-link-ref">Библиотекам</a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref">Музеям</a>
+                  <a href="#!" class="menu-link-ref">Музеям</a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" href="#" class="menu-link-ref">Дши</a>
+                  <a href="#!" class="menu-link-ref">Дши</a>
                 </li>
                 <li class="dropdown-link">
-                  <a href="#" class="menu-link-ref">Наши работы</a>
+                  <a href="#!" class="menu-link-ref">Наши работы</a>
                 </li>
               </ul>
             </div>
-            <div class="dropdown-catalog">
-              <ul
-                class="menu-list menu-list-dropdown menu-list-dropdown-center"
-              >
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Вертикальные музейные витрины (16)</a
+            <div class="tabs__content">
+              <div class="tabs__pane img-list img-list-popular">
+                <div class="dropdown-catalog">
+                  <ul
+                    class="menu-list menu-list-dropdown menu-list-dropdown-center"
                   >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Вертикальные музейные витрины (16)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-image">
+                  <div class="dropdown-image-container">
+                    <img src="images/dropdown-image.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane img-list img-list-popular">
+                <div class="dropdown-catalog">
+                  <ul
+                    class="menu-list menu-list-dropdown menu-list-dropdown-center"
                   >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Стенды, ширмы музейные, перегородки, демонстрационное
-                    оборудование (1)</a
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Вертикальные музейные витрины (16)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-image">
+                  <div class="dropdown-image-container">
+                    <img src="images/dropdown-image.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane img-list img-list-popular">
+                <div class="dropdown-catalog">
+                  <ul
+                    class="menu-list menu-list-dropdown menu-list-dropdown-center"
                   >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Вертикальные музейные витрины (16)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-image">
+                  <div class="dropdown-image-container">
+                    <img src="images/dropdown-image.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane img-list img-list-popular">
+                <div class="dropdown-catalog">
+                  <ul
+                    class="menu-list menu-list-dropdown menu-list-dropdown-center"
                   >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Вертикальные музейные витрины (16)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-image">
+                  <div class="dropdown-image-container">
+                    <img src="images/dropdown-image.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__pane img-list img-list-popular">
+                <div class="dropdown-catalog">
+                  <ul
+                    class="menu-list menu-list-dropdown menu-list-dropdown-center"
                   >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
-                  >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Стенды, ширмы музейные, перегородки, демонстрационное
-                    оборудование (1)</a
-                  >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
-                  >
-                </li>
-                <li class="dropdown-link dropdown-link-center">
-                  <a href="#" class="menu-link-ref"
-                    >Горизонтальные музейные витрины (6)</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown-image">
-              <div class="dropdown-image-container">
-                <img src="/images/dropdown-image.png" alt="" />
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Вертикальные музейные витрины (16)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Стенды, ширмы музейные, перегородки, демонстрационное
+                        оборудование (1)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                    <li class="dropdown-link dropdown-link-center">
+                      <a href="#!" class="menu-link-ref"
+                        >Горизонтальные музейные витрины (6)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-image">
+                  <div class="dropdown-image-container">
+                    <img src="images/dropdown-image.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <script>
-          /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-          // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
-          window.onclick = function (event) {
-            if (!event.target.matches(".dropbtn")) {
-              var dropdowns =
-                document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")) {
-                  openDropdown.classList.remove("show");
-                }
-              }
-            }
-          };
-        </script>
         <div class="logo">
-          <a href="#" class="menu-link-ref">
+          <a href="#!" class="menu-link-ref">
             <picture>
               <source
-                media="(max-width: 799px)"
+                media="(max-width: 460px)"
                 srcset="images/Logo-mobile.png"
               />
-              <img src="/images/Logo.png" alt="" />
+              <img src="images/Logo.png" alt="" />
             </picture>
           </a>
         </div>
         <div class="svg-links">
-          <button href="" class="svg-button">
-            <img src="/svg/loupe.svg" alt="loupe" class="svg" />
-          </button>
-          <button href="" class="svg-button">
-            <img src="/svg/user.svg" alt="user" class="svg" />
-          </button>
-          <button href="" class="svg-button">
-            <img src="/svg/heart.svg" alt="heart" class="svg" />
+          <div class="search-container">
+            <form action="#!">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Введите запрос"
+                name="search"
+              />
+              <button href="#!" class="svg-button search__btn">
+                <img src="svg/loupe.svg" alt="loupe" class="svg" />
+              </button>
+            </form>
+          </div>
+          <!-- <button href="#!" class="svg-button">
+              <img src="svg/user.svg" alt="user" class="svg" />
+            </button> -->
+          <button href="#!" class="svg-button">
+            <img src="svg/heart.svg" alt="heart" class="svg" />
           </button>
         </div>
       </div>
@@ -216,43 +453,99 @@
       <div class="site-menu">
         <nav class="menu">
           <ul class="menu-list">
-            <li class="menu-link menu-link-site">
-              <button class="menu-link-ref button-site">
-                О компании
-                <img src="/svg/arrow.svg" alt="arrow-side" class="arrow" />
-              </button>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!">О компании</a>
+              <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
+              <ul class="dop__menu">
+                <a href="#!">Дизайн-бюро</a>
+                <a href="#!">Производство</a>
+                <a href="#!">Новости</a>
+                <a href="#!">Контакты</a>
+                <a href="#!">Отзывы</a>
+                <a href="#!">Благодарственные письма</a>
+                <a href="#!">Вакансии</a>
+              </ul>
             </li>
-            <li class="menu-link menu-link-site">
-              <button class="menu-link-ref button-site">
-                Библиотекам<img
-                  src="/svg/arrow.svg"
-                  alt="arrow-side"
-                  class="arrow"
-                />
-              </button>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!" class="title" href="#!">Услуги</a>
+              <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
+              <ul class="dop__menu">
+                <a href="#!">Проект организации пространства</a>
+                <a href="#!">3D-дизайн</a>
+                <a href="#!">Разработка проектов библиотек</a>
+                <a href="#!"
+                  >Разработка проектов для высших учебных заведений</a
+                >
+                <a href="#!">Разработка проектов музеев</a>
+                <a href="#!">Разработка малых архитектурных форм</a>
+              </ul>
             </li>
-            <li class="menu-link menu-link-site">
-              <button class="menu-link-ref button-site">
-                Музеям<img
-                  src="/svg/arrow.svg"
-                  alt="arrow-side"
-                  class="arrow"
-                />
-              </button>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!" class="title" href="#!">Библиотекам</a>
             </li>
-            <li class="menu-link menu-link-site">
-              <button class="menu-link-ref button-site">
-                Дши<img src="/svg/arrow.svg" alt="arrow-side" class="arrow" />
-              </button>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!" class="title" href="#!">Музеям</a>
             </li>
-            <li class="menu-link menu-link-site">
-              <button class="menu-link-ref button-site">
-                Наши работы<img
-                  src="/svg/arrow.svg"
-                  alt="arrow-side"
-                  class="arrow"
-                />
-              </button>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!" class="title" href="#!">Дши</a>
+            </li>
+            <li
+              class="menu-link menu-link-site wow fadeInDown"
+              data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInDown;
+              "
+            >
+              <a href="#!" class="title" href="#!">Наши работы</a>
+              <img src="svg/arrow.svg" alt="arrow-side" class="arrow" />
+              <ul class="dop__menu">
+                <a href="#!">Библиотеки</a>
+                <a href="#!">Вузы</a>
+                <a href="#!">Музеи</a>
+                <a href="#!">ДШИ</a>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -262,6 +555,81 @@
           </div>
         </address>
       </div>
+
+      <div class="popup__contacts">
+        <div class="popup__body">
+          <div class="popup__card">
+            <h1 class="title">Свяжитесь с нами</h1>
+            <div class="close__btn">
+              <span class="close__line"></span>
+              <span class="close__line"></span>
+            </div>
+            <div class="form">
+              <div class="input-container">
+                <input
+                  required=""
+                  id="firstname"
+                  class="input"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut cut-short1"></div>
+                <label for="firstname" class="placeholder">Имя</label>
+              </div>
+              <div class="input-container">
+                <input
+                  required=""
+                  id="phone"
+                  class="input"
+                  type="tel"
+                  placeholder=" "
+                />
+                <div class="cut cut-short"></div>
+                <label for="phone" class="placeholder">Телефон</label>
+              </div>
+              <div class="input-container">
+                <input
+                  id="organization"
+                  class="input"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut cut-long"></div>
+                <label for="phone" class="placeholder"
+                  >Название организации</label
+                >
+              </div>
+              <div class="input-container">
+                <input
+                  id="organization"
+                  class="input"
+                  type="email"
+                  placeholder=" "
+                />
+                <div class="cut cut-long1"></div>
+                <label for="phone" class="placeholder">Электронный адрес</label>
+              </div>
+              <div class="input-container">
+                <input
+                  id="organization"
+                  class="input"
+                  type="text"
+                  placeholder=" "
+                />
+                <div class="cut cut-long2"></div>
+                <label for="phone" class="placeholder">Комментарий</label>
+              </div>
+            </div>
+            <p class="info">
+              Нажимая на кнопку ОТПРАВИТЬ, я принимаю
+              <a href="https://vita-rus.ru/about/documents/privacy-policy/"
+                >Политику конфиденциальности</a
+              >
+            </p>
+            <a class="send" href="#!"><button>Отправить</button></a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="page">
@@ -270,13 +638,13 @@
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Главная</p>
-              <img src="/svg/right-arrow.svg" alt=""
+              <img src="svg/right-arrow.svg" alt=""
             /></a>
           </li>
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
               ><p class="catalog-text">Каталог</p>
-              <img src="/svg/right-arrow.svg" alt=""
+              <img src="svg/right-arrow.svg" alt=""
             /></a>
           </li>
           <li class="menu-link menu-link-card">
@@ -291,18 +659,18 @@
         <div class="preview-img-block">
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -310,18 +678,18 @@
           </div>
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -329,18 +697,18 @@
           </div>
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -348,18 +716,18 @@
           </div>
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -367,18 +735,18 @@
           </div>
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -386,18 +754,18 @@
           </div>
           <div class="preview-img-container">
             <a
-              href="/images/Frame-catalog.png"
+              href="images/Frame-catalog.png"
               data-fancybox="gallery1"
               data-caption="Optional caption"
             >
               <picture>
                 <source
                   media="(max-width: 799px)"
-                  srcset="/images/Frame-catalog-mini.png"
+                  srcset="images/Frame-catalog-mini.png"
                 />
                 <img
                   class="scale"
-                  src="/images/Frame-catalog-mini.png"
+                  src="images/Frame-catalog-mini.png"
                   alt=""
                 />
               </picture>
@@ -406,16 +774,16 @@
         </div>
         <div class="preview-big-img-container">
           <a
-            href="/images/Frame-catalog.png"
+            href="images/Frame-catalog.png"
             data-fancybox="gallery1"
             data-caption="Optional caption"
           >
             <picture>
               <source
                 media="(max-width: 1000px)"
-                srcset="/images/Frame-catalog-card-mini.png"
+                srcset="images/Frame-catalog-card-mini.png"
               />
-              <img src="/images/Frame-catalog.png" alt="" />
+              <img src="images/Frame-catalog.png" alt="" />
             </picture>
           </a>
         </div>
@@ -437,28 +805,28 @@
           </div>
           <div class="button-container-cat">
             <button class="button button-first-description">
-              <img src="/svg/white-heart.svg" alt="" /> В избранное
+              <img src="svg/white-heart.svg" alt="" /> В избранное
             </button>
             <button
               class="button button-first-description button-first-description-right"
             >
-              <img src="/svg/question-circle.svg" alt="" /> Задать вопрос
+              <img src="svg/question-circle.svg" alt="" /> Задать вопрос
             </button>
           </div>
           <div class="switch-download-container">
             <div class="switch-container">
               <button class="switch switch-cat">
-                <img src="/svg/minus.svg" alt="" />
+                <img src="svg/minus.svg" alt="" />
               </button>
               <span class="switch-number switch-number-cat">1</span>
               <button class="switch switch-cat">
-                <img src="/svg/plus.svg" alt="" />
+                <img src="svg/plus.svg" alt="" />
               </button>
             </div>
             <div class="download-container">
               <p class="text download-text">Скачать</p>
               <button class="download-button">
-                <img src="/svg/download.svg" alt="" /> 3D модель
+                <img src="svg/download.svg" alt="" /> 3D модель
               </button>
             </div>
           </div>
@@ -466,13 +834,13 @@
             <h4 class="caption share-caption">Поделиться</h4>
             <div class="social-container">
               <a href="#" class="social-button"
-                ><img src="/svg/telegram.svg" alt=""
+                ><img src="svg/telegram.svg" alt=""
               /></a>
               <a href="#" class="social-button"
-                ><img src="/svg/telegram.svg" alt=""
+                ><img src="svg/telegram.svg" alt=""
               /></a>
               <a href="#" class="social-button"
-                ><img src="/svg/whatsApp.svg" alt=""
+                ><img src="svg/whatsApp.svg" alt=""
               /></a>
             </div>
           </div>
@@ -524,11 +892,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -540,7 +908,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -552,11 +920,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -568,7 +936,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -580,11 +948,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -596,7 +964,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -608,11 +976,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -624,7 +992,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -636,11 +1004,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -652,7 +1020,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -664,11 +1032,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -680,7 +1048,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -692,11 +1060,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -708,7 +1076,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -720,11 +1088,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -736,7 +1104,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -748,11 +1116,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -764,7 +1132,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -821,11 +1189,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -837,7 +1205,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -849,11 +1217,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -865,7 +1233,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -877,11 +1245,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -893,7 +1261,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -905,11 +1273,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -921,7 +1289,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -933,11 +1301,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -949,7 +1317,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -961,11 +1329,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -977,7 +1345,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -989,11 +1357,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -1005,7 +1373,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -1017,11 +1385,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -1033,7 +1401,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -1045,11 +1413,11 @@
                     <picture>
                       <source
                         media="(max-width: 799px)"
-                        srcset="/images/product-card-mini.png"
+                        srcset="images/product-card-mini.png"
                       />
                       <img
                         class="scale"
-                        src="/images/product-card.png"
+                        src="images/product-card.png"
                         alt=""
                       />
                     </picture>
@@ -1061,7 +1429,7 @@
                       </h4>
                       <div class="card-description">
                         <span class="text-card">4000х750х600</span>
-                        <button><img src="/svg/like.svg" alt="" /></button>
+                        <button><img src="svg/like.svg" alt="" /></button>
                       </div>
                     </div>
                   </div>
@@ -1176,10 +1544,10 @@
             </ul>
             <div class="icons">
               <div class="icon-container">
-                <a href="#" href=""><img src="/svg/youtube.svg" alt="" /></a>
+                <a href="#" href=""><img src="svg/youtube.svg" alt="" /></a>
               </div>
               <div class="icon-container">
-                <a href="#" href=""><img src="/svg/image9.svg" alt="" /></a>
+                <a href="#" href=""><img src="svg/image9.svg" alt="" /></a>
               </div>
             </div>
           </address>
@@ -1193,5 +1561,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="module">
+      import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+    </script>
+    <script src="./script/main.js"></script>
   </body>
 </html>
