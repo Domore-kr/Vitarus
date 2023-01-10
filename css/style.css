@@ -1952,11 +1952,6 @@ svg {
 
 .product-cards {
   display: flex;
-  justify-content: space-between;
-}
-
-.product-card:nth-last-child(n + 2) {
-  margin-right: 20px;
 }
 
 .product-card-image-container {
@@ -2321,11 +2316,13 @@ input[type="checkbox"]:checked + label:before {
 .product-cards-catalog {
   flex-wrap: wrap;
   margin-bottom: 60px;
-  column-gap: 20px;
+  column-gap: 50px;
+  row-gap: 30px;
 }
 
 .product-card-catalog {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .location-container {
