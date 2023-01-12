@@ -48,6 +48,7 @@ figure {
   background: #fff;
   z-index: 1000;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .hat.header__active {
@@ -1028,8 +1029,8 @@ figcaption {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 20px;
   text-align: center;
   border-radius: 20px;
   border: none;
@@ -2007,6 +2008,14 @@ svg {
   cursor: pointer;
 }
 
+.favorite__card__btn svg path {
+  transition: 1s ease all;
+}
+
+.active__favorite svg path {
+  fill: #fff;
+}
+
 /* Карточка товара 2 */
 
 .main-sidebar-container {
@@ -2340,6 +2349,7 @@ input[type="checkbox"]:checked + label:before {
   border: 2px solid #dadbdb;
   border-radius: 20px;
   color: #292a2a;
+  transition: .2s ease all;
 }
 
 .button-container-pag button:hover {

@@ -479,3 +479,14 @@ const swiper__catalog__btns = new Swiper(".swiper__catalog__btns", {
     },
   },
 });
+
+// Favorites buttons
+if (document.querySelector('.favorite__card__btn')) {
+  const favorite__btn = document.querySelectorAll('.favorite__card__btn')
+  favorite__btn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active__favorite')
+    })
+  })
+}
+
