@@ -490,3 +490,28 @@ if (document.querySelector('.favorite__card__btn')) {
   })
 }
 
+// Catalog cards
+
+window.onload = function () {
+  const cards = document.getElementsByClassName('product-card-catalog');
+  if (document.getElementById('show__more__catalog')) {
+    const btn__show__more = document.getElementById('show__more__catalog');
+    for (let i = 12; i < cards.length; i++) {
+      cards[i].style.display = "none";
+    }
+
+    let countD = 12;
+    btn__show__more.addEventListener("click", function() {
+      const cards = document.getElementsByClassName('product-card-catalog');
+      countD += 12;
+      for(let i = 0; i < countD; i++){
+        if (cards[i]) {
+          cards[i].style.display = "flex";
+          if (i === cards.length - 1) {
+            btn__show__more.style.display = "none"
+          }
+        }
+      }
+    })
+  }
+}
