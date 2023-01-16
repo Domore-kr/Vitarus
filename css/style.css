@@ -2006,18 +2006,27 @@ svg {
   color: #b7b7b7;
 }
 
+.favorite__card__btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5AC84;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.active__favorite button {
+  background: #F5AC84;
+}
+
+.active__favorite button svg path{
+  fill: #fff;
+}
+
 .card-description button {
   border: none;
-  background-color: #ffffff;
   cursor: pointer;
-}
-
-.favorite__card__btn svg path {
-  transition: 1s ease all;
-}
-
-.active__favorite svg path {
-  fill: #fff;
 }
 
 /* Карточка товара 2 */
@@ -2196,20 +2205,50 @@ svg {
 
 .button-catalog-block {
   padding: 20px;
-  width: 216px;
-  height: 100px;
+  max-width: 216px;
+  max-height: 100px;
   background: #f3f3f3;
-  border: 2px solid #0a7356;
+  border: 2px solid transparent;
   border-radius: 20px;
-  box-sizing: border-box;
+  transition: .2s ease all;
+}
+
+.button-catalog-block button {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  background: 0;
+  border: 0;
+}
+
+.button-catalog-block svg {
+  min-width: 60px;
 }
 
 .button-catalog-block:hover {
-  background-color: #ffffff;
+  border: 2px solid #0a7356;
 }
 
-.button-catalog-block button:hover {
-  background-color: #ffffff;
+.button-catalog-block h4 {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.active__catalog__button {
+  background: #00533c;
+  border: 2px solid #0a7356;
+}
+
+.active__catalog__button h4{
+  color: #fff;
+}
+
+.active__catalog__button svg{
+  color: #fff;
 }
 
 .button-catalog-block button {
@@ -2230,7 +2269,7 @@ svg {
 }
 
 .button-catalog-img-top {
-  margin-right: 20px;
+  border-radius: 10px;
 }
 
 .filter-container {
