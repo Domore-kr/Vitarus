@@ -215,27 +215,19 @@ document.addEventListener("click", (e) => {
 // Swipers
 
 const popular__swiper = new Swiper(".popular__swiper", {
-  slidesPerView: 5,
+  slidesPerView: 'auto',
   spaceBetween: 10,
   breakpoints: {
     900: {
-      slidesPerView: 5,
+      slidesPerView: 'auto',
     },
 
-    640: {
-      slidesPerView: 4,
-    },
-
-    460: {
+    700: {
       slidesPerView: 3,
     },
 
-    320: {
-      slidesPerView: 2,
-    },
-
     100: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
   },
 });
@@ -479,16 +471,6 @@ const swiper__catalog__btns = new Swiper(".swiper__catalog__btns", {
     },
   },
 });
-
-// Favorites buttons
-if (document.querySelector('.favorite__card__btn')) {
-  const favorite__btn = document.querySelectorAll('.favorite__card__btn')
-  favorite__btn.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('active__favorite')
-    })
-  })
-}
 
 // Catalog cards
 

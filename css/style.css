@@ -23,6 +23,12 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #000;
+  transition: .2s ease all;
+}
+
+a:hover {
+  color: #00533c
 }
 
 figure {
@@ -878,7 +884,6 @@ figure {
   width: 1140px;
   margin: auto;
   margin-bottom: 100px;
-  margin-top: 200px;
 }
 
 .catalog {
@@ -902,6 +907,10 @@ figure {
 .popular-goods {
   margin-bottom: 107px;
 }
+
+.popular__swiper .swiper-slide{
+  max-width: 300px;
+} 
 
 .caption {
   font-family: "Raleway";
@@ -957,14 +966,12 @@ figure {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
   padding-bottom: 30px;
 }
 
 .container-popular .product-card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 15px 0 0 0;
   height: 100%;
 }
@@ -3231,6 +3238,14 @@ input[type="checkbox"]:checked + label:before {
     padding-bottom: 20px;
   }
 
+  .popular-goods .tabs__content {
+    margin: 0 -20px;
+  }
+
+  .popular__swiper {
+    padding: 0 20px;
+  }
+
   .inform-caption {
     font-size: 20px;
     line-height: 30px;
@@ -3519,10 +3534,6 @@ input[type="checkbox"]:checked + label:before {
     width: 94.4vw;
   }
 
-  .product-card {
-    max-width: 140px;
-  }
-
   .product-card:nth-last-child(n + 2) {
     margin-right: 20px;
   }
@@ -3554,7 +3565,7 @@ input[type="checkbox"]:checked + label:before {
   .card-description button {
     position: absolute;
     left: 20px;
-    bottom: 0;
+    bottom: -15px;
   }
 
   .text-card {
@@ -3659,10 +3670,6 @@ input[type="checkbox"]:checked + label:before {
     width: auto;
   }
 
-  .product-card-catalog {
-    overflow: hidden;
-  }
-
   .product-card-catalog:nth-last-child(n + 2) {
     margin-right: 0;
   }
@@ -3737,21 +3744,12 @@ input[type="checkbox"]:checked + label:before {
     max-width: 100%;
   }
 
-  .popular__swiper {
-    margin: 0 -20px;
-    padding: 0 60px 0 20px;
-  }
-
   .popular-goods .tabs__content,
   .popular-goods .tabs__buttons {
     margin: 0 -20px;
   }
 
   .popular-goods .tags__swiper {
-    padding: 0 20px;
-  }
-
-  .popular-goods .tabs__pane {
     padding: 0 20px;
   }
 
@@ -4068,24 +4066,6 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-@media (max-width: 460px) {
-  body {
-    margin-top: 87px;
-  }
-
-  .scheme-container {
-    overflow-x: scroll;
-  }
-
-  .image-container-idea {
-    width: 100%;
-  }
-
-  .slider-item-ancor {
-    width: 100%;
-  }
-}
-
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -4255,5 +4235,48 @@ input[type="checkbox"]:checked + label:before {
 @media (min-width: 1440px) {
   .text-aboutUs {
     width: auto;
+  }
+}
+
+
+@media (max-width: 460px) {
+  body {
+    margin-top: 87px;
+  }
+
+  .scheme-container {
+    overflow-x: scroll;
+  }
+
+  .image-container-idea {
+    width: 100%;
+  }
+
+  .slider-item-ancor {
+    width: 100%;
+  }
+
+  .product-description-card-container {
+    padding: 15px 10px;
+  }
+
+  .card-caption {
+    width: unset;
+  }
+
+  .hit {
+    left: unset;
+  }
+
+  .card-description {
+    margin-top: 0;
+  }
+
+  .swiper-slide-popular {
+    padding: 0;
+  }
+
+  .image-conatainer-series {
+    width: 100%;
   }
 }
