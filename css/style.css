@@ -1600,6 +1600,10 @@ figcaption {
   padding: 30px 30px 20px;
 }
 
+.radius_photo {
+  border-radius: 50%;
+}
+
 .name {
   font-family: "Raleway";
   font-style: normal;
@@ -2349,7 +2353,7 @@ input[type="checkbox"]:checked + label:before {
   border: 2px solid #dadbdb;
   border-radius: 20px;
   color: #292a2a;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 .button-container-pag button:hover {
@@ -2958,7 +2962,7 @@ input[type="checkbox"]:checked + label:before {
   .search__input.active {
     width: 210px;
   }
-  
+
   .headbar {
     display: none;
   }
