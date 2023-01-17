@@ -29,6 +29,10 @@ figure {
   overflow: hidden;
 }
 
+.product-card {
+  width: 100%;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -1319,9 +1323,15 @@ figcaption {
   width: 100%;
 }
 
+.slider-item-ancor {
+  height: 100%;
+}
+
 .idea-img {
   width: 100%;
   pointer-events: none;
+  height: 100%;
+  border-radius: 25px;
 }
 
 .swiper-wrap {
@@ -1606,6 +1616,10 @@ figcaption {
   display: flex;
   align-items: center;
   padding: 30px 30px 20px;
+}
+
+.photo-name img {
+  border-radius: 50%;
 }
 
 .radius_photo {
@@ -1979,6 +1993,7 @@ svg {
 
 .product-card-image-container img {
   padding: 20px;
+  height: 100%;
 }
 
 .product-description-card-container {
@@ -2376,13 +2391,14 @@ input[type="checkbox"]:checked + label:before {
 .product-cards-catalog {
   flex-wrap: wrap;
   margin-bottom: 60px;
-  column-gap: 50px;
+  column-gap: 20px;
   row-gap: 30px;
 }
 
 .product-card-catalog {
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 
 .location-container {
@@ -2902,8 +2918,6 @@ input[type="checkbox"]:checked + label:before {
 
   .image-container-idea {
     position: relative;
-    /* width: 360px;
-    height: 360px; */
     margin-right: 20px;
     width: 100%;
   }
@@ -3086,6 +3100,7 @@ input[type="checkbox"]:checked + label:before {
 
   .svg-links {
     justify-content: end;
+    align-items: center;
   }
 
   .svg-button:nth-last-child(n + 2) {
@@ -3094,7 +3109,7 @@ input[type="checkbox"]:checked + label:before {
 
   .container-info {
     width: auto;
-    padding: 110px 44px 20px 20px;
+    padding: 110px 44px 20px 40px;
     top: 0;
   }
 
@@ -3136,6 +3151,7 @@ input[type="checkbox"]:checked + label:before {
     padding: 0 20px;
     margin-bottom: 80px;
     width: auto;
+    margin-top: 0;
   }
 
   .catalog {
@@ -3520,7 +3536,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .product-card {
-    max-width: 140px;
+    max-width: 130px;
   }
 
   .product-card:nth-last-child(n + 2) {
@@ -3544,6 +3560,7 @@ input[type="checkbox"]:checked + label:before {
     font-size: 13px;
     line-height: 20px;
     padding-bottom: 7px;
+    width: auto;
   }
 
   .card-description {
@@ -3986,7 +4003,7 @@ input[type="checkbox"]:checked + label:before {
 
 @media (min-width: 321px) and (max-width: 360px) {
   .product-card {
-    max-width: 150px;
+    max-width: 130px;
   }
 }
 
@@ -4098,10 +4115,6 @@ input[type="checkbox"]:checked + label:before {
 .news-block {
   width: 100%;
   height: 100%;
-}
-
-.swiper-slide-popular {
-  padding-right: 20px;
 }
 
 /* grid */
