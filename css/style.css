@@ -2394,12 +2394,13 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 60px;
   column-gap: 20px;
   row-gap: 30px;
+  justify-content: space-between;
 }
 
 .product-card-catalog {
   display: flex;
   flex-direction: column;
-  width: 31%;
+  width: calc(25% - 20px);
   box-shadow: 8px 8px 8px rgb(0 0 0 / 7%);
   border-radius: 30px 30px 30px 30px;
 }
