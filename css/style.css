@@ -2022,7 +2022,7 @@ svg {
 }
 
 .card-caption a {
-  color: #292A2A;
+  color: #292a2a;
 }
 
 .card-caption a:hover {
@@ -2637,13 +2637,13 @@ input[type="checkbox"]:checked + label:before {
   line-height: 30px;
 
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 8px 8px 8px 30px;
   gap: 20px;
   isolation: isolate;
 }
