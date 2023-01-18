@@ -20,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+picture {
+  z-index: 2;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -1011,6 +1016,8 @@ figcaption {
   text-align: center;
   color: #292a2a;
   text-decoration: none;
+  z-index: 5;
+  position: relative;
 }
 
 .tags {
@@ -1989,7 +1996,7 @@ svg {
 
 .product-card-image-container picture {
   margin: auto;
-  height: 100%;
+  height: 120%;
 }
 
 .product-card-image-container img {
@@ -2012,6 +2019,14 @@ svg {
   line-height: 20px;
   letter-spacing: 0.03em;
   width: 160px;
+}
+
+.card-caption a {
+  color: #292A2A;
+}
+
+.card-caption a:hover {
+  color: #0a7356;
 }
 
 .card-description {
@@ -2323,7 +2338,7 @@ svg {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
   letter-spacing: 0.01em;
   display: flex;
@@ -3539,10 +3554,6 @@ input[type="checkbox"]:checked + label:before {
     width: 94.4vw;
   }
 
-  .product-card {
-    max-width: 130px;
-  }
-
   .product-card:nth-last-child(n + 2) {
     margin-right: 20px;
   }
@@ -4008,6 +4019,7 @@ input[type="checkbox"]:checked + label:before {
 @media (min-width: 321px) and (max-width: 360px) {
   .product-card {
     max-width: 130px;
+    width: auto;
   }
 }
 
@@ -4090,6 +4102,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 460px) {
+  .product-card-catalog {
+    width: calc(50% - 20px);
+  }
+
   body {
     margin-top: 87px;
   }
@@ -4277,5 +4293,11 @@ input[type="checkbox"]:checked + label:before {
 @media (min-width: 1440px) {
   .text-aboutUs {
     width: auto;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 899px) {
+  .product-card {
+    width: 30%;
   }
 }
