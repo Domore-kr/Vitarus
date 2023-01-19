@@ -2835,14 +2835,14 @@ input[type="checkbox"]:checked + label:before {
 
   /* Monochromic/200 */
 
-  color: #292a2a;
+  color: #292A2A;
 
   width: 30px;
 }
 
 .search_list .text {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .text a {
@@ -2857,11 +2857,11 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: center;
   /* flex-direction: row; */
-  color: #292a2a;
+  color: #292A2A;
 }
 
 .text a:hover {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
 }
 
 .search_product_container {
