@@ -2007,7 +2007,6 @@ svg {
 .product-description-card-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   border-radius: 0px 0px 30px 30px;
   padding: 20px;
   background-color: #d7cec936;
@@ -2022,7 +2021,7 @@ svg {
 }
 
 .card-caption a {
-  color: #292a2a;
+  color: #292A2A;
 }
 
 .card-caption a:hover {
@@ -2239,7 +2238,7 @@ svg {
 }
 
 .top-button-catalog-container {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .button-catalog-block {
