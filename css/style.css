@@ -552,10 +552,10 @@ figure {
 
 .popup__contacts .popup__body .popup__card {
   position: relative;
-  max-width: 586px;
+  max-width: 440px;
   width: 100%;
   border-radius: 24px;
-  padding: 48px;
+  padding: 40px;
   background-color: #fff;
 }
 
@@ -614,13 +614,22 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .title {
-  font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  color: #222222;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgb(34, 34, 34, 0.5);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+
+  margin-bottom: 27px;
+  margin-top: 0;
 }
 
 .popup__contacts .popup__body .popup__card .form {
@@ -2021,7 +2030,7 @@ svg {
 }
 
 .card-caption a {
-  color: #292A2A;
+  color: #292a2a;
 }
 
 .card-caption a:hover {
