@@ -451,10 +451,10 @@ const swiper__catalog__btns = new Swiper(".swiper__catalog__btns", {
   spaceBetween: 20,
   breakpoints: {
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
-    768: {
-      slidesPerView: 3,
+    769: {
+      slidesPerView: 4,
     },
     100: {
       slidesPerView: 'auto',
