@@ -1567,6 +1567,10 @@ figcaption {
   margin: 0;
 }
 
+.text-news a {
+  color: #0a7356;
+}
+
 .date {
   font-family: "Raleway";
   font-style: normal;
@@ -2847,7 +2851,7 @@ input[type="checkbox"]:checked + label:before {
   gap: 20px;
 }
 
-.text a {
+.search_list .text a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
