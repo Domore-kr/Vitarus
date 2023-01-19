@@ -215,17 +215,27 @@ document.addEventListener("click", (e) => {
 // Swipers
 
 const popular__swiper = new Swiper(".popular__swiper", {
-  slidesPerView: 'auto',
+  slidesPerView: 5,
   spaceBetween: 10,
   breakpoints: {
     900: {
-      slidesPerView: 'auto',
+      slidesPerView: 5,
     },
-    700: {
+
+    640: {
+      slidesPerView: 4,
+    },
+
+    460: {
       slidesPerView: 3,
     },
-    100: {
+
+    320: {
       slidesPerView: 2,
+    },
+
+    100: {
+      slidesPerView: 1,
     },
   },
 });
@@ -277,21 +287,27 @@ function portfolio__swiper(section) {
       spaceBetween: 30,
       direction: "vertical",
       breakpoints: {
-        900: {
-          direction: "vertical",
+        320: {
+          direction: "horizontal",
         },
         640: {
           direction: "horizontal",
         },
-        320: {
-          direction: "horizontal",
+        900: {
+          direction: "vertical",
         },
       },
     });
 
-    const nextBtn = document.querySelector(section).querySelector(".swiper-button-next");
-    const prevBtn = document.querySelector(section).querySelector(".swiper-button-prev");
-    const pagination = document.querySelector(section).querySelector(".swiper-pagination");
+    const nextBtn = document
+      .querySelector(section)
+      .querySelector(".swiper-button-next");
+    const prevBtn = document
+      .querySelector(section)
+      .querySelector(".swiper-button-prev");
+    const pagination = document
+      .querySelector(section)
+      .querySelector(".swiper-pagination");
 
     const gallery__top = new Swiper(
       document.querySelector(section).querySelector(".gallery-top"),
@@ -318,11 +334,16 @@ portfolio__swiper(".portfolio");
 
 // Change img
 if (document.querySelector(".gallery-thumbs")) {
-  const slides__thumbs = document.querySelector(".gallery-thumbs").querySelectorAll(".swiper-slide");
+  const slides__thumbs = document
+    .querySelector(".gallery-thumbs")
+    .querySelectorAll(".swiper-slide");
   if (slides__thumbs) {
     slides__thumbs.forEach((slide) => {
       slide.addEventListener("click", (e) => {
-        const active__big__img = document.querySelector(".gallery-top ").querySelector(".swiper-slide-active").querySelector("img");
+        const active__big__img = document
+          .querySelector(".gallery-top ")
+          .querySelector(".swiper-slide-active")
+          .querySelector("img");
         if (e.target.src != undefined) {
           active__big__img.src = e.target.src;
         }
@@ -331,7 +352,6 @@ if (document.querySelector(".gallery-thumbs")) {
   }
 }
 
-
 const ideas__swiper = new Swiper(".ideas__swiper", {
   slidesPerView: 3,
   spaceBetween: 20,
@@ -339,10 +359,11 @@ const ideas__swiper = new Swiper(".ideas__swiper", {
     1024: {
       slidesPerView: 4,
     },
+
     768: {
       slidesPerView: 3,
     },
-    500: {
+    425: {
       slidesPerView: 2,
     },
     320: {
@@ -368,16 +389,16 @@ const news__swiper = new Swiper(".news__swiper", {
     prevEl: ".news__btn__prev",
   },
   breakpoints: {
-    1024: {
-      slidesPerView: 4,
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    1024: {
+      slidesPerView: 4,
     },
   },
 });
@@ -391,16 +412,16 @@ const subSwiperThumbs = new Swiper(".sub-swiper-thumbs", {
     prevEl: ".news__btn__prev",
   },
   breakpoints: {
-    1024: {
-      direction: "vertical",
+    290: {
+      slidesPerView: 2,
+      direction: "horizontal",
     },
     640: {
       slidesPerView: 3,
       direction: "horizontal",
     },
-    290: {
-      slidesPerView: 2,
-      direction: "horizontal",
+    1024: {
+      direction: "vertical",
     },
   },
 });
@@ -412,14 +433,21 @@ const clients__swiper = new Swiper(".clients__swiper", {
     1024: {
       slidesPerView: 5,
     },
+
     768: {
       slidesPerView: 4,
     },
+
     600: {
       slidesPerView: 3,
     },
-    100: {
+
+    375: {
       slidesPerView: 2,
+    },
+
+    320: {
+      slidesPerView: 1,
     },
   },
 });
@@ -432,16 +460,16 @@ const reviews__swiper = new Swiper(".reviews__swiper", {
     prevEl: ".reviews__btn__prev",
   },
   breakpoints: {
-    1024: {
-      slidesPerView: 4,
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    100: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    1024: {
+      slidesPerView: 4,
     },
   },
 });
@@ -457,66 +485,17 @@ const swiper__catalog__btns = new Swiper(".swiper__catalog__btns", {
       slidesPerView: 4,
     },
     100: {
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
     },
   },
 });
 
-// Catalog cards
-
-window.onload = function () {
-  const cards = document.getElementsByClassName('product-card-catalog');
-  const container = document.querySelector('.location-container');
-  if (document.getElementById('show__more__catalog')) {
-    const btn__show__more = document.getElementById('show__more__catalog');
-    for (let i = 12; i < cards.length; i++) {
-      cards[i].style.display = "none";
-    }
-
-    let countD = 12;
-    btn__show__more.addEventListener("click", function() {
-      const cards = document.getElementsByClassName('product-card-catalog');
-      countD += 12;
-      for(let i = 0; i < countD; i++){
-        if (cards[i]) {
-          cards[i].style.display = "flex";
-          if (i === cards.length - 1) {
-            container.classList.add('justify__end')
-            btn__show__more.style.display = "none"
-          }
-        }
-      }
-    })
-  }
-}
-
-// Раскрытие аккордиона, карточек
-
-function uncover__content(all__cards, content__item, button) {
-  all__cards.forEach(element => {
-    if (button) {
-      const content = element.querySelector(content__item);
-      if (element.querySelector(button)) {
-        element.querySelector(button).addEventListener('click', () => {
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            element.classList.remove('content__active');
-            if (element.querySelector('.btn__show__more p')) {
-              element.querySelector('.btn__show__more p').innerText = 'Читать полностью';
-            }
-          } else {
-            if (element.querySelector('.btn__show__more p')) {
-              content.style.maxHeight = content.scrollHeight + "px";
-              element.classList.add('content__active');
-              element.querySelector('.btn__show__more p').innerText = 'Скрыть описание';
-            }
-          }
-        });
-      }
-    }
+// Favorites buttons
+if (document.querySelector(".favorite__card__btn")) {
+  const favorite__btn = document.querySelectorAll(".favorite__card__btn");
+  favorite__btn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active__favorite");
+    });
   });
 }
-
-
-const news__card = document.querySelectorAll('.news-block');
-uncover__content(news__card, '.more__content', '.btn__show__more');
