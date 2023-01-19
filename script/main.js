@@ -460,16 +460,16 @@ const reviews__swiper = new Swiper(".reviews__swiper", {
     prevEl: ".reviews__btn__prev",
   },
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    1024: {
+      slidesPerView: 4,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1024: {
-      slidesPerView: 4,
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
   },
 });
@@ -490,12 +490,60 @@ const swiper__catalog__btns = new Swiper(".swiper__catalog__btns", {
   },
 });
 
-// Favorites buttons
-if (document.querySelector(".favorite__card__btn")) {
-  const favorite__btn = document.querySelectorAll(".favorite__card__btn");
-  favorite__btn.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active__favorite");
-    });
+// Catalog cards
+
+window.onload = function () {
+  const cards = document.getElementsByClassName('product-card-catalog');
+  const container = document.querySelector('.location-container');
+  if (document.getElementById('show__more__catalog')) {
+    const btn__show__more = document.getElementById('show__more__catalog');
+    for (let i = 12; i < cards.length; i++) {
+      cards[i].style.display = "none";
+    }
+    let countD = 12;
+    btn__show__more.addEventListener("click", function() {
+      const cards = document.getElementsByClassName('product-card-catalog');
+      countD += 12;
+      for(let i = 0; i < countD; i++){
+        if (cards[i]) {
+          cards[i].style.display = "flex";
+          if (i === cards.length - 1) {
+            container.classList.add('justify__end')
+            btn__show__more.style.display = "none"
+          }
+        }
+      }
+    })
+  }
+}
+
+// Раскрытие аккордиона, карточек
+
+function uncover__content(all__cards, content__item, button) {
+  all__cards.forEach(element => {
+    if (button) {
+      const content = element.querySelector(content__item);
+      if (element.querySelector(button)) {
+        element.querySelector(button).addEventListener('click', () => {
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            element.classList.remove('content__active');
+            if (element.querySelector('.btn__show__more p')) {
+              element.querySelector('.btn__show__more p').innerText = 'Читать полностью';
+            }
+          } else {
+            if (element.querySelector('.btn__show__more p')) {
+              content.style.maxHeight = content.scrollHeight + "px";
+              element.classList.add('content__active');
+              element.querySelector('.btn__show__more p').innerText = 'Скрыть описание';
+            }
+          }
+        });
+      }
+    }
   });
 }
+
+
+const news__card = document.querySelectorAll('.news-block');
+uncover__content(news__card, '.more__content', '.btn__show__more');
