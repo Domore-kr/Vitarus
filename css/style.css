@@ -893,8 +893,8 @@ figure {
 }
 
 .page {
-  max-width: 1140px;
-  width: 1140px;
+  max-width: 1340px;
+  width: 1340px;
   margin: auto;
   margin-bottom: 100px;
   margin-top: 60px;
@@ -2077,7 +2077,7 @@ svg {
 
 .product-card-image-container img {
   padding: 20px;
-  height: 100%;
+   
   max-width: 260px;
   object-fit: cover;
 }
@@ -2799,6 +2799,10 @@ input[type="checkbox"]:checked + label:before {
 
 .basket_product:nth-last-child(n + 2) {
   margin-bottom: 20px;
+}
+
+.basket_product_image_container {
+  width: 200px;
 }
 
 .basket_product_name {
