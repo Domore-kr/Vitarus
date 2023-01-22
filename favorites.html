@@ -436,12 +436,24 @@
           <!-- <button href="#!" class="svg-button">
               <img src="svg/user.svg" alt="user" class="svg" />
             </button> -->
-            <button href="#!" class="svg-button">
-              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 1C11.8 1 10 3.66667 10 5C10 3.66667 8.2 1 5 1C1.8 1 1 3.66667 1 5C1 12 10 17 10 17C10 17 19 12 19 5C19 3.66667 18.2 1 15 1Z" stroke="#292A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <b>4</b>           
-            </button>
+          <button href="#!" class="svg-button">
+            <svg
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 1C11.8 1 10 3.66667 10 5C10 3.66667 8.2 1 5 1C1.8 1 1 3.66667 1 5C1 12 10 17 10 17C10 17 19 12 19 5C19 3.66667 18.2 1 15 1Z"
+                stroke="#292A2A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <b>4</b>
+          </button>
         </div>
       </div>
 
@@ -553,7 +565,7 @@
 
       <div class="popup__contacts">
         <div class="popup__body">
-          <div class="popup__card">
+          <form class="popup__card">
             <h1 class="title">Свяжитесь с нами</h1>
             <div class="close__btn">
               <span class="close__line"></span>
@@ -562,7 +574,7 @@
             <div class="form">
               <div class="input-container">
                 <input
-                  required=""
+                  required
                   id="firstname"
                   class="input"
                   type="text"
@@ -573,7 +585,7 @@
               </div>
               <div class="input-container">
                 <input
-                  required=""
+                  required
                   id="phone"
                   class="input"
                   type="tel"
@@ -584,45 +596,42 @@
               </div>
               <div class="input-container">
                 <input
+                  required
                   id="organization"
                   class="input"
                   type="text"
                   placeholder=" "
                 />
                 <div class="cut cut-long"></div>
-                <label for="phone" class="placeholder"
-                  >Название организации</label
-                >
+                <label for="phone" class="placeholder">Название компании</label>
               </div>
-              <div class="input-container">
-                <input
-                  id="organization"
-                  class="input"
-                  type="email"
-                  placeholder=" "
-                />
-                <div class="cut cut-long1"></div>
-                <label for="phone" class="placeholder">Электронный адрес</label>
-              </div>
-              <div class="input-container">
-                <input
-                  id="organization"
-                  class="input"
-                  type="text"
-                  placeholder=" "
-                />
-                <div class="cut cut-long2"></div>
-                <label for="phone" class="placeholder">Комментарий</label>
+              <div class="input-container input-container_textarea">
+                <textarea
+                  class="popup_textarea"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
             </div>
-            <p class="info">
-              Нажимая на кнопку ОТПРАВИТЬ, я принимаю
-              <a href="https://vita-rus.ru/about/documents/privacy-policy/"
-                >Политику конфиденциальности</a
-              >
-            </p>
-            <a class="send" href="#!"><button>Отправить</button></a>
-          </div>
+            <div class="checkbox_container">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="happy"
+                name="happy"
+                value="yes"
+                required
+              />
+              <label for="happy"
+                ><p class="info">
+                  Нажимая на кнопку ОТПРАВИТЬ, я принимаю
+                  <a href="https://vita-rus.ru/about/documents/privacy-policy/"
+                    >Политику конфиденциальности</a
+                  >
+                </p>
+              </label>
+            </div>
+            <button class="send">Отправить</button>
+          </form>
         </div>
       </div>
     </header>
@@ -651,9 +660,18 @@
         <div class="head-button-container">
           <h2 class="buyer_head">Информация о покупателе</h2>
           <button class="button_hide">
-            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.99999 2.828L2.04999 7.778L0.635986 6.364L6.99999 0L13.364 6.364L11.95 7.778L6.99999 2.828Z" fill="#292A2A"/>
-            </svg>              
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.99999 2.828L2.04999 7.778L0.635986 6.364L6.99999 0L13.364 6.364L11.95 7.778L6.99999 2.828Z"
+                fill="#292A2A"
+              />
+            </svg>
           </button>
         </div>
         <form action="#0" class="form_buyer">
@@ -738,10 +756,22 @@
           <span class="basket_product_description">Размер: 4000х750х600</span>
           <button class="basket_product_del">
             <a href="#!">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 4V4C6 2.34315 7.34315 1 9 1V1C10.6569 1 12 2.34315 12 4V4M6 4H12M6 4H3M12 4H15M17 4H15M1 4H3M3 4V15C3 16.1046 3.89543 17 5 17H13C14.1046 17 15 16.1046 15 15V4M7 8V13M11 13V8" stroke="#EB5757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> 
-            </a>           
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 4V4C6 2.34315 7.34315 1 9 1V1C10.6569 1 12 2.34315 12 4V4M6 4H12M6 4H3M12 4H15M17 4H15M1 4H3M3 4V15C3 16.1046 3.89543 17 5 17H13C14.1046 17 15 16.1046 15 15V4M7 8V13M11 13V8"
+                  stroke="#EB5757"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </button>
         </article>
         <article class="basket_product">

@@ -550,7 +550,7 @@
 
       <div class="popup__contacts">
         <div class="popup__body">
-          <div class="popup__card">
+          <form class="popup__card">
             <h1 class="title">Свяжитесь с нами</h1>
             <div class="close__btn">
               <span class="close__line"></span>
@@ -559,7 +559,7 @@
             <div class="form">
               <div class="input-container">
                 <input
-                  required=""
+                  required
                   id="firstname"
                   class="input"
                   type="text"
@@ -570,7 +570,7 @@
               </div>
               <div class="input-container">
                 <input
-                  required=""
+                  required
                   id="phone"
                   class="input"
                   type="tel"
@@ -581,45 +581,42 @@
               </div>
               <div class="input-container">
                 <input
+                  required
                   id="organization"
                   class="input"
                   type="text"
                   placeholder=" "
                 />
                 <div class="cut cut-long"></div>
-                <label for="phone" class="placeholder"
-                  >Название организации</label
-                >
+                <label for="phone" class="placeholder">Название компании</label>
               </div>
-              <div class="input-container">
-                <input
-                  id="organization"
-                  class="input"
-                  type="email"
-                  placeholder=" "
-                />
-                <div class="cut cut-long1"></div>
-                <label for="phone" class="placeholder">Электронный адрес</label>
-              </div>
-              <div class="input-container">
-                <input
-                  id="organization"
-                  class="input"
-                  type="text"
-                  placeholder=" "
-                />
-                <div class="cut cut-long2"></div>
-                <label for="phone" class="placeholder">Комментарий</label>
+              <div class="input-container input-container_textarea">
+                <textarea
+                  class="popup_textarea"
+                  placeholder="Комментарий"
+                ></textarea>
               </div>
             </div>
-            <p class="info">
-              Нажимая на кнопку ОТПРАВИТЬ, я принимаю
-              <a href="https://vita-rus.ru/about/documents/privacy-policy/"
-                >Политику конфиденциальности</a
-              >
-            </p>
-            <a class="send" href="#!"><button>Отправить</button></a>
-          </div>
+            <div class="checkbox_container">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="happy"
+                name="happy"
+                value="yes"
+                required
+              />
+              <label for="happy"
+                ><p class="info">
+                  Нажимая на кнопку ОТПРАВИТЬ, я принимаю
+                  <a href="https://vita-rus.ru/about/documents/privacy-policy/"
+                    >Политику конфиденциальности</a
+                  >
+                </p>
+              </label>
+            </div>
+            <button class="send">Отправить</button>
+          </form>
         </div>
       </div>
     </header>
