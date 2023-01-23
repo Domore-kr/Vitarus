@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Search</title>
+    <title>Новости</title>
   </head>
+
   <body>
     <header class="hat">
       <div class="headbar">
@@ -619,7 +629,7 @@
     </header>
 
     <main class="page">
-      <nav class="path path_favorites">
+      <nav class="path path_news">
         <ul class="menu-list menu-list-card">
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
@@ -629,218 +639,183 @@
           </li>
           <li class="menu-link menu-link-card">
             <a href="#" class="menu-link-ref menu-link-ref-catalog"
-              ><p class="catalog-text">Поиск</p>
+              ><p class="catalog-text">О компании</p>
               <img src="/svg/right-arrow.svg" alt=""
             /></a>
+          </li>
+          <li class="menu-link menu-link-card">
+            <a href="#" class="menu-link-ref menu-link-ref-catalog"
+              ><p class="catalog-text">Новости</p></a
+            >
           </li>
         </ul>
       </nav>
 
-      <h1 class="favorites_head">Поиск</h1>
+      <h1 class="favorites_head news_head">Новости</h1>
 
-      <section class="search_container">
-        <form action="#0" class="search_form">
-          <div class="forma_favorite forma_search forma_name">
-            <span class="forma_head">Что ищем</span>
-            <input
-              class="input_favorite input_search"
-              type="text"
-              placeholder="Максим"
-              required
-            />
-          </div>
-          <div class="forma_favorite forma_search forma_delivery">
-            <span class="forma_head">Где ищем</span>
-            <select class="input_favorite input_favorite_select input_search">
-              <option>Везде</option>
-              <option>Не везде</option>
-            </select>
-          </div>
-          <button class="basket_button_container search_button">
-            <img src="/svg/white_loupe.svg" alt="" />Поиск
-          </button>
-        </form>
+      <section class="container_for_news">
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
+        <article class="news_block_for_news">
+          <a href="">
+            <div class="news_image_container">
+              <img src="/images/news_image.png" alt="" />
+            </div>
+            <div class="news_block_content">
+              <span class="news_date">30 ноября 2022</span>
+              <span class="news_block_name">Библиотечная лаборатория </span>
+            </div>
+          </a>
+        </article>
       </section>
-
-      <section class="search_list">
-        <article class="search_product_container">
-          <div class="search_img_container">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="images/search_img_mobile.png"
-              />
-              <img src="/images/search_img.png" alt="" />
-            </picture>
-          </div>
-          <div class="search_product_content">
-            <div class="search_product_head_container">
-              <a href=""
-                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
-              >
-              <span class="search_date">Изменен: 02.10.2021</span>
-            </div>
-            <span class="search_product_description"
-              >Мебель для детей требует особого подхода к проектированию и
-              производству. Здесь не должно быть острых углов, токсичных красок
-              или опасных ...</span
-            >
-            <ul class="search_product_path">
-              <li>Путь:</li>
-              <li><a href="#">Главная</a></li>
-              <li>/</li>
-              <li><a href="#">Каталог библиотечной мебели</a></li>
-            </ul>
-          </div>
-        </article>
-        <article class="search_product_container">
-          <div class="search_img_container">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="images/search_img_mobile.png"
-              />
-              <img src="/images/search_img.png" alt="" />
-            </picture>
-          </div>
-          <div class="search_product_content">
-            <div class="search_product_head_container">
-              <a href=""
-                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
-              >
-              <span class="search_date">Изменен: 02.10.2021</span>
-            </div>
-            <span class="search_product_description"
-              >Мебель для детей требует особого подхода к проектированию и
-              производству. Здесь не должно быть острых углов, токсичных красок
-              или опасных ...</span
-            >
-            <ul class="search_product_path">
-              <li>Путь:</li>
-              <li><a href="#">Главная</a></li>
-              <li>/</li>
-              <li><a href="#">Каталог библиотечной мебели</a></li>
-            </ul>
-          </div>
-        </article>
-        <article class="search_product_container">
-          <div class="search_img_container">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="images/search_img_mobile.png"
-              />
-              <img src="/images/search_img.png" alt="" />
-            </picture>
-          </div>
-          <div class="search_product_content">
-            <div class="search_product_head_container">
-              <a href=""
-                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
-              >
-              <span class="search_date">Изменен: 02.10.2021</span>
-            </div>
-            <span class="search_product_description"
-              >Мебель для детей требует особого подхода к проектированию и
-              производству. Здесь не должно быть острых углов, токсичных красок
-              или опасных ...</span
-            >
-            <ul class="search_product_path">
-              <li>Путь:</li>
-              <li><a href="#">Главная</a></li>
-              <li>/</li>
-              <li><a href="#">Каталог библиотечной мебели</a></li>
-            </ul>
-          </div>
-        </article>
-        <article class="search_product_container">
-          <div class="search_img_container">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="images/search_img_mobile.png"
-              />
-              <img src="/images/search_img.png" alt="" />
-            </picture>
-          </div>
-          <div class="search_product_content">
-            <div class="search_product_head_container">
-              <a href=""
-                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
-              >
-              <span class="search_date">Изменен: 02.10.2021</span>
-            </div>
-            <span class="search_product_description"
-              >Мебель для детей требует особого подхода к проектированию и
-              производству. Здесь не должно быть острых углов, токсичных красок
-              или опасных ...</span
-            >
-            <ul class="search_product_path">
-              <li>Путь:</li>
-              <li><a href="#">Главная</a></li>
-              <li>/</li>
-              <li><a href="#">Каталог библиотечной мебели</a></li>
-            </ul>
-          </div>
-        </article>
-        <article class="search_product_container">
-          <div class="search_img_container">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="images/search_img_mobile.png"
-              />
-              <img src="/images/search_img.png" alt="" />
-            </picture>
-          </div>
-          <div class="search_product_content">
-            <div class="search_product_head_container">
-              <a href=""
-                ><h2 class="search_product_head">Бибилиотечная мебель</h2></a
-              >
-              <span class="search_date">Изменен: 02.10.2021</span>
-            </div>
-            <span class="search_product_description"
-              >Мебель для детей требует особого подхода к проектированию и
-              производству. Здесь не должно быть острых углов, токсичных красок
-              или опасных ...</span
-            >
-            <ul class="search_product_path">
-              <li>Путь:</li>
-              <li><a href="#">Главная</a></li>
-              <li>/</li>
-              <li><a href="#">Каталог библиотечной мебели</a></li>
-            </ul>
-          </div>
-        </article>
-
-        <div class="location-container">
-          <div class="button-container button-container-pag">
-            <button class="button">Показать еще</button>
-          </div>
-          <div class="paginator">
-            <nav role="navigation">
-              <ul class="cd-pagination">
-                <li class="button-pag">
-                  <a class="disabled" href="#0"
-                    ><img src="/svg/black-arrow-left.svg" alt=""
-                  /></a>
-                </li>
-                <li class="pag-num"><a class="current" href="#0">1</a></li>
-                <li class="pag-num"><a class="current" href="#0">2</a></li>
-                <li class="pag-num"><a class="current" href="#0">3</a></li>
-                <li class="pag-num pag-ellipsis"><span>...</span></li>
-                <li class="pag-num"><a class="current" href="#0">10</a></li>
-                <li class="button-pag">
-                  <a href="#0"
-                    ><img src="/svg/black-arrow-right.svg" alt=""
-                  /></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <div class="location-container">
+        <div
+          id="show__more__catalog"
+          class="button-container button-container-pag"
+        >
+          <button class="button">Показать еще</button>
         </div>
-      </section>
+        <div class="paginator">
+          <nav role="navigation">
+            <ul class="cd-pagination">
+              <li class="button-pag">
+                <a class="disabled" href="#0"
+                  ><img src="svg/black-arrow-left.svg" alt=""
+                /></a>
+              </li>
+              <li class="pag-num"><a class="current" href="#0">1</a></li>
+              <li class="pag-num"><a class="current" href="#0">2</a></li>
+              <li class="pag-num"><a class="current" href="#0">3</a></li>
+              <li class="pag-num"><a class="current" href="#0">4</a></li>
+              <li class="pag-num"><a class="current" href="#0">5</a></li>
+              <li class="pag-num pag-ellipsis"><span>...</span></li>
+              <li class="pag-num"><a class="current" href="#0">10</a></li>
+              <li class="button-pag">
+                <a href="#0"><img src="svg/black-arrow-right.svg" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </main>
 
     <footer class="foot">

@@ -149,7 +149,7 @@ figure {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 0 10%;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -418,7 +418,7 @@ figure {
 .site-menu {
   max-width: 1140px;
   width: 1140px;
-  margin: auto;
+  margin: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -438,6 +438,7 @@ figure {
 
 .site-menu .menu ul li {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .site-menu .menu ul li a {
@@ -934,10 +935,9 @@ figure {
 
 .page {
   max-width: 1340px;
-  width: 1340px;
-  margin: auto;
+  margin: 10%;
   margin-bottom: 100px;
-  margin-top: 60px;
+  margin-top: 220px;
 }
 
 .catalog {
@@ -3060,13 +3060,88 @@ input[type="checkbox"]:checked + label:before {
   text-decoration: underline;
 }
 
+/* Новости */
+
+.path_news {
+  margin-bottom: 60px;
+}
+
+.news_head {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.container_for_news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px 35px;
+
+  margin-bottom: 60px;
+}
+
+.news_block_for_news {
+  border-radius: 25px 25px 25px 25px;
+}
+
+.news_image_container {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.news_image_container img {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.news_block_content {
+  max-height: 100px;
+
+  background: #ffffff;
+  /* S */
+
+  box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 25px 25px;
+
+  padding: 20px 25px;
+}
+
+.news_date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Monochromic/150 */
+
+  color: #b7b7b7;
+  margin-bottom: 10px;
+
+  display: block;
+}
+
+.news_block_name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.03em;
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+}
+
+/*  */
+
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
   }
 
   .headbar {
-    padding: 21.87px 9.72% 15px;
+    padding: 21.87px 10% 15px;
   }
 
   .logobar {
@@ -3315,6 +3390,7 @@ input[type="checkbox"]:checked + label:before {
 
   .page {
     padding: 0 20px;
+    margin: auto;
     margin-bottom: 80px;
     width: auto;
     margin-top: 0;
@@ -4456,7 +4532,7 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 460px) {
   body {
-    margin-top: 87px;
+    margin-top: 120px;
   }
 
   .scheme-container {
