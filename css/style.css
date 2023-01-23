@@ -3093,8 +3093,6 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .news_block_content {
-  max-height: 100px;
-
   background: #ffffff;
   /* S */
 
@@ -3250,6 +3248,14 @@ input[type="checkbox"]:checked + label:before {
 
 .grid_images_news a img {
   width: 100%;
+}
+
+/*  */
+
+/* Портфолио */
+
+.menu-list_portfolio {
+  margin-bottom: 50px;
 }
 
 /*  */
