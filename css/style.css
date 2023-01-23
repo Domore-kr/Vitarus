@@ -3135,6 +3135,125 @@ input[type="checkbox"]:checked + label:before {
 
 /*  */
 
+/* Новости внутренняя */
+
+.page_internal_news {
+  max-width: 860px;
+}
+
+.news_head_internal {
+  margin-bottom: 12px;
+}
+
+.main_information_for_news {
+  margin-top: 12px;
+}
+
+.main_date_news {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  /* Monochromic/150 */
+
+  color: #b7b7b7;
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+.main_image_and_video_news {
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+}
+
+.news_image_internal {
+  border-radius: 30px;
+  width: 100%;
+  min-height: 350px;
+}
+
+.watch_video_news {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.watch_video_news a {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-decoration-line: underline;
+
+  /* Monochromic/0 */
+
+  color: #ffffff;
+}
+
+.news_button_watch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: #0a7356;
+  /* Green/200 */
+
+  border: 2px solid #0a7356;
+}
+
+.news_button_watch img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_watch_video {
+  display: none;
+}
+
+.main_news_inform {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Monochromic/200 */
+
+  color: #292a2a;
+  display: block;
+
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.grid_images_news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+
+  margin-bottom: 70px;
+}
+
+.grid_images_news a img {
+  width: 100%;
+}
+
+/*  */
+
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
@@ -3952,6 +4071,36 @@ input[type="checkbox"]:checked + label:before {
     max-height: none;
     margin-bottom: 30px;
   }
+
+  /* Новости внутренняя */
+
+  .watch_video_news {
+    display: none;
+  }
+
+  .mobile_watch_video {
+    display: block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 20px;
+  }
+
+  .mobile_watch_video a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .mobile_watch_video a span {
+    color: #0a7356;
+    text-decoration-line: underline;
+  }
+
+  /*  */
 }
 
 @media (max-width: 768px) {
