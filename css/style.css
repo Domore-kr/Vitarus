@@ -2572,6 +2572,9 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 60px;
   column-gap: 20px;
   row-gap: 30px;
+}
+
+.product-card-detail {
   margin-left: 254.5px;
   padding-left:5.14%;
 }
@@ -4523,7 +4526,7 @@ input[type="checkbox"]:checked + label:before {
     display: none;
   }
 
-  .product-cards-catalog {
+  .product-card-detail {
     margin-left: 0;
     padding-left: 0;
   }
