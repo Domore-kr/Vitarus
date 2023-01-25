@@ -3299,6 +3299,10 @@ input[type="checkbox"]:checked + label:before {
 
 /*  */
 
+.news-list {
+  margin: 0 10%;
+}
+
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
