@@ -585,7 +585,7 @@ figure {
   width: 100%;
   border-radius: 24px;
   padding: 30px 20px 15px 20px;
-  background-color: #fff;
+  background-color: #f8f8f9;
 }
 
 .popup__contacts .popup__body .popup__card .close__btn {
@@ -679,7 +679,7 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .form .input {
-  background-color: transparent;
+  background-color: #ffffff;
   border: 1px solid #bdbdbd;
   border-radius: 30px;
   font-size: 18px;
@@ -690,7 +690,7 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .form .cut {
-  background-color: #fff;
+  background-color: #f8f8f9;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -739,8 +739,8 @@ figure {
 .popup__contacts .popup__body .popup__card .form .placeholder {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 25px;
   color: #222222;
   opacity: 0.5;
@@ -811,6 +811,7 @@ figure {
 .popup__contacts .popup__body .popup__card .info a {
   color: #0a7356;
   text-decoration: underline;
+  font-size: 14px;
 }
 
 .popup__contacts .popup__body .popup__card .send {
@@ -819,10 +820,15 @@ figure {
   font-weight: 800;
   font-size: 18px;
   border: 0;
-  border-radius: 57px;
   color: #fff;
-  background-color: #0a7356;
+}
+
+.popup__contacts .popup__body .popup__card .send button {
+  background: 0;
+  border: 0;
   padding: 16px 30px;
+  background-color: #0a7356;
+  border-radius: 57px;
 }
 
 .intro {
@@ -1116,7 +1122,7 @@ figcaption {
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
-  line-height: 20px;
+  line-height: 25px;
   text-align: center;
   border-radius: 20px;
   border: none;
@@ -2806,7 +2812,6 @@ input[type="checkbox"]:checked + label:before {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-
   background: #ffffff;
   border-radius: 30px;
   border: none;
@@ -2814,7 +2819,7 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 8px 8px 8px 30px;
   gap: 20px;
   isolation: isolate;
 }
@@ -3297,6 +3302,7 @@ input[type="checkbox"]:checked + label:before {
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
+    font-family: 'Raleway';
   }
 
   .headbar {
