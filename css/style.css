@@ -20,6 +20,14 @@ body {
   overflow-x: hidden;
 }
 
+p a {
+  color: #0a7356;
+}
+
+p a:hover {
+  text-decoration: underline
+}
+
 :focus::placeholder {
   color: transparent;
 }
@@ -1659,7 +1667,7 @@ figcaption {
 }
 
 .text-news::-webkit-scrollbar-thumb {
-  background: #0a7356;
+  background: #d7e3e7;
 }
 
 .more__content {
@@ -1852,6 +1860,7 @@ figcaption {
 
 .copyright {
   cursor: pointer;
+  font-size: 16px;
 }
 
 .copyright:hover {
@@ -2079,7 +2088,7 @@ svg {
 .product-description {
   width: 45.83%;
   margin-bottom: 77px;
-  margin-top: -100px;
+  margin-top: -45px;
 }
 
 .share-container {
@@ -2531,6 +2540,8 @@ svg {
 
 .filter-link {
   user-select: none;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 input[type="checkbox"] {
@@ -2613,15 +2624,18 @@ input[type="checkbox"]:checked + label:before {
   height: 40px;
 }
 
-.button-container-pag button {
+.button-container-pag .button {
   background: #ffffff;
   border: 2px solid #dadbdb;
   border-radius: 20px;
   color: #292a2a;
   transition: 0.2s ease all;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.button-container-pag button:hover {
+.button-container-pag .button:hover {
   background-color: #0a7356;
   color: #ffffff;
   border: none;
@@ -3570,7 +3584,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .page {
-    padding: 0 20px;
+    padding: 0 15px;
     margin: auto;
     margin-bottom: 80px;
     width: auto;
@@ -3594,7 +3608,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
 
@@ -3951,10 +3965,6 @@ input[type="checkbox"]:checked + label:before {
     display: none;
   }
 
-  .share-container {
-    display: block;
-  }
-
   .share-caption {
     font-weight: 400;
     font-size: 16px;
@@ -3966,7 +3976,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .description-caption {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .text-description-catalog {
@@ -4752,7 +4762,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -4814,6 +4824,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .card-caption a {
-   font-size: 15px;
-   line-height: 14px;  }
+    font-size: 14px;
+    line-height: 14px;  
+  }
 }
