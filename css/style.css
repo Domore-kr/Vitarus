@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+:focus::placeholder {
+  color: transparent;
+}
+
 h2 {
   font-family: 'Raleway';
   font-style: normal;
