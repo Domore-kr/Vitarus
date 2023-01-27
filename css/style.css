@@ -37,8 +37,9 @@ h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 70px;
+  line-height: 50px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 ul,
@@ -1856,9 +1857,17 @@ figcaption {
   padding-bottom: 45px;
 }
 
+.copyright-politics p {
+  font-size: 14px;
+}
+
+.copyright-politics a {
+  font-size: 14px;
+}
+
 .copyright {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .copyright:hover {
@@ -4398,7 +4407,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .menu-link-ref {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .logobar {
@@ -4423,6 +4432,7 @@ input[type="checkbox"]:checked + label:before {
   .page {
     max-width: 1440px;
     width: 1440px;
+    margin: auto
   }
 
   .big-img-container {
