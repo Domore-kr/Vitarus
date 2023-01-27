@@ -801,49 +801,70 @@
             <h2 class="caption">Форма обратной связи</h2>
             <div class="form-container">
               <form action="">
-                <div class="field-container">
-                  <div class="forma">
-                    <span class="form-head">Название организации</span>
-                    <input
-                      type="text"
-                      class="field"
-                      placeholder="ИП Александр"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Контактное лицо</span>
-                    <input
-                      type="text"
-                      class="field"
-                      placeholder="Александр"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Телефон</span>
-                    <input
-                      type="tel"
-                      class="field"
-                      placeholder="+7 960 000 00 00"
-                      required
-                    />
-                  </div>
-                  <div class="forma">
-                    <span class="form-head">Email</span>
-                    <input
-                      type="email"
-                      class="field"
-                      placeholder="User@mail.ru"
-                      required
-                    />
-                  </div>
+                <div class="forma forma1">
+                  <label for="order_org" class="form-head"
+                    >Название организации</label
+                  >
+                  <input
+                    type="text"
+                    id="order_org"
+                    class="field"
+                    placeholder="ИП Александр"
+                    required
+                  />
                 </div>
-                <div class="button-block-field">
-                  <div class="button-container button-container-field">
-                    <button class="button">Заказать проект</button>
-                  </div>
+                <div class="forma  forma2">
+                  <label for="order_name" class="form-head"
+                    >Контактное лицо</label
+                  >
+                  <input
+                    type="text"
+                    id="order_name"
+                    class="field"
+                    placeholder="Александр"
+                    required
+                  />
                 </div>
+                <div class="forma forma3">
+                  <label for="order_phone" class="form-head">Телефон</label>
+                  <input
+                    type="tel"
+                    id="order_phone"
+                    class="field"
+                    placeholder="+7 960 000 00 00"
+                    required
+                  />
+                </div>
+                <div class="forma forma4">
+                  <label for="order_email" class="form-head">Email</label>
+                  <input
+                    type="email"
+                    id="order_email"
+                    class="field"
+                    placeholder="User@mail.ru"
+                    required
+                  />
+                </div>
+                <div class="politic_checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox"
+                    id="politic_checkbox"
+                    name="happy"
+                    value="yes"
+                    required
+                  />
+                  <label for="politic_checkbox"
+                    ><p class="info">
+                      Нажимая на кнопку ОТПРАВИТЬ, я принимаю
+                      <a
+                        href="https://vita-rus.ru/about/documents/privacy-policy/"
+                        >Политику конфиденциальности</a
+                      >
+                    </p>
+                  </label>
+                </div>
+                <button class="button">Заказать проект</button>
               </form>
             </div>
           </section>

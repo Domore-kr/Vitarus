@@ -1949,6 +1949,10 @@ svg {
   padding-bottom: 10px;
 }
 
+.menu-link-card a p {
+  font-size: 16px;
+}
+
 .menu-link-ref-catalog {
   font-size: 16px;
   display: flex;
@@ -2367,9 +2371,59 @@ svg {
 }
 
 .form-container form {
-  display: flex;
+  display: grid;
+  /* grid-template-columns: repeat(3, minmax(260px, 260px)); */
+  gap: 25px 40px;
+  grid-template-areas:
+    "forma1 forma2 button"
+    "forma3 forma4 button"
+    "politic_checkbox politic_checkbox politic_checkbox";
+  /* display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: flex-end; */
+}
+
+.forma .form-head {
+  margin-bottom: 5px;
+}
+
+.forma1 {
+  grid-area: forma1;
+}
+
+.forma2 {
+  grid-area: forma2;
+}
+
+.forma3 {
+  grid-area: forma3;
+}
+
+.forma4 {
+  grid-area: forma4;
+}
+
+.politic_checkbox {
+  grid-area: politic_checkbox;
+}
+
+.politic_checkbox .info {
+  font-size: 14px;
+}
+
+.politic_checkbox .info a {
+  font-size: 14px;
+}
+
+.form-container form .button {
+  grid-area: button;
+}
+
+.form-container form .button {
+  width: 200px;
+  height: 40px;
+  margin-top: auto;
 }
 
 .field-container {
@@ -2387,10 +2441,6 @@ svg {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-}
-
-.forma:nth-last-child(n + 3) {
-  margin-bottom: 25px;
 }
 
 .field {
@@ -4088,7 +4138,9 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .form-container form {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
@@ -4097,11 +4149,11 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .forma {
-    margin-bottom: 30px;
+    width: 100%;
   }
 
-  .forma:nth-child(odd) {
-    margin-right: 20px;
+  .field {
+    width: 100%;
   }
 
   .button-container-field {
@@ -4432,7 +4484,8 @@ input[type="checkbox"]:checked + label:before {
   .page {
     max-width: 1440px;
     width: 1440px;
-    margin: auto
+    margin: auto;
+    margin-bottom: 100px;
   }
 
   .big-img-container {
