@@ -560,55 +560,39 @@
 
       <div class="popup__contacts">
         <div class="popup__body">
-          <form class="popup__card">
+          <div class="popup__card">
             <h1 class="title">Свяжитесь с нами</h1>
             <div class="close__btn">
               <span class="close__line"></span>
               <span class="close__line"></span>
             </div>
-            <div class="form">
-              <div class="input-container">
+            <form class="form">
                 <input
                   required
                   id="firstname"
                   class="input"
                   type="text"
-                  placeholder=" "
+                  placeholder="Имя"
                 />
-                <div class="cut cut-short1"></div>
-                <label for="firstname" class="placeholder">Имя</label>
-              </div>
-              <div class="input-container">
                 <input
                   required
                   id="phone"
                   class="input"
                   type="tel"
-                  placeholder=" "
+                  placeholder="Телефон"
                 />
-                <div class="cut cut-short"></div>
-                <label for="phone" class="placeholder">Телефон</label>
-              </div>
-              <div class="input-container">
                 <input
                   required
                   id="organization"
                   class="input"
                   type="text"
-                  placeholder=" "
+                  placeholder="Название компании"
                 />
-                <div class="cut cut-long"></div>
-                <label for="phone" class="placeholder">Название компании</label>
-              </div>
-              <div class="input-container input-container_textarea">
                 <textarea
                   class="popup_textarea"
                   placeholder="Комментарий"
                 ></textarea>
-              </div>
-            </div>
-            <div class="checkbox_container">
-              <input
+                <input
                 type="checkbox"
                 class="custom-checkbox"
                 id="happy"
@@ -624,9 +608,9 @@
                   >
                 </p>
               </label>
-            </div>
-            <button class="send">Отправить</button>
-          </form>
+              <button class="send">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>

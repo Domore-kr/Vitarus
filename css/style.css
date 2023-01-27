@@ -25,7 +25,7 @@ p a {
 }
 
 p a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 :focus::placeholder {
@@ -33,7 +33,7 @@ p a:hover {
 }
 
 h2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -41,8 +41,13 @@ h2 {
   margin-top: 20px;
 }
 
-ul, li, span, a, p, #text {
-  font-family: 'Raleway';
+ul,
+li,
+span,
+a,
+p,
+#text {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -679,12 +684,6 @@ figure {
   row-gap: 20px;
 }
 
-.popup__contacts .popup__body .popup__card .form .input-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
-
 .popup__contacts .popup__body .popup__card .form .ic2 {
   margin-top: 23px;
   margin-bottom: 23px;
@@ -695,10 +694,11 @@ figure {
   border: 1px solid #bdbdbd;
   border-radius: 30px;
   font-size: 18px;
-  height: 100%;
+  height: 50px;
   outline: 0;
   padding: 4px 20px 0;
   width: 100%;
+  position: relative;
 }
 
 .popup__contacts .popup__body .popup__card .form .cut {
@@ -769,10 +769,6 @@ figure {
   top: 18px;
 }
 
-.popup__contacts .popup__body .popup__card .form .input-container_textarea {
-  height: 150px;
-}
-
 .popup_textarea {
   background: #ffffff;
   border-radius: 30px;
@@ -785,7 +781,7 @@ figure {
   isolation: isolate;
 
   width: 100%;
-  height: 100%;
+  height: 150px;
 
   resize: none;
 
@@ -811,8 +807,6 @@ figure {
 }
 
 .popup__contacts .popup__body .popup__card .info {
-  margin-top: 24px;
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -833,6 +827,10 @@ figure {
   font-size: 18px;
   border: 0;
   color: #fff;
+  background: #0a7356;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
 }
 
 .popup__contacts .popup__body .popup__card .send button {
@@ -2552,7 +2550,6 @@ input[type="checkbox"] + label {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 20px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2599,7 +2596,7 @@ input[type="checkbox"]:checked + label:before {
 
 .product-card-detail {
   margin-left: 254.5px;
-  padding-left:5.14%;
+  padding-left: 5.14%;
 }
 
 .product-card-catalog {
@@ -3312,7 +3309,6 @@ input[type="checkbox"]:checked + label:before {
 .grid_images_news a img {
   width: 100%;
   border-radius: 30px;
-
 }
 
 /*  */
@@ -3332,7 +3328,7 @@ input[type="checkbox"]:checked + label:before {
 @media (min-width: 1141px) and (max-width: 1919px) {
   body {
     margin-top: 220px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
   }
 
   .headbar {
@@ -3480,8 +3476,8 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .logobar {
-   padding-top: 20px;
-   width: auto;
+    padding-top: 20px;
+    width: auto;
   }
 
   .dropdown {
@@ -4825,6 +4821,6 @@ input[type="checkbox"]:checked + label:before {
 
   .card-caption a {
     font-size: 14px;
-    line-height: 14px;  
+    line-height: 14px;
   }
 }
