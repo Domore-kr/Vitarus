@@ -2147,8 +2147,8 @@ svg {
 }
 
 .product-card-caption {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 40px;
   padding-bottom: 0;
 }
 
@@ -2966,8 +2966,8 @@ input[type="checkbox"]:checked + label:before {
 .basket_product_name {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 30px;
   /* identical to box height, or 150% */
 
@@ -4465,6 +4465,7 @@ input[type="checkbox"]:checked + label:before {
   .logobar {
     max-width: 1440px;
     width: 1440px;
+    margin: auto;
   }
 
   .button-logobar {
@@ -4474,6 +4475,7 @@ input[type="checkbox"]:checked + label:before {
   .site-menu {
     max-width: 1440px;
     width: 1440px;
+    margin: auto;
   }
 
   .container-info {
