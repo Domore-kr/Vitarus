@@ -2827,8 +2827,6 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 45px;
 }
 
 .buyer_head {
@@ -7723,8 +7721,6 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 45px;
 }
 
 .buyer_head {
@@ -9795,4 +9791,8 @@ input[type="checkbox"]:checked + label:before {
     font-size: 14px;
     line-height: 14px;
   }
+}
+
+.hidden {
+  display: none;
 }
