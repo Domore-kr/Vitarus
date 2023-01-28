@@ -2666,6 +2666,14 @@ input[type="checkbox"]:checked + label:before {
   border-radius: 30px 30px 30px 30px;
 }
 
+.view_goods_card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8px 8px 8px rgb(0 0 0 / 7%);
+  border-radius: 30px 30px 30px 30px;
+  margin-bottom: 10%;
+}
+
 .location-container {
   display: flex;
   justify-content: space-between;
@@ -2949,6 +2957,10 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.basket_product a {
+  line-height: unset;
 }
 
 .basket_product:nth-last-child(n + 2) {
@@ -7357,6 +7369,10 @@ svg {
 
 /* Каталог */
 
+.view_goods {
+  min-width: 100%;
+}
+
 .product-card-image-container {
   display: flex;
   justify-content: center;
@@ -7441,7 +7457,7 @@ svg {
 }
 
 .filter-container {
-  width: 260px;
+  min-width: 160px;
   margin-right: 40px;
 }
 
