@@ -77,7 +77,6 @@ p a {
   fill: #0a7356;
 }
 .popup__idea__pin a button {
-  background: 0;
   border: 0;
 }
 .content__active .btn__show__more svg {
@@ -1307,7 +1306,6 @@ figure {
 }
 .menu-list {
   display: flex;
-  flex-wrap: wrap;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
@@ -1428,6 +1426,13 @@ figure {
 .menu-list-dropdown {
   display: block;
 }
+.line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  background:#dadbdb;
+}
 .menu-list-dropdown-first {
   padding-bottom: 35px;
   border-bottom: 2px solid #dadbdb;
@@ -1535,7 +1540,7 @@ figure {
   -webkit-tap-highlight-color: transparent;
 }
 .menu-link-site:nth-last-child(n + 2) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .dop__menu {
   opacity: 0;
@@ -1923,7 +1928,7 @@ figure {
 }
 .page {
   max-width: 1340px;
-  margin: 240px 10% 100px;
+  margin: 240px 10% 60px;
 }
 .catalog {
   margin-bottom: 105px;
@@ -2939,6 +2944,13 @@ figcaption {
 .basket_product_del:hover svg path {
   stroke: #fff;
 }
+.favorite__wide__card.active__favorite button {
+  background: #0a7356;
+  color: #fff;
+}
+.favorite__wide__card.active__favorite button svg path {
+  stroke: #fff;
+}
 .card-description button {
   border: 0;
   cursor: pointer;
@@ -3105,7 +3117,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 .top-button-catalog-container {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 .button-catalog-block {
   padding: 20px;
@@ -3331,6 +3343,12 @@ input[type="checkbox"] {
   padding: 40px;
   margin-bottom: 70px;
 }
+.buyer_information .button_hide svg{
+  transition: .2s ease all;
+}
+.buyer_information.content__active .button_hide svg{
+  transform: rotate(180deg);
+}
 .head-button-container {
   justify-content: space-between;
   gap: 10px;
@@ -3360,6 +3378,9 @@ input[type="checkbox"] {
 }
 .form_buyer {
   display: grid;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   gap: 25px 100px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "forma_name forma_phone" "forma_company forma_email" "forma_adress forma_delivery" "forma_comment forma_comment";
@@ -4530,7 +4551,7 @@ input[type="checkbox"] {
     width: 1440px;
   }
   .page {
-    margin: auto auto 240px;
+    margin: auto auto 100px;
   }
   .big-img-container {
     width: 1140px;
