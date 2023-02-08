@@ -4977,7 +4977,7 @@ input[type="checkbox"] {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .contacts_block {
