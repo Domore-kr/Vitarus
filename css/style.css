@@ -240,6 +240,17 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 @media (max-width: 899px) {
+  /* Контакты */
+  .contact_map_container {
+    flex-direction: column;
+  }
+
+  .contact_map_container div {
+    width: 100% !important;
+    height: 500px;
+  }
+  /*  */
+
   body {
     margin-top: 137px;
   }
@@ -5076,6 +5087,7 @@ iframe {
 .contact_map_container {
   display: flex;
   gap: 10px;
+  justify-content: space-between;
 }
 
 .contact_map_container div {
